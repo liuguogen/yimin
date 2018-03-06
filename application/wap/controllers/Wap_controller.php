@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Index_controller extends CI_Controller {
+class Wap_controller extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,14 +18,13 @@ class Index_controller extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	
 	public function __construct()
 	{
 
 
 		parent::__construct();
-		if($this->agent->is_mobile()) {
-			redirect(base_url().'wap');
-		}
+		
 	}
 	public function index()
 	{

@@ -140,7 +140,7 @@
                             <ul class="submenu">
                                 
                                     <li class="b-nav-li">
-                                        <a href="<?php echo site_url('Default_controller/newsList') ?>" target="right_content">
+                                        <a href="<?php echo site_url('Admin_controller/newsList') ?>" target="right_content">
                                             <i class="icon-double-angle-right"></i>
                                             新闻列表
                                         </a>
