@@ -1748,13 +1748,13 @@
     </div>
     <!-- 侨外优势 E-->
     
-   <div class="qw-bottom">
+   <!-- <div class="qw-bottom">
         <div class="w1100">
             <div class="gd-close" onclick="$('.qw-bottom').hide();bottom_flag = false;_czc.push(['_trackEvent','新官网主页1.5-底部条幅-关闭','点击','新官网主页1.5-底部条幅-关闭']);"></div>
-            <!-- <p><span class='pgnum_ajax'>75567</span>人已评估</p> -->
+            
             <a href="http://www.iqiaowai.com/pinggu/#from=gd_bottom" onclick="_czc.push(['_trackEvent','新官网主页1.5-底部条幅-自评','点击','新官网主页1.5-底部条幅-自评']);" target="_blank" rel="nofollow"></a>
         </div>
-    </div>
+    </div> -->
     <script>
   /*  document.getElementById("bottom-dial-btn").onclick = function() {
         lxb.call(document.getElementById("bottom-dial"));
@@ -1950,11 +1950,11 @@
          <p>京公境准字[2008]0008号<img src ="http://www.iqiaowai.com/templets/new/images/gaba.png" />京公安备11010502033230 京ICP备11035523号  Copyright © 北京侨外出国咨询服务有限公司</p>
     </div>           
 </div>
-<script src="http://www.iqiaowai.com/templets/new/js/theater.js"></script>
+<!-- <script src="http://www.iqiaowai.com/templets/new/js/theater.js"></script>
 <DIV id="kw_gd" style="width:280px;background:#555454;height:52px;border-radius:5px;rgba(85,84,84,0.72);position:absolute;top:10px;left:34%;z-index:9999;cursor:pointer;display:none;" onclick="kw_fun()">
     <span id="vader" style="width:155px;height:40px;border:0px;margin:5px 0px 6px 10px;border-top-left-radius:5px;border-bottom-left-radius:5px;float:left;font-size:18px;color:#555454;display: block;background:#fff;line-height:40px;padding-left:15px;"></span>
     <button type="submit"  style="cursor:pointer;float:left;width:80px;height:40px;margin-top:5px;background:url(http://www.iqiaowai.com/templets/new/images/btn.gif)no-repeat;border:0px;background-size:100% 100%;"></button>
-</DIV>
+</DIV> -->
 <input type="hidden" value="" id="kw_hide" />
 <script>
 function getDomainQuery(url) {
@@ -2018,7 +2018,7 @@ function kw_fun() {
         <i></i><p>在<br/>线<br/>咨<br/>询</p>
     </div>
     <!-- 宽屏对联 -->
-    <div class="sidebar sidebar_b">
+    <!-- <div class="sidebar sidebar_b">
         <div class="closebox">
         </div>
         <div class="sidebar_top">
@@ -2061,12 +2061,12 @@ function kw_fun() {
         <div class="gotop" onclick='$("body,html").animate({scrollTop: 0}, 1000);'>
             回到顶部 <i></i>
         </div>
-    </div>
+    </div> -->
     <!-- 小屏对联 -->
-    <div class="sidebar sidebar_s">
+    <!-- <div class="sidebar sidebar_s">
         <div class="closebox">
-        </div>
-        <div class="sidebar_top">
+        </div> -->
+        <!-- <div class="sidebar_top">
             <p id="side_ask_s" class="zx" onclick="openLy1('右侧导航小版');">移民咨询 <i></i></p>
             <div class="city">
                 <div class="branch">
@@ -2094,8 +2094,8 @@ function kw_fun() {
                     </ul>
                 </div>
             </div>            
-        </div>
-        <div class="callback">
+        </div> -->
+       <!--  <div class="callback">
             <div>
                 免费移民方案
             </div>
@@ -2106,11 +2106,11 @@ function kw_fun() {
                 <a class="takephone" id="dl-dail2" href="javascript:void(0);">立即回电</a>
                 <span></span>
             </div>
-        </div>
-        <div class="gotop" onclick='$("body,html").animate({scrollTop: 0}, 1000);'>
+        </div> -->
+       <!--  <div class="gotop" onclick='$("body,html").animate({scrollTop: 0}, 1000);'>
             回到顶部 <i></i>
         </div>
-    </div>
+    </div> -->
 </div>
 <!-- 左侧对联 -->
 <!-- <div class="leftbar">
@@ -2180,10 +2180,10 @@ function kw_fun() {
         </div>
     </div>
 </div>
-<script type="text/javascript" charset="utf-8" src="http://www.iqiaowai.com/templets/new/index/js/sidebar1.js"></script>
-<script type="text/javascript" charset="utf-8" src="http://lead.soperson.com/20003027/10086744.js"></script>
-<script src="http://www.iqiaowai.com/templets/new/js/public.js"></script>
-<script src="http://www.iqiaowai.com/zhuanti/jiance.js"></script>
+<!-- <script type="text/javascript" charset="utf-8" src="http://www.iqiaowai.com/templets/new/index/js/sidebar1.js"></script>
+<script type="text/javascript" charset="utf-8" src="http://lead.soperson.com/20003027/10086744.js"></script> -->
+<!-- <script src="http://www.iqiaowai.com/templets/new/js/public.js"></script>
+<script src="http://www.iqiaowai.com/zhuanti/jiance.js"></script> -->
 
 
 </body>
