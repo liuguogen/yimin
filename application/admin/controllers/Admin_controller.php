@@ -36,6 +36,47 @@ class Admin_controller extends CI_Controller {
 	{
 		$this->load->view('home/index');
 	}
+
+	public function activityList()
+	{
+		if(!empty($_POST)){
+			$keyword=trim($this->input->post('title'));
+			$data['title']=$keyword;
+			$total=$this->Admin_model->getCount('activity',array('title|like'=>$keyword));
+			$filter=array('title|like'=>$keyword);
+		}else{
+			$keyword='';
+			$total=$this->Admin_model->getCount('activity');
+			$data['title']=$keyword;
+			$filter=array();
+		}
+		$this->load->library('pagination');
+		$limit = $this->limit;
+		$config['base_url'] = site_url('Admin_controller/activityList').'?page=p';
+		$config['total_rows'] = $total;
+		$config['per_page'] = $limit;
+		$config['full_tag_open'] = '<div class="pagination">'; // 分页开始样式
+		$config['full_tag_close'] = '</div>'; // 分页结束样式
+		$config['first_link'] = '首页'; // 第一页显示
+		$config['last_link'] = '末页'; // 最后一页显示
+		$config['next_link'] = '下一页 '; // 下一页显示
+		$config['prev_link'] = '上一页'; // 上一页显示
+		$config['cur_tag_open'] = ' <a class="current">'; // 当前页开始样式
+		$config['cur_tag_close'] = '</a>'; // 当前页结束样式
+		$config['num_links'] = 2;// 当前连接前后显示页码个数
+		$config['page_query_string']=TRUE;
+		//$config['uri_segment'] = 4;
+		$config['use_page_numbers'] = TRUE;
+		$config['page_query_string']=TRUE;
+		$config['use_page_numbers'] = TRUE;
+		$per_page=$this->input->get('per_page');
+		$start=$per_page?($per_page-1)*$limit:0; 
+		
+		$data['row']=$this->Admin_model->getList('*','activity',$filter,$start,$limit,'create_time DESC');
+		$this->pagination->initialize($config);
+		$data['page_links']=$this->pagination->create_links();
+		$this->load->view('home/activitylist',$data);
+	}
 	public function newsList()
 	{
 		if(!empty($_POST)){
@@ -77,6 +118,32 @@ class Admin_controller extends CI_Controller {
 		$data['page_links']=$this->pagination->create_links();
 		$this->load->view('home/newslist',$data);
 	}
+	public function addActivity()
+	{
+			if(IS_POST) {
+			$post=$this->input->post();
+			$post['create_time']=time();
+			if($post['activity_id']!='') {
+				$activity_id=$post['activity_id'];
+				unset($post['activity_id']);
+				
+				//更新
+				$flag=$this->Admin_model->update('activity',$post,array('activity_id'=>$activity_id));
+			}else {
+				$flag=$this->Admin_model->insert('activity',$post);
+			}
+
+
+			if($flag) {
+				$this->message('保存成功',site_url('Admin_controller/activityList'));
+			}else {
+				$this->message('保存失败',site_url('Admin_controller/activityList'));
+			}
+		}else{
+			$this->load->view('home/addactivity');
+		}
+
+	}
 	/**
 	**添加新闻
 	**/
@@ -105,6 +172,26 @@ class Admin_controller extends CI_Controller {
 			}
 		}else{
 			$this->load->view('home/addnews');
+		}
+	}
+
+	public function editActivity()
+	{
+		$data['data']=$this->Admin_model->getRow('*','activity',array('activity_id'=>$this->input->get('activity_id')));
+		$this->load->view('home/addactivity',$data);
+	}
+
+	public function delActivity()
+	{
+		$flag=$this->Admin_model->delete('activity',array('activity_id'=>$this->input->get('activity_id')));
+		if($flag)
+		{
+			$this->message('删除成功',site_url('Admin_controller/activityList'));
+
+		}
+		else
+		{
+			$this->message('删除失败',site_url('Admin_controller/activityList'));
 		}
 	}
 	/**

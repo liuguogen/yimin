@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title>新闻管理 - 新闻列表</title>
+    <title>活动管理 - 活动列表</title>
     <meta http-equiv="Cache-Control" content="no-transform" />
     <meta http-equiv="Cache-Control" content="no-siteapp" />
       <?php  $this->load->view('public/header') ?>
@@ -36,14 +36,14 @@ margin:0 auto;
 <div class="bjy-admin-nav">
     <i class="fa fa-home"></i> 首页
     &gt;
-    新闻列表
+    活动列表
 </div>
-<form action="<?php echo site_url('Admin_controller/newsList') ?>" method="post">
+<form action="<?php echo site_url('Admin_controller/activityList') ?>" method="post">
 
     <table class="table table-striped table-bordered table-hover table-condensed">
         
             <td width="15%">
-                <input class="form-control" type="text" name="title" value="<?php echo $title ?>" placeholder="新闻标题" />
+                <input class="form-control" type="text" name="title" value="<?php echo $title ?>" placeholder="标题" />
             </td>
             <td width="55%">
                 <input class="btn btn-success" type="submit" value="搜索">
@@ -53,10 +53,10 @@ margin:0 auto;
 </form>
 <ul id="myTab" class="nav nav-tabs">
     <li class="active">
-        <a href="javascript:;">新闻列表</a>
+        <a href="javascript:;">活动列表</a>
     </li>
         <li>
-        <a href="<?php echo site_url('Admin_controller/addNewsList') ?>">添加新闻</a>
+        <a href="<?php echo site_url('Admin_controller/addActivity') ?>">添加活动</a>
     </li>
 </ul>
 <table class="table table-striped table-bordered table-hover table-condensed">
@@ -76,7 +76,7 @@ margin:0 auto;
     ?>
         <tr>
             <td>
-              <?php echo $v['news_id'] ?>
+              <?php echo $v['activity_id'] ?>
             </td>
             <td>
                 <?php echo $v['title'] ?>
@@ -97,11 +97,11 @@ margin:0 auto;
 
             
                
-                <a href="<?php echo site_url('Admin_controller/editNews?news_id='.$v['news_id']); ?>">编辑</a> |
+                <a href="<?php echo site_url('Admin_controller/editActivity?activity_id='.$v['activity_id']); ?>">编辑</a> |
                 
                
                 
-                <a href="javascript:if(confirm('确定删除吗？'))location='<?php echo site_url('Admin_controller/delNews?news_id='.$v['news_id']) ?>'" >删除</a>
+                <a href="javascript:if(confirm('确定删除吗？'))location='<?php echo site_url('Admin_controller/delActivity?activity_id='.$v['activity_id']) ?>'" >删除</a>
                 
             </td>
     </tr>

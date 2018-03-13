@@ -29,7 +29,9 @@ class Index_controller extends CI_Controller {
 	}
 	public function index()
 	{
-		$this->load->view('home/index');
+		
+		$activity_data = $this->Home_model->getList('*','activity');
+		$this->load->view('home/index',array('activity_data'=>$activity_data));
 	}
 	
 }

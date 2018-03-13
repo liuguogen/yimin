@@ -417,398 +417,80 @@
                 <div class="more"><a href="/activity/" target="_blank">更多>></a></div>
             </div>
             <div class="qw-activity-box clearfix" onclick="_czc.push(['_trackEvent','新官网主页1.5-侨外活动','点击','新官网主页1.5-侨外活动']);">
-			<div class="detail" data-num="38628">
+
+                <?php if($activity_data){
+
+                    foreach ($activity_data as $ak => $av) {
+                        
+                    
+                  ?>
+			<div class="detail" data-num="<?php echo $av['activity_id'] ?>">
                     <i></i>
-                    <a href="http://www.iqiaowai.com/activity/38628.html" target="_blank"><img src="http://img3.iqiaowai.com/uploads/allimg/180302/206-1P3021034570-L.jpg" alt="【江苏3.10】西班牙、希腊投资移"></a>
+                    <a href="http://www.iqiaowai.com/activity/38621.html" target="_blank"><img src="../../../<?php echo $av['thumb'] ?>" alt="<?php echo $av['title'] ?>"></a>
                     <div class="text-box">
-                        <a href="http://www.iqiaowai.com/activity/38628.html" target="_blank"><p class="profile">3月10日，侨外江苏分公司特别邀请了侨外集团直属海外置业公司高级销售经理带来侨外海外分公司自主…</p></a>
+                        <a href="http://www.iqiaowai.com/activity/38628.html" target="_blank"><p class="profile"><?php echo mb_substr($av['abstract'],0,60,'utf-8').'...'; ?></p></a>
                         <p class="time">
-                            时间：2018-03-10 13:30-17:00
+                            时间：<?php echo $av['activity_time']; ?>
                         </p>
                         <p class="address">
-                            地点：南京市玄武区洪武北路55号置地广场15层
+                            地点：<?php echo $av['prace']; ?>
                         </p>
                     </div>
                 </div>
-<div class="detail" data-num="38580">
-                    <i></i>
-                    <a href="http://www.iqiaowai.com/activity/38580.html" target="_blank"><img src="http://img3.iqiaowai.com/uploads/allimg/180223/206-1P2231622200-L.jpg" alt="【重庆3.31】财富配置安全与传承"></a>
-                    <div class="text-box">
-                        <a href="http://www.iqiaowai.com/activity/38580.html" target="_blank"><p class="profile">为了让高资产人士获得更利于自身发展的机会守护资产，重庆侨外围绕"CRS下如何做好全球税务规划"进…</p></a>
-                        <p class="time">
-                            时间：2018-03-31 10:00-17:00
-                        </p>
-                        <p class="address">
-                            地点：重庆解放碑大都会商厦20层侨外出国
-                        </p>
-                    </div>
-                </div>
-<div class="detail" data-num="38578">
-                    <i></i>
-                    <a href="http://www.iqiaowai.com/activity/38578.html" target="_blank"><img src="http://img3.iqiaowai.com/uploads/allimg/180223/206-1P223150K10-L.jpg" alt="【重庆3.25】美国移民新政与税改"></a>
-                    <div class="text-box">
-                        <a href="http://www.iqiaowai.com/activity/38578.html" target="_blank"><p class="profile">H-1B工作签作为美国留学生毕业后长留美国发展甚至获取绿卡的主要途径之一每财年开放85,000名额，但…</p></a>
-                        <p class="time">
-                            时间：2018-03-25 13:30-17:00
-                        </p>
-                        <p class="address">
-                            地点：重庆解放碑大都会商厦20层
-                        </p>
-                    </div>
-                </div>
-<div class="detail" data-num="38635">
-                    <i></i>
-                    <a href="http://www.iqiaowai.com/activity/38635.html" target="_blank"><img src="http://img2.iqiaowai.com/uploads/allimg/180302/206-1P3021452450-L.jpg" alt="【佛山3.24】2018国际教育展暨北"></a>
-                    <div class="text-box">
-                        <a href="http://www.iqiaowai.com/activity/38635.html" target="_blank"><p class="profile">2018年3月24日，佛山侨外将举办"2018国际教育展暨北美投资嘉年华"，特邀使领馆官员、资深留学专家、…</p></a>
-                        <p class="time">
-                            时间：2018-03-24 13:00-18:00
-                        </p>
-                        <p class="address">
-                            地点：佛山市南海区保利洲际酒店二楼
-                        </p>
-                    </div>
-                </div>
-<div class="detail" data-num="38639">
-                    <i></i>
-                    <a href="http://www.iqiaowai.com/activity/38639.html" target="_blank"><img src="http://img4.iqiaowai.com/uploads/allimg/180302/206-1P302164R40-L.jpg" alt="【西安3.24】英联邦移民=留学+就"></a>
-                    <div class="text-box">
-                        <a href="http://www.iqiaowai.com/activity/38639.html" target="_blank"><p class="profile">3月24日，陕西侨外出国有幸邀请到重磅嘉宾，为您独家解读英联邦移民=留学+就业。</p></a>
-                        <p class="time">
-                            时间：2018-03-24 14:00-17:00
-                        </p>
-                        <p class="address">
-                            地点：西安高新区都市之门C座20层商务中心
-                        </p>
-                    </div>
-                </div>
-<div class="detail" data-num="38624">
-                    <i></i>
-                    <a href="http://www.iqiaowai.com/activity/38624.html" target="_blank"><img src="http://img6.iqiaowai.com/uploads/allimg/180301/206-1P301145A20-L.jpg" alt="【青岛3.20】北美嘉年华·海外教"></a>
-                    <div class="text-box">
-                        <a href="http://www.iqiaowai.com/activity/38624.html" target="_blank"><p class="profile">3月20日，山东侨外首次联合国际学校总会进行巡展，届时将会有20多所来自全球各地知名院校的校方莅…</p></a>
-                        <p class="time">
-                            时间：2018-03-20 13:00-17:00
-                        </p>
-                        <p class="address">
-                            地点：青岛耀中国际学校·黄岛区太行山路72号
-                        </p>
-                    </div>
-                </div>
-<div class="detail" data-num="38599">
-                    <i></i>
-                    <a href="http://www.iqiaowai.com/activity/38599.html" target="_blank"><img src="http://img1.iqiaowai.com/uploads/allimg/180227/206-1P22G453550-L.jpg" alt="【深圳3.18】荷兰阿姆斯特丹市长"></a>
-                    <div class="text-box">
-                        <a href="http://www.iqiaowai.com/activity/38599.html" target="_blank"><p class="profile">纯净绝美的自然风光、自由宽容的法制、出色的高等教育和完善的福利体系，也都是荷兰吸引世界各地…</p></a>
-                        <p class="time">
-                            时间：2018-03-18 14:00-18:00
-                        </p>
-                        <p class="address">
-                            地点：深圳市四季酒店29楼百合莲花厅
-                        </p>
-                    </div>
-                </div>
-<div class="detail" data-num="38615">
-                    <i></i>
-                    <a href="http://www.iqiaowai.com/activity/38615.html" target="_blank"><img src="http://img2.iqiaowai.com/uploads/allimg/180301/206-1P301101S80-L.png" alt="【广州3.17】荷兰市长中国行-广"></a>
-                    <div class="text-box">
-                        <a href="http://www.iqiaowai.com/activity/38615.html" target="_blank"><p class="profile">3月17日，现任荷兰阿姆斯特丹副市长Mr. Achmed Baadoud亲临广州侨外，与广大投资人一起分享荷兰的“投资…</p></a>
-                        <p class="time">
-                            时间：2018-03-17 14:00-18:00
-                        </p>
-                        <p class="address">
-                            地点：珠江新城华夏路16号富力盈凯广场25层【荷兰厅】
-                        </p>
-                    </div>
-                </div>
-<div class="detail" data-num="38636">
-                    <i></i>
-                    <a href="http://www.iqiaowai.com/activity/38636.html" target="_blank"><img src="http://img6.iqiaowai.com/uploads/allimg/180302/206-1P302153I60-L.jpg" alt="【北京3.17】北美投资嘉年华暨北"></a>
-                    <div class="text-box">
-                        <a href="http://www.iqiaowai.com/activity/38636.html" target="_blank"><p class="profile">北京侨外作为全方位海外生活规划服务平台致力于满足客户的需求，特于3月17日举办“北美投资嘉年华…</p></a>
-                        <p class="time">
-                            时间：2018-03-17 14:00-18:00
-                        </p>
-                        <p class="address">
-                            地点：北京市朝阳区东三环中路7号千禧大酒店二层朝阳北厅
-                        </p>
-                    </div>
-                </div>
-<div class="detail" data-num="38553">
-                    <i></i>
-                    <a href="http://www.iqiaowai.com/activity/38553.html" target="_blank"><img src="http://img5.iqiaowai.com/uploads/allimg/180212/206-1P212095S80-L.jpg" alt="【西安3.16】荷兰阿姆斯特丹市长"></a>
-                    <div class="text-box">
-                        <a href="http://www.iqiaowai.com/activity/38553.html" target="_blank"><p class="profile">3月16日，现任荷兰阿姆斯特丹市副市长Mr. Achmed Baadoud先生将对荷兰政策、经济、环境、教育等方面做深…</p></a>
-                        <p class="time">
-                            时间：2018-03-16 14:00-17:00
-                        </p>
-                        <p class="address">
-                            地点：陕西侨外分公司
-                        </p>
-                    </div>
-                </div>
-<div class="detail" data-num="38579">
-                    <i></i>
-                    <a href="http://www.iqiaowai.com/activity/38579.html" target="_blank"><img src="http://img3.iqiaowai.com/uploads/allimg/180223/206-1P223160H80-L.jpg" alt="【重庆3.15】阿姆斯特丹副市长见"></a>
-                    <div class="text-box">
-                        <a href="http://www.iqiaowai.com/activity/38579.html" target="_blank"><p class="profile">阿姆斯特丹副市长全国见面会“重庆站”将于3月15日诚意来袭，届时Mr. Achmed Baadoud先生，将会就荷兰政…</p></a>
-                        <p class="time">
-                            时间：2018-03-15 13:30-17:00
-                        </p>
-                        <p class="address">
-                            地点：重庆解放碑威斯汀酒店7层郁金香厅
-                        </p>
-                    </div>
-                </div>
-<div class="detail" data-num="38616">
-                    <i></i>
-                    <a href="http://www.iqiaowai.com/activity/38616.html" target="_blank"><img src="http://img7.iqiaowai.com/uploads/180301/206-1P301103AR92.jpg" alt="【上海3.11】阿姆斯特丹市长侨外"></a>
-                    <div class="text-box">
-                        <a href="http://www.iqiaowai.com/activity/38616.html" target="_blank"><p class="profile">荷兰阿姆斯特丹副市长将亲临说明会现场，活动将详解荷兰投资移民项目。
-</p></a>
-                        <p class="time">
-                            时间：2018-03-11 14:00-17:00
-                        </p>
-                        <p class="address">
-                            地点：威海路500号四季酒店3层松泽厅
-                        </p>
-                    </div>
-                </div>
-<div class="detail" data-num="38576">
-                    <i></i>
-                    <a href="http://www.iqiaowai.com/activity/38576.html" target="_blank"><img src="http://img1.iqiaowai.com/uploads/allimg/180223/206-1P2231121560-L.jpeg" alt="【青岛3.10】荷兰阿姆斯特丹市长"></a>
-                    <div class="text-box">
-                        <a href="http://www.iqiaowai.com/activity/38576.html" target="_blank"><p class="profile">3月10日-18日，荷兰阿姆斯特丹副市长等一行将进行为期九天的访华活动，期间将陆续到访青岛、上海、…</p></a>
-                        <p class="time">
-                            时间：2018-03-10 14:00-17:00
-                        </p>
-                        <p class="address">
-                            地点：青岛侨外分公司
-                        </p>
-                    </div>
-                </div>
-<div class="detail" data-num="38586">
-                    <i></i>
-                    <a href="http://www.iqiaowai.com/activity/38586.html" target="_blank"><img src="http://img1.iqiaowai.com/uploads/180227/153-1P22G15002451.jpg" alt="【宁波3.10】英美投资教育生活巡"></a>
-                    <div class="text-box">
-                        <a href="http://www.iqiaowai.com/activity/38586.html" target="_blank"><p class="profile">侨外出国集团浙江分公司将邀请英国现任曼切斯特地区投资总署署长Ian Dixon先生、侨外移民英国项目负…</p></a>
-                        <p class="time">
-                            时间：2018-03-10 13:30-17:00
-                        </p>
-                        <p class="address">
-                            地点：宁波市江东区豫园源街88号宁波香格里拉大酒店3楼海曙厅
-                        </p>
-                    </div>
-                </div>
-<div class="detail" data-num="38598">
-                    <i></i>
-                    <a href="http://www.iqiaowai.com/activity/38598.html" target="_blank"><img src="http://img3.iqiaowai.com/uploads/allimg/180227/206-1P22G426030-L.png" alt="【深圳3.10】欧洲投资，抄底正当"></a>
-                    <div class="text-box">
-                        <a href="http://www.iqiaowai.com/activity/38598.html" target="_blank"><p class="profile">对于置业欧洲的投资人而言，2017年可以说是实现资产增值的“丰收年”。</p></a>
-                        <p class="time">
-                            时间：2018-03-10 14:00-18:00
-                        </p>
-                        <p class="address">
-                            地点：深圳市金田路金中环商务大厦4102A侨外公司
-                        </p>
-                    </div>
-                </div>
-<div class="detail" data-num="38619">
-                    <i></i>
-                    <a href="http://www.iqiaowai.com/activity/38619.html" target="_blank"><img src="http://img7.iqiaowai.com/uploads/allimg/180301/206-1P3011051270-L.jpg" alt="【北京3.10】欧洲教育&投资&购房"></a>
-                    <div class="text-box">
-                        <a href="http://www.iqiaowai.com/activity/38619.html" target="_blank"><p class="profile">以希腊、西班牙为主的超高性价比移民国家、以荷兰为主的高福利移民国家均受到广大投资者的青睐。…</p></a>
-                        <p class="time">
-                            时间：2018-03-10 13:30-17:00
-                        </p>
-                        <p class="address">
-                            地点：朝阳区东大桥路尚都国际中心A座32层
-                        </p>
-                    </div>
-                </div>
-<div class="detail" data-num="38620">
-                    <i></i>
-                    <a href="http://www.iqiaowai.com/activity/38620.html" target="_blank"><img src="http://img6.iqiaowai.com/uploads/allimg/180301/206-1P301110S20-L.png" alt="【广州3.5】移民专家一对一咨询"></a>
-                    <div class="text-box">
-                        <a href="http://www.iqiaowai.com/activity/38620.html" target="_blank"><p class="profile">3月5日-3月9日，广州侨外汇聚各国移民专家，一对一VIP对话，为您快速圆梦海外提供定制方案！</p></a>
-                        <p class="time">
-                            时间：2018-03-05 10:00-17:00
-                        </p>
-                        <p class="address">
-                            地点：珠江新城华夏路16号富力盈凯广场25层【侨外厅】
-                        </p>
-                    </div>
-                </div>
-<div class="detail" data-num="38555">
-                    <i></i>
-                    <a href="http://www.iqiaowai.com/activity/38555.html" target="_blank"><img src="http://img2.iqiaowai.com/uploads/allimg/180212/206-1P212101503345.jpg" alt="【珠海3.3】对话荷兰市长18万美"></a>
-                    <div class="text-box">
-                        <a href="http://www.iqiaowai.com/activity/38555.html" target="_blank"><p class="profile">2018年3月3日（周六），珠海侨外有幸邀请到重磅嘉宾：荷兰阿姆斯特丹副市长Mr. Achmed Baadoud亲临珠海，…</p></a>
-                        <p class="time">
-                            时间：2018-03-03 14:00-17:00
-                        </p>
-                        <p class="address">
-                            地点：珠海吉大景山路新骏景万豪酒店3楼海涛厅
-                        </p>
-                    </div>
-                </div>
-<div class="detail" data-num="38582">
-                    <i></i>
-                    <a href="http://www.iqiaowai.com/activity/38582.html" target="_blank"><img src="http://img4.iqiaowai.com/uploads/180224/206-1P224114309606.jpg" alt="【北京3.3】开年大吉开启北美移"></a>
-                    <div class="text-box">
-                        <a href="http://www.iqiaowai.com/activity/38582.html" target="_blank"><p class="profile">新年伊始，如何正确开启北美移民新征程?不妨听听掌握北美政策最新动态的专业人士带来的北美移民…</p></a>
-                        <p class="time">
-                            时间：2018-03-03 13:30-17:00
-                        </p>
-                        <p class="address">
-                            地点：朝阳区东大桥路8号尚都国际中心A座32层
-                        </p>
-                    </div>
-                </div>
-<div class="detail" data-num="38496">
-                    <i></i>
-                    <a href="http://www.iqiaowai.com/activity/38496.html" target="_blank"><img src="http://img4.iqiaowai.com/uploads/allimg/180205/206-1P205103P70-L.png" alt="【河南2.25】走进欧洲-＂豫＂见"></a>
-                    <div class="text-box">
-                        <a href="http://www.iqiaowai.com/activity/38496.html" target="_blank"><p class="profile">说走就走的旅行或许并不那么容易，但一次邂逅感动和惊喜的游园会绝对是可行而可靠的！
-</p></a>
-                        <p class="time">
-                            时间：2018-02-25 14:300-17:00
-                        </p>
-                        <p class="address">
-                            地点：郑州市郑东新区金水东路中兴路楷林IFC-A座25层 侨外会议中心
-                        </p>
-                    </div>
-                </div>
+<?php }}?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                 <div class="list" id="pro_end">
                     <ul>
-					<input type="hidden" value="38628" class="act_id"/>
-						<li class="clearfix now" data-num="38628">
-							<input type="hidden" value="2018-03-10" class=""/>
-							<a  target="_blank" href="http://www.iqiaowai.com/activity/38628.html" alt="【江苏3.10】西班牙、希腊投资移" >【江苏3.10】西班牙、希腊投资移民私享会</a>
+
+                       <?php if($activity_data){
+
+                    foreach ($activity_data as $ak => $av) {
+                        
+                    
+                  ?>
+					<input type="hidden" value="<?php echo $av['activity_id'] ?>" class="act_id"/>
+						<li class="clearfix now" data-num="<?php echo $av['activity_id'] ?>">
+							<input type="hidden" value="<?php echo date('Y-m-d',$av['create_time']); ?>" class=""/>
+							<a  target="_blank" href="http://www.iqiaowai.com/activity/38628.html" alt="<?php echo $av['title'] ?>" ><?php echo $av['title'] ?></a>
 							<span onclick="tanchu();" class="act34">预约</span>
 						</li>
 
-					<input type="hidden" value="38580" class="act_id"/>
-						<li class="clearfix now" data-num="38580">
-						<input type="hidden" value="2018-03-31" class="act_date"/>
-						<a target="_blank" href="http://www.iqiaowai.com/activity/38580.html" alt="【重庆3.31】财富配置安全与传承" >【重庆3.31】财富配置安全与传承私享会</a>
-						<span onclick="tanchu();" class="act34">预约</span>
-						</li>
-<input type="hidden" value="38578" class="act_id"/>
-						<li class="clearfix now" data-num="38578">
-						<input type="hidden" value="2018-03-25" class="act_date"/>
-						<a target="_blank" href="http://www.iqiaowai.com/activity/38578.html" alt="【重庆3.25】美国移民新政与税改" >【重庆3.25】美国移民新政与税改解读沙龙</a>
-						<span onclick="tanchu();" class="act34">预约</span>
-						</li>
-<input type="hidden" value="38635" class="act_id"/>
-						<li class="clearfix now" data-num="38635">
-						<input type="hidden" value="2018-03-24" class="act_date"/>
-						<a target="_blank" href="http://www.iqiaowai.com/activity/38635.html" alt="【佛山3.24】2018国际教育展暨北" >【佛山3.24】2018国际教育展暨北美投资嘉年华</a>
-						<span onclick="tanchu();" class="act34">预约</span>
-						</li>
-<input type="hidden" value="38639" class="act_id"/>
-						<li class="clearfix now" data-num="38639">
-						<input type="hidden" value="2018-03-24" class="act_date"/>
-						<a target="_blank" href="http://www.iqiaowai.com/activity/38639.html" alt="【西安3.24】英联邦移民=留学+就" >【西安3.24】英联邦移民=留学+就业</a>
-						<span onclick="tanchu();" class="act34">预约</span>
-						</li>
-<input type="hidden" value="38624" class="act_id"/>
-						<li class="clearfix now" data-num="38624">
-						<input type="hidden" value="2018-03-20" class="act_date"/>
-						<a target="_blank" href="http://www.iqiaowai.com/activity/38624.html" alt="【青岛3.20】北美嘉年华·海外教" >【青岛3.20】北美嘉年华·海外教育专题活动</a>
-						<span onclick="tanchu();" class="act34">预约</span>
-						</li>
-<input type="hidden" value="38599" class="act_id"/>
-						<li class="clearfix now" data-num="38599">
-						<input type="hidden" value="2018-03-18" class="act_date"/>
-						<a target="_blank" href="http://www.iqiaowai.com/activity/38599.html" alt="【深圳3.18】荷兰阿姆斯特丹市长" >【深圳3.18】荷兰阿姆斯特丹市长见面会——</a>
-						<span onclick="tanchu();" class="act34">预约</span>
-						</li>
-<input type="hidden" value="38615" class="act_id"/>
-						<li class="clearfix now" data-num="38615">
-						<input type="hidden" value="2018-03-17" class="act_date"/>
-						<a target="_blank" href="http://www.iqiaowai.com/activity/38615.html" alt="【广州3.17】荷兰市长中国行-广" >【广州3.17】荷兰市长中国行-广州站</a>
-						<span onclick="tanchu();" class="act34">预约</span>
-						</li>
-<input type="hidden" value="38636" class="act_id"/>
-						<li class="clearfix now" data-num="38636">
-						<input type="hidden" value="2018-03-17" class="act_date"/>
-						<a target="_blank" href="http://www.iqiaowai.com/activity/38636.html" alt="【北京3.17】北美投资嘉年华暨北" >【北京3.17】北美投资嘉年华暨北美投资趋势</a>
-						<span onclick="tanchu();" class="act34">预约</span>
-						</li>
-<input type="hidden" value="38553" class="act_id"/>
-						<li class="clearfix now" data-num="38553">
-						<input type="hidden" value="2018-03-16" class="act_date"/>
-						<a target="_blank" href="http://www.iqiaowai.com/activity/38553.html" alt="【西安3.16】荷兰阿姆斯特丹市长" >【西安3.16】荷兰阿姆斯特丹市长访华-西安见</a>
-						<span onclick="tanchu();" class="act34">预约</span>
-						</li>
-<input type="hidden" value="38579" class="act_id"/>
-						<li class="clearfix now" data-num="38579">
-						<input type="hidden" value="2018-03-15" class="act_date"/>
-						<a target="_blank" href="http://www.iqiaowai.com/activity/38579.html" alt="【重庆3.15】阿姆斯特丹副市长见" >【重庆3.15】阿姆斯特丹副市长见面会-重庆站</a>
-						<span onclick="tanchu();" class="act34">预约</span>
-						</li>
-<input type="hidden" value="38616" class="act_id"/>
-						<li class="clearfix now" data-num="38616">
-						<input type="hidden" value="2018-03-11" class="act_date"/>
-						<a target="_blank" href="http://www.iqiaowai.com/activity/38616.html" alt="【上海3.11】阿姆斯特丹市长侨外" >【上海3.11】阿姆斯特丹市长侨外客户见面会</a>
-						<span onclick="tanchu();" class="act34">预约</span>
-						</li>
-<input type="hidden" value="38576" class="act_id"/>
-						<li class="clearfix now" data-num="38576">
-						<input type="hidden" value="2018-03-10" class="act_date"/>
-						<a target="_blank" href="http://www.iqiaowai.com/activity/38576.html" alt="【青岛3.10】荷兰阿姆斯特丹市长" >【青岛3.10】荷兰阿姆斯特丹市长访华-青岛首</a>
-						<span onclick="tanchu();" class="act34">预约</span>
-						</li>
-<input type="hidden" value="38586" class="act_id"/>
-						<li class="clearfix now" data-num="38586">
-						<input type="hidden" value="2018-03-10" class="act_date"/>
-						<a target="_blank" href="http://www.iqiaowai.com/activity/38586.html" alt="【宁波3.10】英美投资教育生活巡" >【宁波3.10】英美投资教育生活巡回展宁波站</a>
-						<span onclick="tanchu();" class="act34">预约</span>
-						</li>
-<input type="hidden" value="38598" class="act_id"/>
-						<li class="clearfix now" data-num="38598">
-						<input type="hidden" value="2018-03-10" class="act_date"/>
-						<a target="_blank" href="http://www.iqiaowai.com/activity/38598.html" alt="【深圳3.10】欧洲投资，抄底正当" >【深圳3.10】欧洲投资，抄底正当时！</a>
-						<span onclick="tanchu();" class="act34">预约</span>
-						</li>
-<input type="hidden" value="38619" class="act_id"/>
-						<li class="clearfix now" data-num="38619">
-						<input type="hidden" value="2018-03-10" class="act_date"/>
-						<a target="_blank" href="http://www.iqiaowai.com/activity/38619.html" alt="【北京3.10】欧洲教育&投资&购房" >【北京3.10】欧洲教育&投资&购房移民说明会</a>
-						<span onclick="tanchu();" class="act34">预约</span>
-						</li>
-<input type="hidden" value="38620" class="act_id"/>
-						<li class="clearfix now" data-num="38620">
-						<input type="hidden" value="2018-03-05" class="act_date"/>
-						<a target="_blank" href="http://www.iqiaowai.com/activity/38620.html" alt="【广州3.5】移民专家一对一咨询" >【广州3.5】移民专家一对一咨询日</a>
-						<span onclick="tanchu();" class="act34">预约</span>
-						</li>
-<input type="hidden" value="38555" class="act_id"/>
-						<li class="clearfix now" data-num="38555">
-						<input type="hidden" value="2018-03-03" class="act_date"/>
-						<a target="_blank" href="http://www.iqiaowai.com/activity/38555.html" alt="【珠海3.3】对话荷兰市长18万美" >【珠海3.3】对话荷兰市长18万美金即可移民的</a>
-						<span onclick="tanchu();" class="act34">预约</span>
-						</li>
-<input type="hidden" value="38582" class="act_id"/>
-						<li class="clearfix now" data-num="38582">
-						<input type="hidden" value="2018-03-03" class="act_date"/>
-						<a target="_blank" href="http://www.iqiaowai.com/activity/38582.html" alt="【北京3.3】开年大吉开启北美移" >【北京3.3】开年大吉开启北美移民新征程</a>
-						<span onclick="tanchu();" class="act34">预约</span>
-						</li>
-<input type="hidden" value="38496" class="act_id"/>
-						<li class="clearfix now" data-num="38496">
-						<input type="hidden" value="2018-02-25" class="act_date"/>
-						<a target="_blank" href="http://www.iqiaowai.com/activity/38496.html" alt="【河南2.25】走进欧洲-＂豫＂见" >【河南2.25】走进欧洲-＂豫＂见欧罗巴</a>
-						<span onclick="tanchu();" class="act34">结束</span>
-						</li>
-<input type="hidden" value="38479" class="act_id"/>
-						<li class="clearfix now" data-num="38479">
-						<input type="hidden" value="2018-02-10" class="act_date"/>
-						<a target="_blank" href="http://www.iqiaowai.com/activity/38479.html" alt="【北京2.10】北美&欧洲投资移民" >【北京2.10】北美&欧洲投资移民说明会</a>
-						<span onclick="tanchu();" class="act34">结束</span>
-						</li>
+					
+<?php }} ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                     </ul>	
 					<script src="http://www.iqiaowai.com/templets/new/index/js/active_sort.js"></script>

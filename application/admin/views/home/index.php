@@ -145,7 +145,12 @@
                                             新闻列表
                                         </a>
                                     </li>
-                                    
+                                    <li class="b-nav-li">
+                                        <a href="<?php echo site_url('Admin_controller/activityList') ?>" target="right_content">
+                                            <i class="icon-double-angle-right"></i>
+                                            移民活动
+                                        </a>
+                                    </li>
                                    
                                 
                             </ul>
