@@ -45,11 +45,11 @@ class Images extends CI_Controller {
 	public function upload(){
 		$filename=date("Y-m-d",time());
 
-		if(!file_exists('../../../uploads/'.$filename)){
-			//var_export('ff');exit;
-			mkdir('../../../uploads/'.$filename,0777);
+		if(!file_exists(realpath(dirname(__FILE__) . '/../../../').'/uploads/'.$filename)){
+			
+			mkdir(realpath(dirname(__FILE__) . '/../../../').'/uploads/'.$filename,0777);
 		}
-		$targetFolder= '../../../uploads/'.$filename;
+		$targetFolder= '/uploads/'.$filename;
 		$str="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYX";
 			$tempFile = $_FILES['file']['tmp_name'];
 			$targetPath = realpath(dirname(__FILE__) . '/../../../'). $targetFolder;
