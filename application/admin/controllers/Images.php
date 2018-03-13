@@ -49,7 +49,7 @@ class Images extends CI_Controller {
 			//var_export('ff');exit;
 			mkdir('../../../uploads/'.$filename,0777);
 		}
-		$targetFolder= '/uploads/'.$filename;
+		$targetFolder= '../../../uploads/'.$filename;
 		$str="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYX";
 			$tempFile = $_FILES['file']['tmp_name'];
 			$targetPath = realpath(dirname(__FILE__) . '/../../../'). $targetFolder;
