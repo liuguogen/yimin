@@ -45,9 +45,9 @@ class Images extends CI_Controller {
 	public function upload(){
 		$filename=date("Y-m-d",time());
 
-		if(!file_exists('../uploads/'.$filename)){
+		if(!file_exists('../../../uploads/'.$filename)){
 			//var_export('ff');exit;
-			mkdir('../uploads/'.$filename,0777);
+			mkdir('../../../uploads/'.$filename,0777);
 		}
 		$targetFolder= '/uploads/'.$filename;
 		$str="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYX";
