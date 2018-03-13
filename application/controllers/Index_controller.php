@@ -29,9 +29,21 @@ class Index_controller extends CI_Controller {
 	}
 	public function index()
 	{
-		
+
 		$activity_data = $this->Home_model->getList('*','activity');
 		$this->load->view('home/index',array('activity_data'=>$activity_data));
+	}
+
+	public function activityDeatail()
+	{
+		$activity_id=$this->uri->segment(2);
+		$data['activity_data']=$this->Home_model->getRow('*','activity',array('activity_id'=>$activity_id));
+		//上一篇 下一篇
+		$prev_data= $this->Home_model->query("select activity_id,title from activity where activity_id<".$activity_id." order by activity_id desc limit 1");
+		$data['prev_data'] = $prev_data ?  "<a href='".site_url('activity/'.$prev_data['activity_id'].'')."'>".$prev_data['title']."</a>"  : "没有了";
+		$next_data = $this->Home_model->query("select activity_id,title from activity where activity_id>".$activity_id." order by activity_id desc limit 1");
+		$data['next_data'] = $next_data ?  "<a href='".site_url('activity/'.$next_data['activity_id'].'')."'>".$next_data['title']."</a>"  : "没有了";
+		$this->load->view('home/activity',$data);
 	}
 	
 }
