@@ -1,0 +1,445 @@
+input,
+textarea {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+}
+/*左侧红包*/
+.qw-nav-bag{
+    width: 108px;
+    height: 464px;
+    background: url(http://www.iqiaowai.com/templets/new/images/nav/5/red.png) center no-repeat;
+    position: absolute;
+    top: 145px;
+    left: 0;
+    z-index: 99;
+}
+.qw-nav-bag a{
+    display: block;
+    width: 108px;
+    height: 115px;
+    position: absolute;
+    top: 207px;
+    left: 0;
+}
+/*右侧对联*/
+.sidebar {
+    width: 84px;
+    position: fixed;
+    z-index: 999;
+    right: 5px;
+    top: 50%;
+    margin-top: -320px;
+}
+.sidebar_b {
+    width: 94px;
+    height: 650px;
+    padding-top: 15px;
+    /*padding-left: 30px;*/
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    top: 50%;
+    margin-top: -332px;
+    background: url(http://www.iqiaowai.com/templets/new/images/nav/8/rightbg_l.png) top center no-repeat;
+    background-size: 100% 100%;
+}
+.sidebar_h {
+    width: 44px;
+    height: 110px;
+    background: #b0303a;
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    margin-top: -55px;
+    right: 0;
+    /*margin-right: -648px;*/
+    cursor: pointer;
+    display: none;
+    opacity: 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 5px 0 0 5px;
+}
+.sidebar_h i {
+    width: 25px;
+    height: 25px;
+    background: url(http://www.iqiaowai.com/templets/new/images/nav/5/tel1.gif) center no-repeat;
+    display: block;
+    margin: 10px auto 0px auto;
+}
+.sidebar .closeright {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    right: 0;
+    top: -26px;
+    cursor: pointer;
+}
+.sidebar .closeright:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+.sidebar .sidebar_top {
+    width: 80px;
+	overflow: hidden;
+    margin: 0 auto;
+}
+.sidebar .sidebar_top p {
+    line-height: 37px;
+    color: #fff;
+    font-size: 12px;
+    padding-left: 30px;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    /*background: linear-gradient(#830000,#b40000);*/
+}
+.sidebar .sidebar_top i {
+    width: 25px;
+    height: 20px;
+    background: url(http://www.iqiaowai.com/templets/new/images/nav/8/tel.png) center no-repeat;
+    position: absolute;
+    left: 3px;
+    top: 10px;
+}
+.sidebar .sidebar_top p i{
+    animation: shine .8s infinite;    
+}
+.sidebar ul {
+    width: 60px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 10px 9px;
+    background: #820000;
+}
+.sidebar ul li {
+    font-size: 12px;
+    line-height: 25px;
+    margin: 0;
+    color: #fff;
+    /*text-align: center;*/
+    padding-left: 12px;
+    cursor: pointer;
+    position: relative;
+    float: none;
+}
+.sidebar .sidebar_top ul li i {
+    width: 6px;
+    height: 7px;
+    background: url(http://www.iqiaowai.com/templets/new/images/nav/8/icon.png) -6px -111px no-repeat;
+    position: absolute;
+    right: 2px;
+    top: 10px;
+    left: auto;
+}
+.sidebar .sidebar_top ul li:hover  i {
+    background: url(http://www.iqiaowai.com/templets/new/images/nav/8/icon.png) -12px -111px no-repeat;
+}
+.sidebar ul li.last {
+    border-bottom: 0;
+}
+.sidebar ul li:hover{
+    font-weight: bold;
+    color: #fffd36;
+}
+.sidebar .callback,
+.sidebar .gotop {
+    width: 78px;
+    background: #820000;
+    line-height: 40px;
+    padding-left: 27px;
+    position: relative;
+    color: #fff;
+    font-size: 12px;
+    cursor: default;
+    margin: 0 auto;
+}
+.sidebar .callback{
+    padding: 0;
+    text-align: center;
+    margin-top: 2px;
+}
+.sidebar .gotop {
+    width: 53px;
+    cursor: pointer;
+    background: #eb0000;
+}
+.sidebar .callback:hover,.sidebar .gotop:hover {
+    background: #eb0000;
+}
+.sidebar .callback i,
+.sidebar .gotop i {
+    width: 18px;
+    height: 22px;
+    background: url(http://www.iqiaowai.com/templets/new/images/nav/8/icon.png) -40px -22px no-repeat;
+    position: absolute;
+    left: 5px;
+    top: 7px;
+}
+.sidebar .gotop i {
+    background: url(http://www.iqiaowai.com/templets/new/images/nav/8/icon.png) -40px -51px no-repeat;
+}
+.sidebar .callbox {
+    width: 128px;
+    height: 64px;
+    background: #b0303a;
+    position: absolute;
+    left: -154px;
+    top: 0;
+    padding: 10px 5px 0;
+    display: none;
+    border-radius: 5px;
+}
+.sidebar .callbox div {
+	height: 28px;
+    line-height: 28px;
+}
+.sidebar .callbox input {
+    width: 118px;
+    background: #fff;
+    line-height: 28px;
+    font-size: 12px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+    color: #000;
+}
+.sidebar .callbox .takephone {
+    width: 90px;
+    height: 28px;
+    display: block;
+    margin-top: 8px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 28px;
+    color: #a95802;
+    margin: 5px auto 0;
+    border-radius: 5px;
+    text-decoration: none;
+    background: linear-gradient(#fbe9bf, #e5bb5b);
+}
+.sidebar .callbox .takephone:hover {
+    text-decoration: none;
+}
+.sidebar .callbox span {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 15px solid #b0303a;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    right: -10px;
+    top: 15px;
+}
+.sidebar_s {
+    width: 94px;
+    height: 508px;
+    padding-top: 15px;
+    /* padding-left: 30px; */
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    top: 50%;
+    margin-top: -254px;
+    background: url(http://www.iqiaowai.com/templets/new/images/nav/8/rightbg_l.png) top center no-repeat;
+    background-size: 100% 100%;
+}
+.sidebar_s .sidebar_top p.zx {
+    line-height: 37px;
+    color: #fff;
+    font-size: 12px;
+    padding-left: 30px;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+}
+.sidebar_s .city {
+    margin: 0 auto;
+}
+.sidebar_s .branch {
+}
+.sidebar_s .city p {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: bold;
+    border-bottom: 1px dotted #8d8d8d;
+    margin: 0;
+    cursor: pointer;
+    background: url(http://www.iqiaowai.com/templets/new/images/nav/5/tra.png) 64px 0 no-repeat;
+    padding: 0;
+    color: #4f4f4f;
+}
+.sidebar_s .city p.on {
+    background: url(http://www.iqiaowai.com/templets/new/images/nav/5/tra.png) 64px -20px no-repeat;
+}
+.sidebar_s ul {
+    width: 60px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 2px 9px;
+    /*display: none;*/
+    background: #820000;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+.sidebar_s ul::-webkit-scrollbar {
+    width: 4px;
+    height: 16px;
+    background-color: #c3c3c3;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+.sidebar_s ul::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #c3c3c3;
+    border-radius: 10px;
+    background-color: #c3c3c3;
+}
+/*定义滑块 内阴影+圆角*/
+.sidebar_s ul::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px #8a8a8a;
+    background-color: #8a8a8a;
+}
+.sidebar_s ul.off {
+    display: none;
+}
+.sidebar_s ul li {
+    font-size: 12px;
+    line-height: 19px;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    float: none;
+    padding: 0;
+}
+.sidebar_s ul li.last {
+    border-bottom: 0;
+}
+.sidebar_s ul li:hover {
+    font-weight: bold;
+    color: #fffd36;
+}
+/*左侧对联*/
+.sidebarLeft_h {
+    width: 44px;
+    height: 44px;
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    margin-top: -22px;
+    left: 0;
+    /*margin-left: -670px;*/
+    cursor: pointer;
+    display: none;
+    opacity: 0;
+    background: url(http://www.iqiaowai.com/templets/new/images/nav/8/icon.png) 7px -117px #b0303a no-repeat;
+    border-radius: 5px;
+}
+.sidebarLeft {
+    width: 97px;
+    height: 304px;
+    padding-top: 18px;
+    /* padding-left: 5px; */
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    left: 17px;
+    margin-top: -130px;
+    background: url(http://www.iqiaowai.com/templets/new/images/nav/8/leftbg.png) no-repeat;
+}
+.sidebarLeft .closeleft {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: -26px;
+    right: 0;
+    cursor: pointer;
+}
+.sidebarLeft .contact-btn {
+    width: 77px;
+    height: 56px;
+    margin: 0 auto;
+    background: #6c0000;
+    margin-bottom: 1px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+.sidebarLeft .contact-btn:hover a {
+    font-weight: bold;
+}
+.sidebarLeft .contact-btn a {
+    width: 77px;
+    /*height: 74px;*/
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+}
+.sidebarLeft .contact-btn i {
+    width: 30px;
+    height: 24px;
+    display: block;
+    margin: 0 auto 8px;
+}
+.sidebarLeft .contact-btn i.nav-ask{
+    animation:shine .8s infinite;
+}
+@-webkit-keyframes shine{
+    0%{opacity:0;}
+    50%{opacity:1;}
+    70%{opacity:1;}
+    100%{opacity:0;}
+}
+@-moz-keyframes shine{
+    0%{opacity:0;}
+    50%{opacity:1;}
+    70%{opacity:1;}
+    100%{opacity:0;}
+}
+@keyframes shine{
+    0%{opacity:0;}
+    50%{opacity:1;}
+    70%{opacity:1;}
+    100%{opacity:0;}
+}
+.sidebarLeft .qrcode_box {
+    width: 140px;
+    height: 150px;
+    background: url(http://www.iqiaowai.com/templets/new/images/nav/5/qrcode.png);
+    position: absolute;
+    bottom: -50px;
+    right: -140px;
+    display: none;
+}
+.sidebarLeft .qrcode:hover .qrcode_box {
+    display: block;
+}
+.sidebar .closebox,
+.sidebarLeft .closebox {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: -26px;
+    right: -4px;
+    cursor: pointer;
+    background: url(http://www.iqiaowai.com/templets/new/images/nav/5/close.png) right center no-repeat;
+}
+.sidebar .closebox:hover,
+.sidebarLeft .closebox:hover {
+    background: url(http://www.iqiaowai.com/templets/new/images/nav/5/close.png) left center no-repeat;
+}
+.sidebarLeft .deer{
+    width: 115px;
+    height: 119px;
+    background: url(http://www.iqiaowai.com/templets/new/images/nav/8/deer.png) left center no-repeat;   
+    position: absolute;
+    top: -119px;
+    left: -16px; 
+}

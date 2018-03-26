@@ -11,26 +11,26 @@
     <title>【侨外移民官网】全方位海外生活规划服务平台，提供海外置业，投资移民，购房移民，教育规划，全球资产配置等一站式海外安家服务。 </title>
     <meta name="keywords" content="侨外移民,侨外移民官网,侨外投资移民,投资移民,美国移民,英国投资移民,侨外,侨外集团" />
     <meta name="description" content="侨外移民，美国投资移民EB-5、英国企业家移民引入机构，侨外为上万家庭实现移民梦想，业务涵盖美国、英国、澳大利亚、葡萄牙、西班牙等十余国，提供投资移民、海外置业、教育规划、家族财富管理、全球资产配置等专业、贴心、省心的全方位海外生活规划服务！" />
-    <link rel="stylesheet" href="http://www.iqiaowai.com/templets/new/index/css/common.css?154668">
-    <link rel="stylesheet" href="http://www.iqiaowai.com/templets/new/index/css/css.css?171025">
-    <link rel="stylesheet" href="http://www.iqiaowai.com/templets/new/index/css/banner.css">
-    <link rel="stylesheet" href="http://www.iqiaowai.com/templets/new/index/css/flexslider.css">
-    <script src="http://www.iqiaowai.com/templets/wf/js/jquery.min.js"></script>
-    <script src="http://www.iqiaowai.com/templets/new/index/js/jquery.flexslider-min.js"></script>
-    <script src="http://www.iqiaowai.com/templets/new/js/jwplayer.js"></script>
-    <script src="http://www.iqiaowai.com/templets/new/index/js/jquery.kxbdMarquee.js"></script>
-    <script src="http://www.iqiaowai.com/templets/wf/js/jquery.SuperSlide.2.1.1.js"></script>
-    <script src="http://www.iqiaowai.com/templets/new/index/js/common_new.js"></script>
-    <script src="http://www.iqiaowai.com/templets/new/index/js/index.js"></script>
-	<script src="http://www.iqiaowai.com/templets/new/js/savepath.js"></script>
-	<link href="http://www.iqiaowai.com/templets/new/css/footer.css" rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="../../../assets/home/css/common.css">
+    <link rel="stylesheet" href="../../../assets/home/css/css.css">
+    <link rel="stylesheet" href="../../../assets/home/css/banner.css">
+    <link rel="stylesheet" href="../../../assets/home/css/flexslider.css">
+    <script src="../../../assets/home/js/jquery.min.js"></script>
+    <script src="../../../assets/home/js/jquery.flexslider-min.js"></script>
+    <script src="../../../assets/home/js/jwplayer.js"></script>
+    <script src="../../../assets/home/js/jquery.kxbdMarquee.js"></script>
+    <script src="../../../assets/home/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="../../../assets/home/js/common_new.js"></script>
+    <script src="../../../assets/home/js/index.js"></script>
+	<script src="../../../assets/home/js/savepath.js"></script>
+	<link href="../../../assets/home/css/footer.css" rel='stylesheet' type='text/css'/>
 	<script>
 	$(document).ready(function(){
 		uclick("首页");
 	});
 	</script>
-	<script src="http://www.iqiaowai.com/templets/new/index/js/cnzz.js"></script>
-    <script src="http://www.iqiaowai.com/templets/new/js/float_year.js"></script>
+	<script src="../../../assets/home/js/cnzz.js"></script>
+    <script src="../../../assets/home/js/float_year.js"></script>
 </head>
 
 <body>
@@ -238,7 +238,7 @@
 <?php }} ?>
 
                     </ul>	
-					<script src="http://www.iqiaowai.com/templets/new/index/js/active_sort.js"></script>
+					<script src="../../../asset/home/js/active_sort.js"></script>
                 </div>
             </div>
         </div>
@@ -252,7 +252,7 @@
                 <div class="title">热门项目 <span>Popular project</span></div>
                 <div class="more"><a href="/projects/" target="_blank">更多>></a></div>
                 <div class="change" onclick="romchange();">换一批</div>
-				 <script src="http://www.iqiaowai.com/templets/new/index/js/gz_d2.js"></script>
+				 <script src="../../../asset/home/js/gz_d2.js"></script>
             </div>
             <div class="project-item clearfix">
 			 <div class="tips_t hide">
@@ -261,7 +261,7 @@
                         立即免费通话
                     </a>
                 </div>
-				 <script src="http://www.iqiaowai.com/templets/new/index/js/gz_d.js"></script>
+				 <script src="../../../asset/home/js/gz_d.js"></script>
 				    <!--<script  data-lxb-uid="22942246" data-lxb-gid="311488"  src="http://lxbjs.baidu.com/api/asset/api.js"></script>  -->
                 <script>
                 document.write('<script type="text/javascript"  data-lxb-uid="22942246" data-lxb-gid="311488" src="http://lxbjs.baidu.com/api/asset/api.js?t=' + new Date().getTime() + '" charset="utf-8"></scr' + 'ipt>');
@@ -1272,7 +1272,7 @@
                         如需咨询，请拨打热线电话：400-818-1100
                     </div>
                 </div>
-               <script src="http://www.iqiaowai.com/templets/new/index/js/yanzheng.js"></script>
+               <script src="../../../asset/home/js/yz.js"></script>
             </div>
         </div>
     </div>
@@ -1438,12 +1438,12 @@ function kw_fun() {
     uclick("关键字按钮");
 }
 </script>
-<link rel="stylesheet" href="http://www.iqiaowai.com/templets/new/css/general8.css">
+<link rel="stylesheet" href="../../../asset/home/css/general8.css">
 <!-- <div class="qw-nav-bag"><a href="http://www.iqiaowai.com/zhuanti/survey180104/#newyear" target="_blank" rel="nofollow"></a></div> -->
 <div class="rightbar">
-    <div class="sidebar_h">
+   <!--  <div class="sidebar_h">
         <i></i><p>在<br/>线<br/>咨<br/>询</p>
-    </div>
+    </div> -->
     <!-- 宽屏对联 -->
     <!-- <div class="sidebar sidebar_b">
         <div class="closebox">

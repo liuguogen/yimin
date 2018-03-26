@@ -14,33 +14,31 @@
                <meta http-equiv="Cache-Control" content="no-siteapp" />
                <meta name="applicable-device" content="pc,mobile">	
               	
-               <script src="http://www.iqiaowai.com/templets/new/js/html5.js"></script>
-		<script src="http://www.iqiaowai.com/templets/new/js/ieBetter.js"></script>
-		<script src="http://www.iqiaowai.com/templets/wf/js/jquery.min.js"></script>
-		<script src="http://www.iqiaowai.com/templets/wf/js/jquery.query.js"></script>
-		<script src="http://www.iqiaowai.com/templets/wf/js/jquery.scroll.js"></script>
-		<script src="http://www.iqiaowai.com/include/js/dedeajax2.js"></script>
-		<script src="http://www.iqiaowai.com/templets/new/js/jquery.banner.revolution.min.js"></script>
-		<script src="http://www.iqiaowai.com/templets/new/js/banner.min.js"></script>
-		<script src="http://www.iqiaowai.com/templets/new/js/jwplayer.js"></script>
-		<script src="http://www.iqiaowai.com/templets/new/js/header.js"></script>
+        <!-- <script src="http://www.iqiaowai.com/templets/new/js/html5.js"></script> -->
+		<script src="../../../assets/home/js/ieBetter.js"></script>
+		<script src="../../../assets/home/js/jquery.min.js"></script>
+		<script src="../../../assets/home/js/jquery.query.js"></script>
+		<script src="../../../assets/home/js/jquery.scroll.js"></script>
+		<script src="../../../assets/home/js/dedeajax2.js"></script>
+		<script src="../../../assets/home/js/jquery.banner.revolution.min.js"></script>
+		<script src="../../../assets/home/js/banner.min.js"></script>
+		<script src="../../../assets/home/js/jwplayer.js"></script>
+		<script src="../../../assets/home/js/header.js"></script>
 		
 
-		<link href="http://www.iqiaowai.com/min/f=/templets/wf/css/bootstrap.css,
-		/templets/new/css/index.css,
-		/templets/new/css/footer.css,
-		/flowplayer/skin/functional.css,
-		/templets/new/css/banner.css" rel='stylesheet' type='text/css' />
-
-
-    <link href="http://www.iqiaowai.com/templets/new/css/article.css" rel='stylesheet' type='text/css' />
-    <script src="http://www.iqiaowai.com/templets/new/js/article.js"></script>
-    <script src="http://www.iqiaowai.com/templets/new/js/req.js"></script>
-<script src="https://v.myrtb.net/js/bgnms.js"></script>
+	   <link href="../../../assets/home/css/bootstrap.css" rel='stylesheet' type='text/css' />
+       <link href="../../../assets/home/css/index.css" rel='stylesheet' type='text/css' />
+       <link href="../../../assets/home/css/footer.css" rel='stylesheet' type='text/css' />
+       <link href="../../../assets/home/css/functional.css" rel='stylesheet' type='text/css' />
+       <link href="../../../assets/home/css/banner.css" rel='stylesheet' type='text/css' />
+    <link href="../../../assets/home/css/article.css" rel='stylesheet' type='text/css' />
+    <script src="../../../assets/home/js/article.js"></script>
+    <script src="../../../assets/home/js/req.js"></script>
+<script src="../../../assets/home/js/bgnms.js"></script>
 <script>
     beheActiveView({at: "arrive", src: "1697009109", cid: "", sid: "27206"})
 </script>
-<iframe width="0" height="0" frameborder="0" src="https://v.myrtb.net/js/0.html"></iframe>
+<!-- <iframe width="0" height="0" frameborder="0" src="https://v.myrtb.net/js/0.html"></iframe> -->
   </head>
   <body>
     <script>var jyc_begin=new Date().getTime();</script>
@@ -49,14 +47,14 @@
 var _czc = _czc || [];
 _czc.push(["_setAccount", "1259783328"]);
 </script>
-	<link rel="stylesheet" href="http://www.iqiaowai.com/templets/new/index/css/common.css">
-    <link rel="stylesheet" href="http://www.iqiaowai.com/templets/new/index/css/css.css?171025">
-    <script language="JavaScript" src="http://pv.sohu.com/cityjson"></script>
-    <script src="http://www.iqiaowai.com/templets/new/js/md5.js"></script>  
-	<script src="http://www.iqiaowai.com/templets/new/index/js/common_new.js"></script>  
-    <script src="http://www.iqiaowai.com/templets/new/js/savepath_uclick.js"></script>
-    <script src="http://www.iqiaowai.com/templets/new/js/float_year.js"></script>
-    <script src="http://www.iqiaowai.com/templets/wf/js/jquery.SuperSlide.2.1.1.js"></script>
+	<link rel="stylesheet" href="../../../assets/home/css/common.css">
+    <link rel="stylesheet" href="../../../assets/home/css/css.css">
+    <!-- <script language="JavaScript" src="http://pv.sohu.com/cityjson"></script> -->
+    <script src="../../../assets/home/js/md5.js"></script>  
+	<script src="../../../assets/home/js/common_new.js"></script>  
+    <script src="../../../assets/home/js/savepath_uclick.js"></script>
+    <script src="../../../assets/home/js/float_year.js"></script>
+    <script src="../../../assets/home/js/jquery.SuperSlide.2.1.1.js"></script>
 <style>
 body{background:rgb(238,238,238);}
 </style>
