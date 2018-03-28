@@ -122,7 +122,7 @@
                                         </a>
                                     </li>
                                     <li class="b-nav-li">
-                                        <a href="<?php echo site_url('Default_controller/setting') ?>" target="right_content">
+                                        <a href="<?php echo site_url('Admin_controller/setting') ?>" target="right_content">
                                             <i class="icon-double-angle-right"></i>
                                             配置信息
                                         </a>

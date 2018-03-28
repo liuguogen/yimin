@@ -76,27 +76,10 @@
             </div>
         </div>
     </div>-->
-    <div class="flexslider" style="height:525px;">
-        <ul class="slides"> 
-            <li  style="background:url(http://img2.iqiaowai.com/uploads/180212/200-1P212101619148.jpg) 50% 0 no-repeat;background-size:auto 100%;height:525px;">
-                <a href="http://www.iqiaowai.com/zhuanti/america180211/#banner-1" target="_blank" rel="nofollow" onclick="_czc.push(['_trackEvent','新官网主页1.5-banner-38554','点击','新官网主页1.5-banner-38554']);"></a>
-            </li><li  style="background:url(http://img1.iqiaowai.com/uploads/allimg/180202/153-1P202095P70-L.jpg) 50% 0 no-repeat;background-size:auto 100%;height:525px;">
-                <a href="http://www.iqiaowai.com/zhuanti/canada180131/#banner-1" target="_blank" rel="nofollow" onclick="_czc.push(['_trackEvent','新官网主页1.5-banner-38415','点击','新官网主页1.5-banner-38415']);"></a>
-            </li><li  style="background:url(http://img6.iqiaowai.com/uploads/180205/200-1P205163136100.jpg) 50% 0 no-repeat;background-size:auto 100%;height:525px;">
-                <a href="http://www.iqiaowai.com/zhuanti/helan180204/#banner-1" target="_blank" rel="nofollow" onclick="_czc.push(['_trackEvent','新官网主页1.5-banner-38503','点击','新官网主页1.5-banner-38503']);"></a>
-            </li><li  style="background:url(http://img8.iqiaowai.com/uploads/180211/180211/200-1P211164330415.jpg) 50% 0 no-repeat;background-size:auto 100%;height:525px;">
-                <a href="http://www.iqiaowai.com/zhuanti/america180209/#banner-1" target="_blank" rel="nofollow" onclick="_czc.push(['_trackEvent','新官网主页1.5-banner-38548','点击','新官网主页1.5-banner-38548']);"></a>
-            </li><li  style="background:url(http://img4.iqiaowai.com/uploads/171107/156-1G10F91936226.jpg) 50% 0 no-repeat;background-size:auto 100%;height:525px;">
-                <a href="http://www.iqiaowai.com/zhuanti/passport170830/#banner-1" target="_blank" rel="nofollow" onclick="_czc.push(['_trackEvent','新官网主页1.5-banner-36231','点击','新官网主页1.5-banner-36231']);"></a>
-            </li><li  style="background:url(http://img2.iqiaowai.com/uploads/180202/180202/200-1P2021K3204c.jpg) 50% 0 no-repeat;background-size:auto 100%;height:525px;">
-                <a href="http://www.iqiaowai.com/zhuanti/england171129/#banner-1" target="_blank" rel="nofollow" onclick="_czc.push(['_trackEvent','新官网主页1.5-banner-38492','点击','新官网主页1.5-banner-38492']);"></a>
-            </li>
-        </ul> 
-        <div class="hotspot banner-leyu" onclick="_czc.push(['_trackEvent','新官网主页1.5-banner-leyu','点击','新官网主页1.5-banner-leyu']);"></div>
-    </div>
+    <?php $this->load->view('public/thumb') ?>
     <!-- 轮播图 E -->
     <!-- 国旗导航 S -->
-    <div class="qw-flags">
+    <!-- <div class="qw-flags">
         <div class="qw-center clearfix">
             <div class="flag-box">
                 <a href="http://www.iqiaowai.com/america/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-国旗导航-美国','点击','新官网主页1.5-国旗导航-美国']);">
@@ -184,7 +167,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- 国旗导航 E -->
     <!-- 侨外活动 S-->
     <div class="qw-activity">

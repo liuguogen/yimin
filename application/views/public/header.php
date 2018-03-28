@@ -2,8 +2,8 @@
     <div class="qw-header">
         <div class="qw-center">
             <div class="qw-logo">
-                <a  target="_blank" href="http://www.iqiaowai.com/">
-                    <img src="http://www.iqiaowai.com/templets/new/images/logo.jpg" style="width:436px;height:40px;" alt="侨外投资移民">
+                <a  target="_blank" href="/">
+                    <img src="../../../<?php echo $this->config->item('top_logo','home') ?>" style="width:436px;height:40px;" alt="<?php echo $this->config->item('sitename','home') ?>">
                 </a>
             </div>
             <div class="qw-company">
@@ -66,7 +66,7 @@
     </div>
     <!-- 头部 E -->
     <!-- 导航 S  -->
-    <div class="qw-nav" style="background: #6d6d6d;">
+    <div class="qw-nav" style="background: #3ab6ca;">
         <ul class="qw-center">
             <li class="on nav-box"><a href="http://www.iqiaowai.com/" class="nav-link"    onclick="_czc.push(['_trackEvent','新官网主页1.5-导航首页','点击','新官网主页1.5-导航首页']);">首  页</a><i class="nav-line"></i></li>
             <li class="nav-box nav-country-box">
@@ -197,12 +197,12 @@
                 <a href="http://www.iqiaowai.com/projects/#title" class="nav-link" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-导航-热门项目','点击','新官网主页1.5-导航-热门项目']);">热门项目</a>
                 <i class="nav-line"></i>
             </li>
-            <li class="nav-box"><a href="http://www.iqiaowai.com/zhuanti/edu170808/#title" class="nav-link" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-导航-教育规划','点击','新官网主页1.5-导航-教育规划']);">教育规划</a><i class="nav-line"></i></li>
+           
             <li class="nav-box"><a href="http://house.iqiaowai.com/" class="nav-link" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-导航-海外房产','点击','新官网主页1.5-导航-海外房产']);">海外房产</a><i class="nav-line"></i></li>
-            <li class="nav-box"><a href="/club/" class="nav-link" target="_blank">侨·CLUB</a><i class="nav-line"></i></li>
+            
             <li class="nav-box nav-about-box">
-                <a href="http://www.iqiaowai.com/aboutus.html" class="nav-link" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-导航-关于侨外','点击','新官网主页1.5-导航-关于侨外']);">关于侨外</a>
-                <i class="nav-line"></i>
+                <a href="http://www.iqiaowai.com/aboutus.html" class="nav-link" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-导航-关于侨外','点击','新官网主页1.5-导航-关于侨外']);">关于我们</a>
+               <!--  <i class="nav-line"></i>
                 <div class="qw-about-menu">
                     <i></i>
                     <ul>
@@ -216,7 +216,7 @@
 					
 					
 					</ul>
-                </div>
+                </div> -->
             </li>
         </ul>
     </div>

@@ -23,6 +23,8 @@ class Index_controller extends CI_Controller {
 
 
 		parent::__construct();
+		$data=$this->Home_model->getRow('*','setting');
+		$this->config->set_item('home',$data);
 		if($this->agent->is_mobile()) {
 			redirect(base_url().'wap');
 		}

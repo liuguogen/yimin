@@ -223,4 +223,43 @@ class Admin_controller extends CI_Controller {
 
 		$this->load->view('home/welcome');
 	}
+
+	public function setting($value='')
+	{
+		if(IS_POST) {
+			$data=$this->input->post();
+			
+			
+			
+			if(isset($data['thumb']) && $data['thumb']){
+				$data['thumb']=implode(',',$data['thumb']);
+			}
+			
+			
+			$data['create_time']=time();
+			if($data['setting_id']!='' && isset($data['setting_id']))
+			{
+				$setting_id=$data['setting_id'];
+				unset($data['setting_id']);
+				$flag=$this->Admin_model->update('setting',$data,array('setting_id'=>$setting_id));
+			}else {
+				$flag=$this->Admin_model->insert('setting',$data);
+			}
+			
+			if($flag) {
+				$this->message('保存成功',site_url('Admin_controller/setting'));
+			}else {
+				$this->message('保存失败',site_url('Admin_controller/setting'));
+			}
+		}else {
+			$rRow=$this->Admin_model->getRow('*','setting');
+			//$rRow['core_business']=$rRow['core_business'] ? unserialize($rRow['core_business']) :array();//序列化核心业务
+			//$rRow['contactus']=$rRow['contactus'] ? unserialize($rRow['contactus']) :array();//序列化联系我们
+			$rRow['thumb']=$rRow['thumb']  ? explode(',',$rRow['thumb']) :array();
+			//$rRow['partner_img']=$rRow['partner_img']  ? explode(',',$rRow['partner_img']) :array();
+			//$rRow['core_businessImg']=$rRow['core_businessImg'] ? explode(',',$rRow['core_businessImg']) :array();
+			$data['data']=$rRow;
+			$this->load->view('home/setting',$data);
+		}
+	}
 }
