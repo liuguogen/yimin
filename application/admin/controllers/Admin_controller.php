@@ -255,7 +255,7 @@ class Admin_controller extends CI_Controller {
 			$rRow=$this->Admin_model->getRow('*','setting');
 			//$rRow['core_business']=$rRow['core_business'] ? unserialize($rRow['core_business']) :array();//序列化核心业务
 			//$rRow['contactus']=$rRow['contactus'] ? unserialize($rRow['contactus']) :array();//序列化联系我们
-			$rRow['thumb']=$rRow['thumb']  ? explode(',',$rRow['thumb']) :array();
+			$rRow['thumb']=isset($rRow['thumb'])  ? explode(',',$rRow['thumb']) :array();
 			//$rRow['partner_img']=$rRow['partner_img']  ? explode(',',$rRow['partner_img']) :array();
 			//$rRow['core_businessImg']=$rRow['core_businessImg'] ? explode(',',$rRow['core_businessImg']) :array();
 			$data['data']=$rRow;
