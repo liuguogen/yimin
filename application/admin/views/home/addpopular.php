@@ -100,7 +100,7 @@
         </tr>
         <tr>
             <th>描述 <span style="color: red;">*</span></th>
-            <td><textarea name="brief"><?php echo $data['brief']; ?></textarea></td>
+            <td><textarea name="brief"><?php if(isset($data['brief']) && $data['brief']){ echo $data['brief'];}else{echo '';} ?></textarea></td>
         </tr>
         <tr>
             <th>项目介绍 <span style="color: red;">*</span></th>
