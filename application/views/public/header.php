@@ -68,7 +68,7 @@
     <!-- 导航 S  -->
     <div class="qw-nav" style="background: #3ab6ca;">
         <ul class="qw-center">
-            <li class="on nav-box"><a href="http://www.iqiaowai.com/" class="nav-link"    onclick="_czc.push(['_trackEvent','新官网主页1.5-导航首页','点击','新官网主页1.5-导航首页']);">首  页</a><i class="nav-line"></i></li>
+            <li class="on nav-box"><a href="/" class="nav-link"    onclick="_czc.push(['_trackEvent','新官网主页1.5-导航首页','点击','新官网主页1.5-导航首页']);">首  页</a><i class="nav-line"></i></li>
             <li class="nav-box nav-country-box">
                 <a href="http://www.iqiaowai.com/country/" class="nav-link" target="_blank"  onclick="_czc.push(['_trackEvent','新官网主页1.5-导航移民国家','点击','新官网主页1.5-导航移民国家']);">移民国家</a>
                 <i class="nav-line"></i>

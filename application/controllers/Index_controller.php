@@ -33,7 +33,8 @@ class Index_controller extends CI_Controller {
 	{
 
 		$activity_data = $this->Home_model->getList('*','activity');
-		$this->load->view('home/index',array('activity_data'=>$activity_data));
+		$popular_data = $this->Home_model->getList('*','popular');
+		$this->load->view('home/index',array('activity_data'=>$activity_data,'popular_data'=>$popular_data));
 	}
 
 	public function activityDeatail()
@@ -46,6 +47,12 @@ class Index_controller extends CI_Controller {
 		$next_data = $this->Home_model->query("select activity_id,title from activity where activity_id>".$activity_id." order by activity_id desc limit 1");
 		$data['next_data'] = $next_data ?  "<a href='".site_url('activity/'.$next_data['activity_id'].'')."'>".$next_data['title']."</a>"  : "没有了";
 		$this->load->view('home/activity',$data);
+	}
+
+	public function popularDetail()
+	{
+		$popular_id=$this->uri->segment(2);
+		$this->load->view('home/popular');
 	}
 	
 }

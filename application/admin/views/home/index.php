@@ -151,7 +151,12 @@
                                             移民活动
                                         </a>
                                     </li>
-                                   
+                                    <li class="b-nav-li">
+                                        <a href="<?php echo site_url('Admin_controller/popularList') ?>" target="right_content">
+                                            <i class="icon-double-angle-right"></i>
+                                            热门项目
+                                        </a>
+                                    </li>
                                 
                             </ul>
                         </li> 

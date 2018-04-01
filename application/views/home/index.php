@@ -35,146 +35,66 @@
 
 <body>
     <?php $this->load->view('public/header'); ?>
-    <!-- 分公司导航 S -->
-    <div class="qw-fgs-company clearfix" style="position:relative;" >
-        <div class="qw-center" style="display:none;">
-            <div class="qw-company-box" style="margin:0 auto;">
-                <div class="qw-com">侨外分部:</div>
-                <ul>
-                </ul>
+    
+    <?php $this->load->view('public/thumb') ?>
+    
+    <div class="qw-project">
+        <div class="qw-center" onclick="_czc.push(['_trackEvent','新官网主页1.5-热门项目','点击','新官网主页1.5-热门项目']);">
+            <div class="title-box clearfix">
+                <i></i>
+                <div class="title">热门项目 <span>Popular project</span></div>
+                <div class="more"><a href="/projects/" target="_blank">更多...</a></div>
+               <!--  <div class="change" onclick="romchange();">换一批</div> -->
+				 <script src="../../../asset/home/js/gz_d2.js"></script>
+            </div>
+            <div class="project-item clearfix">
+			 <!-- <div class="tips_t hide">
+                    <input type="text" placeholder="请输入您的电话" id="project-dial">
+                    <a target="_blank" id="project-dial-btn" href="javascript:void(0);">
+                        立即免费通话
+                    </a>
+                </div> -->
+				 <script src="../../../asset/home/js/gz_d.js"></script>
+				    <!--<script  data-lxb-uid="22942246" data-lxb-gid="311488"  src="http://lxbjs.baidu.com/api/asset/api.js"></script>  -->
+                <script>
+                document.write('<script type="text/javascript"  data-lxb-uid="22942246" data-lxb-gid="311488" src="http://lxbjs.baidu.com/api/asset/api.js?t=' + new Date().getTime() + '" charset="utf-8"></scr' + 'ipt>');
+                document.getElementById("project-dial-btn").onclick = function() {
+                    lxb.call(document.getElementById("project-dial"));
+                };
+                </script>
+
+                 <?php if($popular_data){
+
+                    foreach ($popular_data as $k => $v) {
+                        
+                    
+                  ?>
+			<div class="item">
+					<input type="hidden" class="romid" name="romid" value="<?php echo $v['popular_id']; ?>"/>
+                    <div class="heart h_pro"><span class="pro_gz_id"><?php echo $v['follow']; ?></span>关注</div><!-- onclick="pro_gzid(this);"-->
+                    <a class="rom_a" href="<?php echo site_url('popular/'.$v['popular_id'].'')?>" target="_blank"><img src="../../../<?php echo $v['thumb'] ?>" class="rom_img"  width="350px" height="200" alt="<?php echo $v['title'] ?>"/></a>
+                    <p class="name rom_name"><b><a class="rom_a" href="<?php echo site_url('popular/'.$v['popular_id'].'')?>" target="_blank"> <?php echo $v['title'] ?></a></b></p>
+                    <p class="desc rom_desc"><a class="rom_a" href="<?php echo site_url('popular/'.$v['popular_id'].'')?>" target="_blank"><?php echo mb_substr($v['brief'],0,120,'utf-8').'...'; ?></a></p>
+                    <p class="price">价格：<span class="rom_bud"><?php echo $v['price'] ?></span></p>
+                    <div class="project-consult clearfix">
+                        <a href="<?php echo site_url('popular/'.$v['popular_id'].'')?>"><div class="" style="width: 300px;background: #3ab6ca;line-height: 36px;height: 36p;margin:10px 22px;color: white;text-align: center;">查看详情</div></a>
+                       
+                    </div>
+                </div>
+
+<?php }}?>
+
+
             </div>
         </div>
     </div>
-    <!-- 分公司导航 E -->
-    <!-- 轮播图 S -->
-    <!--<div class="swiper-container" id="index_slider" style="height:525px;position:relative;">
-        <div class="swiper-wrapper">
-            <div class="fullwidthbanner-container">
-                <div class="fullwidthbanner">
-                    <ul>
-						 <li data-transition="slideleft" data-slotamount="15" data-masterspeed="300">
-								<div class="hotspot banner-leyu"  onclick="_czc.push(['_trackEvent','新官网主页1.5-banner-leyu','点击','新官网主页1.5-banner-leyu']);"></div>
-								<img src="http://img2.iqiaowai.com/uploads/180212/200-1P212101619148.jpg"  onclick="_czc.push(['_trackEvent','新官网主页1.5-banner-38554','点击','新官网主页1.5-banner-38554']);"  rel="nofollow" alt="侨外移民北美嘉年华" data-href="http://www.iqiaowai.com/zhuanti/america180211/#banner-1" class="swiper-img" data-id="38554" />
-							</li><li data-transition="slideleft" data-slotamount="15" data-masterspeed="300">
-								<div class="hotspot banner-leyu"  onclick="_czc.push(['_trackEvent','新官网主页1.5-banner-leyu','点击','新官网主页1.5-banner-leyu']);"></div>
-								<img src="http://img1.iqiaowai.com/uploads/allimg/180202/153-1P202095P70-L.jpg"  onclick="_czc.push(['_trackEvent','新官网主页1.5-banner-38415','点击','新官网主页1.5-banner-38415']);"  rel="nofollow" alt="加拿大移民百人白金文案团" data-href="http://www.iqiaowai.com/zhuanti/canada180131/#banner-1" class="swiper-img" data-id="38415" />
-							</li><li data-transition="slideleft" data-slotamount="15" data-masterspeed="300">
-								<div class="hotspot banner-leyu"  onclick="_czc.push(['_trackEvent','新官网主页1.5-banner-leyu','点击','新官网主页1.5-banner-leyu']);"></div>
-								<img src="http://img6.iqiaowai.com/uploads/180205/200-1P205163136100.jpg"  onclick="_czc.push(['_trackEvent','新官网主页1.5-banner-38503','点击','新官网主页1.5-banner-38503']);"  rel="nofollow" alt="荷兰市长中国行" data-href="http://www.iqiaowai.com/zhuanti/helan180204/#banner-1" class="swiper-img" data-id="38503" />
-							</li><li data-transition="slideleft" data-slotamount="15" data-masterspeed="300">
-								<div class="hotspot banner-leyu"  onclick="_czc.push(['_trackEvent','新官网主页1.5-banner-leyu','点击','新官网主页1.5-banner-leyu']);"></div>
-								<img src="http://img8.iqiaowai.com/uploads/180211/180211/200-1P211164330415.jpg"  onclick="_czc.push(['_trackEvent','新官网主页1.5-banner-38548','点击','新官网主页1.5-banner-38548']);"  rel="nofollow" alt="侨外美国EB-5投资移民盘点" data-href="http://www.iqiaowai.com/zhuanti/america180209/#banner-1" class="swiper-img" data-id="38548" />
-							</li><li data-transition="slideleft" data-slotamount="15" data-masterspeed="300">
-								<div class="hotspot banner-leyu"  onclick="_czc.push(['_trackEvent','新官网主页1.5-banner-leyu','点击','新官网主页1.5-banner-leyu']);"></div>
-								<img src="http://img4.iqiaowai.com/uploads/171107/156-1G10F91936226.jpg"  onclick="_czc.push(['_trackEvent','新官网主页1.5-banner-36231','点击','新官网主页1.5-banner-36231']);"  rel="nofollow" alt="护照项目专题" data-href="http://www.iqiaowai.com/zhuanti/passport170830/#banner-1" class="swiper-img" data-id="36231" />
-							</li><li data-transition="slideleft" data-slotamount="15" data-masterspeed="300">
-								<div class="hotspot banner-leyu"  onclick="_czc.push(['_trackEvent','新官网主页1.5-banner-leyu','点击','新官网主页1.5-banner-leyu']);"></div>
-								<img src="http://img2.iqiaowai.com/uploads/180202/180202/200-1P2021K3204c.jpg"  onclick="_czc.push(['_trackEvent','新官网主页1.5-banner-38492','点击','新官网主页1.5-banner-38492']);"  rel="nofollow" alt="英国20万镑投资移民案例全程直" data-href="http://www.iqiaowai.com/zhuanti/england171129/#banner-1" class="swiper-img" data-id="38492" />
-							</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <?php $this->load->view('public/thumb') ?>
-    <!-- 轮播图 E -->
-    <!-- 国旗导航 S -->
-    <!-- <div class="qw-flags">
-        <div class="qw-center clearfix">
-            <div class="flag-box">
-                <a href="http://www.iqiaowai.com/america/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-国旗导航-美国','点击','新官网主页1.5-国旗导航-美国']);">
-                    <p>美 国 </p>
-                </a>
-            </div>
-            <div class="flag-box">
-                <a href="http://www.iqiaowai.com/england/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-国旗导航-英国','点击','新官网主页1.5-国旗导航-英国']);"> 
-                    <p>英 国 </p>
-                </a>
-            </div>
-			<div class="flag-box">
-                <a href="http://www.iqiaowai.com/canada/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-国旗导航-加拿大','点击','新官网主页1.5-国旗导航-加拿大']);">
-                    <p>加拿大 </p>
-                </a>
-            </div>
-            <div class="flag-box">
-                <a href="http://www.iqiaowai.com/australia/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-国旗导航-澳大利亚','点击','新官网主页1.5-国旗导航-澳大利亚']);">
-                    <p>澳大利亚 </p>
-                </a>
-            </div>
-            <div class="flag-box">
-                <a href="http://www.iqiaowai.com/spain/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-国旗导航-西班牙','点击','新官网主页1.5-国旗导航-西班牙']);">
-                    <p>西班牙 </p>
-                </a>
-            </div>
-            <div class="flag-box">
-                <a href="http://www.iqiaowai.com/portugal/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-国旗导航-葡萄牙','点击','新官网主页1.5-国旗导航-葡萄牙']);">
-                    <p>葡萄牙 </p>
-                </a>
-            </div>
-            <div class="flag-box">
-                <a href="http://www.iqiaowai.com/greece/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-国旗导航-希腊','点击','新官网主页1.5-国旗导航-希腊']);">
-                    <p>希 腊 </p>
-                </a>
-            </div>
-            <div class="flag-box">
-                <a href="http://www.iqiaowai.com/malta/" target="_blank"  onclick="_czc.push(['_trackEvent','新官网主页1.5-国旗导航-马耳他','点击','新官网主页1.5-国旗导航-马耳他']);">
-                    <p>马耳他 </p>
-                </a>
-            </div>
-            <div class="flag-box">
-                <a href="http://www.iqiaowai.com/italy/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-国旗导航-意大利','点击','新官网主页1.5-国旗导航-意大利']);">
-                    <p>意大利 </p>
-                </a>
-            </div>
-            <div class="flag-box">
-                <a href="http://www.iqiaowai.com/germany/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-国旗导航-德国','点击','新官网主页1.5-国旗导航-德国']);">
-                    <p>德 国 </p>
-                </a>
-            </div>
-            <div class="flag-box">
-                <a href="http://www.iqiaowai.com/saintkitts/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-国旗导航-圣基茨','点击','新官网主页1.5-国旗导航-圣基茨']);">
-                    <p>圣基茨 </p>
-                </a>
-            </div>
-            <div class="flag-box">
-                <a href="http://www.iqiaowai.com/cyprus/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-国旗导航-塞浦路斯','点击','新官网主页1.5-国旗导航-塞浦路斯']);">
-                    <p>塞浦路斯 </p>
-                </a>
-            </div>
-            <div class="flag-box">
-                <a href="http://www.iqiaowai.com/netherlands/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-国旗导航-荷兰','点击','新官网主页1.5-国旗导航-荷兰']);">
-                    <p>荷 兰 </p>
-                </a>
-            </div>
-            <div class="flag-box">
-                <a href="http://www.iqiaowai.com/ireland/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-国旗导航-爱尔兰','点击','新官网主页1.5-国旗导航-爱尔兰']);">
-                    <p>爱尔兰 </p>
-                </a>
-            </div>
-            <div class="flag-box">
-                <a href="http://www.iqiaowai.com/korea/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-国旗导航-韩国','点击','新官网主页1.5-国旗导航-韩国']);">
-                    <p>韩 国 </p>
-                </a>
-            </div>
-            <div class="flag-box">
-                <a href="http://www.iqiaowai.com/zhuanti/thailand171117/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-国旗导航-泰国','点击','新官网主页1.5-国旗导航-泰国']);">
-                    <p>泰国 </p>
-                </a>
-            </div>
-			<div class="flag-box">
-                <a href="http://www.iqiaowai.com/zhuanti/dominic171204" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-国旗导航-多米尼克','点击','新官网主页1.5-国旗导航-多米尼克']);">
-                    <p>多米尼克 </p>
-                </a>
-            </div>
-        </div>
-    </div> -->
-    <!-- 国旗导航 E -->
+    <!-- 热门项目 E-->
     <!-- 侨外活动 S-->
     <div class="qw-activity">
         <div class="qw-center">
             <div class="title-box clearfix">
                 <i></i>
-                <div class="title">侨外活动 <span>Activity</span></div>
+                <div class="title">移民热点 <span>Hotspot</span></div>
                 <div class="more"><a href="/activity/" target="_blank">更多>></a></div>
             </div>
             <div class="qw-activity-box clearfix" onclick="_czc.push(['_trackEvent','新官网主页1.5-侨外活动','点击','新官网主页1.5-侨外活动']);">
@@ -185,7 +105,7 @@
                         
                     
                   ?>
-			<div class="detail" data-num="<?php echo $av['activity_id'] ?>">
+            <div class="detail" data-num="<?php echo $av['activity_id'] ?>">
                     <i></i>
                     <a href="<?php echo site_url('activity/'.$av['activity_id'].'')?>" target="_blank"><img src="../../../<?php echo $av['thumb'] ?>" alt="<?php echo $av['title'] ?>"></a>
                     <div class="text-box">
@@ -210,234 +130,23 @@
                         
                     
                   ?>
-					<input type="hidden" value="<?php echo $av['activity_id'] ?>" class="act_id"/>
-						<li class="clearfix now" data-num="<?php echo $av['activity_id'] ?>">
-							<input type="hidden" value="<?php echo date('Y-m-d',$av['create_time']); ?>" class=""/>
-							<a  target="_blank" href="<?php echo site_url('activity/'.$av['activity_id'].'')?>" alt="<?php echo $av['title'] ?>" ><?php echo $av['title'] ?></a>
-							<span onclick="tanchu();" class="act34">预约</span>
-						</li>
+                    <input type="hidden" value="<?php echo $av['activity_id'] ?>" class="act_id"/>
+                        <li class="clearfix now" data-num="<?php echo $av['activity_id'] ?>">
+                            <input type="hidden" value="<?php echo date('Y-m-d',$av['create_time']); ?>" class=""/>
+                            <a  target="_blank" href="<?php echo site_url('activity/'.$av['activity_id'].'')?>" alt="<?php echo $av['title'] ?>" ><?php echo $av['title'] ?></a>
+                            <span onclick="tanchu();" class="act34">预约</span>
+                        </li>
 
-					
+                    
 <?php }} ?>
 
-                    </ul>	
-					<script src="../../../asset/home/js/active_sort.js"></script>
+                    </ul>   
+                    <script src="../../../asset/home/js/active_sort.js"></script>
                 </div>
             </div>
         </div>
     </div>
     <!-- 侨外活动 E-->
-    <!-- 热门项目 S-->
-    <div class="qw-project">
-        <div class="qw-center" onclick="_czc.push(['_trackEvent','新官网主页1.5-热门项目','点击','新官网主页1.5-热门项目']);">
-            <div class="title-box clearfix">
-                <i></i>
-                <div class="title">热门项目 <span>Popular project</span></div>
-                <div class="more"><a href="/projects/" target="_blank">更多>></a></div>
-                <div class="change" onclick="romchange();">换一批</div>
-				 <script src="../../../asset/home/js/gz_d2.js"></script>
-            </div>
-            <div class="project-item clearfix">
-			 <div class="tips_t hide">
-                    <input type="text" placeholder="请输入您的电话" id="project-dial">
-                    <a target="_blank" id="project-dial-btn" href="javascript:void(0);">
-                        立即免费通话
-                    </a>
-                </div>
-				 <script src="../../../asset/home/js/gz_d.js"></script>
-				    <!--<script  data-lxb-uid="22942246" data-lxb-gid="311488"  src="http://lxbjs.baidu.com/api/asset/api.js"></script>  -->
-                <script>
-                document.write('<script type="text/javascript"  data-lxb-uid="22942246" data-lxb-gid="311488" src="http://lxbjs.baidu.com/api/asset/api.js?t=' + new Date().getTime() + '" charset="utf-8"></scr' + 'ipt>');
-                document.getElementById("project-dial-btn").onclick = function() {
-                    lxb.call(document.getElementById("project-dial"));
-                };
-                </script>
-			<div class="item">
-					<input type="hidden" class="romid" name="romid" value="36355"/>
-                    <div class="heart h_pro"><span class="pro_gz_id">10028</span>关注</div><!-- onclick="pro_gzid(this);"-->
-                    <a class="rom_a" href="http://www.iqiaowai.com/plus/view.php?aid=36355" target="_blank"><img src="http://img4.iqiaowai.com/uploads/allimg/170908/153-1FZQ912370-L.jpg" class="rom_img"  width="350px" height="200" alt="荷兰王国库拉索投资移民"/></a>
-                    <p class="name rom_name"><b><a class="rom_a" href="http://www.iqiaowai.com/plus/view.php?aid=36355" target="_blank"> 荷兰王国库拉索投资移民</a></b></p>
-                    <p class="desc rom_desc"><a class="rom_a" href="http://www.iqiaowai.com/plus/view.php?aid=36355" target="_blank">18万美元起移民欧洲花园，享西欧大国福利。                                    …</a></p>
-                    <p class="price">价格：<span class="rom_bud">20-50万美元</span></p>
-                    <div class="project-consult clearfix">
-                        <div class="btn lxb-box" onclick="_czc.push(['_trackEvent','新官网主页1.5-热门项目-电话咨询','点击','新官网主页1.5-热门项目-电话咨询']);">电话咨询</div>
-                        <div class="btn online-consult" onclick="_czc.push(['_trackEvent','新官网主页1.5-热门项目-在线咨询','点击','新官网主页1.5-热门项目-在线咨询']);">在线咨询</div>
-                    </div>
-                </div>
-<div class="item">
-					<input type="hidden" class="romid" name="romid" value="32263"/>
-                    <div class="heart h_pro"><span class="pro_gz_id">11326</span>关注</div><!-- onclick="pro_gzid(this);"-->
-                    <a class="rom_a" href="http://www.iqiaowai.com/plus/view.php?aid=32263" target="_blank"><img src="http://img7.iqiaowai.com/uploads/170928/153-1F92Q52T2228.jpg" class="rom_img"  width="350px" height="200" alt="圣基茨护照移民"/></a>
-                    <p class="name rom_name"><b><a class="rom_a" href="http://www.iqiaowai.com/plus/view.php?aid=32263" target="_blank"> 圣基茨护照移民</a></b></p>
-                    <p class="desc rom_desc"><a class="rom_a" href="http://www.iqiaowai.com/plus/view.php?aid=32263" target="_blank">无移民监，无居住要求，不影响在国内的正常生活与工作，购房移民圣基茨，畅…</a></p>
-                    <p class="price">价格：<span class="rom_bud">10-20万美元</span></p>
-                    <div class="project-consult clearfix">
-                        <div class="btn lxb-box" onclick="_czc.push(['_trackEvent','新官网主页1.5-热门项目-电话咨询','点击','新官网主页1.5-热门项目-电话咨询']);">电话咨询</div>
-                        <div class="btn online-consult" onclick="_czc.push(['_trackEvent','新官网主页1.5-热门项目-在线咨询','点击','新官网主页1.5-热门项目-在线咨询']);">在线咨询</div>
-                    </div>
-                </div>
-<div class="item">
-					<input type="hidden" class="romid" name="romid" value="32262"/>
-                    <div class="heart h_pro"><span class="pro_gz_id">17855</span>关注</div><!-- onclick="pro_gzid(this);"-->
-                    <a class="rom_a" href="http://www.iqiaowai.com/plus/view.php?aid=32262" target="_blank"><img src="http://img8.iqiaowai.com/uploads/170908/153-1FZQ6460O05.jpg" class="rom_img"  width="350px" height="200" alt="加拿大投资移民"/></a>
-                    <p class="name rom_name"><b><a class="rom_a" href="http://www.iqiaowai.com/plus/view.php?aid=32262" target="_blank"> 加拿大投资移民</a></b></p>
-                    <p class="desc rom_desc"><a class="rom_a" href="http://www.iqiaowai.com/plus/view.php?aid=32262" target="_blank">投资移民加拿大，享受世界大国教育、先进的医疗福利、畅行世界173个国家。…</a></p>
-                    <p class="price">价格：<span class="rom_bud">10-20万美元</span></p>
-                    <div class="project-consult clearfix">
-                        <div class="btn lxb-box" onclick="_czc.push(['_trackEvent','新官网主页1.5-热门项目-电话咨询','点击','新官网主页1.5-热门项目-电话咨询']);">电话咨询</div>
-                        <div class="btn online-consult" onclick="_czc.push(['_trackEvent','新官网主页1.5-热门项目-在线咨询','点击','新官网主页1.5-热门项目-在线咨询']);">在线咨询</div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-    <!-- 热门项目 E-->
-    <!-- 移民热点 S-->
-    <div class="qw-hot">
-        <div class="qw-center">
-            <div class="title-box clearfix">
-                <i></i>
-                <div class="title">移民热点 <span>hot topic</span></div>
-            </div>
-            <div class="items clearfix">
-                <div class="item item-hot" style="overflow:hidden;">
-                    <!--<div class="slide">
-                        <ul>
-						<li>
-                               <img src="http://img6.iqiaowai.com/uploads/180224/180224/200-1P2241H052154.jpg"  alt="侨外X优酷《圆桌派》第二季" width="350px" height="520px" onclick="_czc.push(['_trackEvent','新官网主页1.5-移民热点-广告','点击','新官网主页1.5-移民热点-广告']);window.open('http://www.iqiaowai.com/plus/view.php?aid=36261');">
-                                <p><a target="_blank" href="http://www.iqiaowai.com/plus/view.php?aid=36261">侨外X优酷《圆桌派》第二季</a></p>
-                            </li>
-<li>
-                               <img src="http://img2.iqiaowai.com/uploads/allimg/171208/156-1G20QH6370-L.jpg"  alt="侨外公益活动" width="350px" height="520px" onclick="_czc.push(['_trackEvent','新官网主页1.5-移民热点-广告','点击','新官网主页1.5-移民热点-广告']);window.open('http://www.iqiaowai.com/plus/view.php?aid=37664');">
-                                <p><a target="_blank" href="http://www.iqiaowai.com/plus/view.php?aid=37664">侨外公益活动</a></p>
-                            </li>
-<li>
-                               <img src="http://img2.iqiaowai.com/uploads/171114/153-1G114135519355.jpg"  alt="侨外X凤凰卫视《逐梦彼岸-中国" width="350px" height="520px" onclick="_czc.push(['_trackEvent','新官网主页1.5-移民热点-广告','点击','新官网主页1.5-移民热点-广告']);window.open('http://www.iqiaowai.com/plus/view.php?aid=36325');">
-                                <p><a target="_blank" href="http://www.iqiaowai.com/plus/view.php?aid=36325">侨外X凤凰卫视《逐梦彼岸-中国新移民》</a></p>
-                            </li>
-
-                        </ul>
-                    </div>-->
-                  <ul class="slides">
-                    <li  style="background:url(http://img6.iqiaowai.com/uploads/180224/180224/200-1P2241H052154.jpg) 50% 0 no-repeat;height:520px;">
-                            <a class="item-hot-link" target="_blank" href="http://www.iqiaowai.com/plus/view.php?aid=36261" onclick="_czc.push(['_trackEvent','新官网主页1.5-移民热点-广告','点击','新官网主页1.5-移民热点-广告']);"><p>侨外X优酷《圆桌派》第二季</p></a>
-                        </li>
-<li  style="background:url(http://img2.iqiaowai.com/uploads/allimg/171208/156-1G20QH6370-L.jpg) 50% 0 no-repeat;height:520px;">
-                            <a class="item-hot-link" target="_blank" href="http://www.iqiaowai.com/plus/view.php?aid=37664" onclick="_czc.push(['_trackEvent','新官网主页1.5-移民热点-广告','点击','新官网主页1.5-移民热点-广告']);"><p>侨外公益活动</p></a>
-                        </li>
-<li  style="background:url(http://img2.iqiaowai.com/uploads/171114/153-1G114135519355.jpg) 50% 0 no-repeat;height:520px;">
-                            <a class="item-hot-link" target="_blank" href="http://www.iqiaowai.com/plus/view.php?aid=36325" onclick="_czc.push(['_trackEvent','新官网主页1.5-移民热点-广告','点击','新官网主页1.5-移民热点-广告']);"><p>侨外X凤凰卫视《逐梦彼岸-中国新移民》</p></a>
-                        </li>
-
-                    </ul>
-                </div>
-                <div class="item">
-                    <div class="top">
-                       <a href="http://www.iqiaowai.com/hotspot/38644.html" target="_blank"><img src="http://www.iqiaowai.com/uploads/180302/153-1P302191311G6.jpg" alt="移民是什么？你真的理解正确了吗？" width="350px" height="230px"></a>
-                         <p><a target="_blank" href="http://www.iqiaowai.com/hotspot/38644.html" onclick="_czc.push(['_trackEvent','新官网主页1.5-热点资讯-图','点击','新官网主页1.5-热点资讯-图']);">移民是什么？你真的理解正确了吗…</a></p>
-                    </div>
-                    <div class="item-list">
-                        <div class="item-list-name clearfix">
-                            <p class="name">热点资讯</p>
-                            <div class="more">
-                                <a href="/hotspot/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-热点资讯-更多','点击','新官网主页1.5-热点资讯-更多']);">更多>></a>
-                            </div>
-                        </div>
-                        <ul>
-						<li>
-                                <a target="_blank" href="http://www.iqiaowai.com/hotspot/38643.html" onclick="_czc.push(['_trackEvent','新官网主页1.5-热点资讯-文','点击','新官网主页1.5-热点资讯-文']);">
-									 <i></i>
-									侨外美国曼哈顿W57空中花园进展顺利，…
-							    </a>
-                            </li><li>
-                                <a target="_blank" href="http://www.iqiaowai.com/hotspot/38642.html" onclick="_czc.push(['_trackEvent','新官网主页1.5-热点资讯-文','点击','新官网主页1.5-热点资讯-文']);">
-									 <i></i>
-									侨外出国：购房送英联邦身份，这本护…
-							    </a>
-                            </li><li>
-                                <a target="_blank" href="http://www.iqiaowai.com/hotspot/38641.html" onclick="_czc.push(['_trackEvent','新官网主页1.5-热点资讯-文','点击','新官网主页1.5-热点资讯-文']);">
-									 <i></i>
-									留学美国≠留在美国H1-B签证陷双重困境…
-							    </a>
-                            </li><li>
-                                <a target="_blank" href="http://www.iqiaowai.com/hotspot/38640.html" onclick="_czc.push(['_trackEvent','新官网主页1.5-热点资讯-文','点击','新官网主页1.5-热点资讯-文']);">
-									 <i></i>
-									侨外出国：投资偏爱北美，美加实力吸…
-							    </a>
-                            </li><li>
-                                <a target="_blank" href="http://www.iqiaowai.com/hotspot/38634.html" onclick="_czc.push(['_trackEvent','新官网主页1.5-热点资讯-文','点击','新官网主页1.5-热点资讯-文']);">
-									 <i></i>
-									30天即可实现全球资产配置，和澳新做邻…
-							    </a>
-                            </li><li>
-                                <a target="_blank" href="http://www.iqiaowai.com/hotspot/38630.html" onclick="_czc.push(['_trackEvent','新官网主页1.5-热点资讯-文','点击','新官网主页1.5-热点资讯-文']);">
-									 <i></i>
-									2018侨外英国戏剧表演夏令营招募啦！…
-							    </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="item qw-story" style="margin-right:0;">
-                    <div class="top">
-					<a target="_blank" href="http://www.iqiaowai.com/story/38597.html" onclick="_czc.push(['_trackEvent','新官网主页1.5-移民故事-图','点击','新官网主页1.5-移民故事-图']);"><img src="http://img2.iqiaowai.com/uploads/allimg/180227/206-1P22G354520-L.png" alt="中国妈妈的心声：美国教育让我的女儿脱胎换骨" width="350px" height="230px"></a>
-                        <p><a target="_blank" href="http://www.iqiaowai.com/story/38597.html">中国妈妈的心声：美国教育让我的女儿…</a></p>
-
-                    </div>
-                    <div class="item-list">
-                        <div class="item-list-name clearfix">
-                            <p class="name">移民故事</p>
-                            <div class="more">
-                                <a target="_blank" href="/story/" onclick="_czc.push(['_trackEvent','新官网主页1.5-移民故事-更多','点击','新官网主页1.5-移民故事-更多']);">更多>></a>
-                            </div>
-                        </div>
-                        <ul>
-						<li>
-                                <a target="_blank" href="http://www.iqiaowai.com/story/38572.html" onclick="_czc.push(['_trackEvent','新官网主页1.5-移民故事-文','点击','新官网主页1.5-移民故事-文']);">
-                                    <i></i>
-                                    老师送子女出国，移民留学各有千秋
-                                </a>
-                            </li>
-<li>
-                                <a target="_blank" href="http://www.iqiaowai.com/story/38562.html" onclick="_czc.push(['_trackEvent','新官网主页1.5-移民故事-文','点击','新官网主页1.5-移民故事-文']);">
-                                    <i></i>
-                                    自助申请失败，成年人留学也需要专业机构…
-                                </a>
-                            </li>
-<li>
-                                <a target="_blank" href="http://www.iqiaowai.com/story/38540.html" onclick="_czc.push(['_trackEvent','新官网主页1.5-移民故事-文','点击','新官网主页1.5-移民故事-文']);">
-                                    <i></i>
-                                    移民求学两不误：我和女儿在美国一起成长…
-                                </a>
-                            </li>
-<li>
-                                <a target="_blank" href="http://www.iqiaowai.com/story/38539.html" onclick="_czc.push(['_trackEvent','新官网主页1.5-移民故事-文','点击','新官网主页1.5-移民故事-文']);">
-                                    <i></i>
-                                    全球化时代，让孩子学贯中西才最好
-                                </a>
-                            </li>
-<li>
-                                <a target="_blank" href="http://www.iqiaowai.com/story/38526.html" onclick="_czc.push(['_trackEvent','新官网主页1.5-移民故事-文','点击','新官网主页1.5-移民故事-文']);">
-                                    <i></i>
-                                    总有一种选择，能呵护孩子纯真的笑脸
-                                </a>
-                            </li>
-<li>
-                                <a target="_blank" href="http://www.iqiaowai.com/story/38507.html" onclick="_czc.push(['_trackEvent','新官网主页1.5-移民故事-文','点击','新官网主页1.5-移民故事-文']);">
-                                    <i></i>
-                                    为什么要移民美国？孩子的笑脸由我守护！…
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 移民热点 E-->
     <!-- 移民国家 S-->
     <div class="qw-country">
         <div class="qw-center">

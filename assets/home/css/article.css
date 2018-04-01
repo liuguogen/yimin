@@ -60,12 +60,12 @@
 .pagination a{display: inline-block; background: white; padding: 5px 10px; margin-left: 10px; text-decoration: none; color:rgb(29,29,29);}
 
 .t-r .block{margin-top: 20px; background: white;}
-.t-r .block .title{height: 22px;line-height:22px;font-size: 22px;padding:14px 0;color: rgb(85,85,85);}
-.t-r .block .title h2{height: 22px;line-height:22px;font-size: 22px;padding:14px 0;color: rgb(85,85,85);}
+.t-r .block .title{height: 22px;line-height:22px;font-size: 22px;padding:14px 0;color: #3ab6ca;background:#3ab6ca; }
+.t-r .block .title h2{height: 22px;line-height:22px;font-size: 22px;padding:14px 0;color: rgb(255,255,255);}
 
 
 .t-r .block .title span{font-size: 20px; font-weight: bold;}
-.t-r .block .title .icon{width:20px;height: 22px;float:left;background: url(../images/c-icons.png) no-repeat 0 -26px;}
+.t-r .block .title .icon{width:20px;height: 22px;float:left;background: url(../../images/c-icons.png) no-repeat 0 -26px;}
 
 
 .t-r .block .box {border: 1px solid rgb(210,210,210); padding: 20px; line-height: 30px; background: white; color:rgb(51,51,51);}
