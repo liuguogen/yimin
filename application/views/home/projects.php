@@ -14,41 +14,31 @@
     <meta http-equiv="Cache-Control" content="no-transform" /> 
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <meta name="applicable-device" content="pc,mobile">	
-              	
-        <!-- <script src="http://www.iqiaowai.com/templets/new/js/html5.js"></script> -->
-		<script src="../../../assets/home/js/ieBetter.js"></script>
-		<script src="../../../assets/home/js/jquery.min.js"></script>
-		<script src="../../../assets/home/js/jquery.query.js"></script>
-		<script src="../../../assets/home/js/jquery.scroll.js"></script>
-		<script src="../../../assets/home/js/dedeajax2.js"></script>
-		<script src="../../../assets/home/js/jquery.banner.revolution.min.js"></script>
-		<script src="../../../assets/home/js/banner.min.js"></script>
-		 <script src="../../../assets/home/js/jwplayer.js"></script>
-		<script src="../../../assets/home/js/header.js"></script>
-		
-
-		<link href="../../../assets/home/css/bootstrap.css" rel='stylesheet' type='text/css' />
-       <link href="../../../assets/home/css/index.css" rel='stylesheet' type='text/css' />
-       <link href="../../../assets/home/css/footer.css" rel='stylesheet' type='text/css' />
-       <link href="../../../assets/home/css/functional.css" rel='stylesheet' type='text/css' />
-       <link href="../../../assets/home/css/banner.css" rel='stylesheet' type='text/css' />
-
-
+	<script src="../../../assets/home/js/ieBetter.js"></script>
+	<script src="../../../assets/home/js/jquery.min.js"></script>
+	<script src="../../../assets/home/js/jquery.query.js"></script>
+	<script src="../../../assets/home/js/jquery.scroll.js"></script>
+	<script src="../../../assets/home/js/dedeajax2.js"></script>
+	<script src="../../../assets/home/js/jquery.banner.revolution.min.js"></script>
+	<script src="../../../assets/home/js/banner.min.js"></script>
+	<script src="../../../assets/home/js/jwplayer.js"></script>
+	<script src="../../../assets/home/js/header.js"></script>
+	<link href="../../../assets/home/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="../../../assets/home/css/index.css" rel='stylesheet' type='text/css' />
+    <link href="../../../assets/home/css/footer.css" rel='stylesheet' type='text/css' />
+    <link href="../../../assets/home/css/functional.css" rel='stylesheet' type='text/css' />
+    <link href="../../../assets/home/css/banner.css" rel='stylesheet' type='text/css' />
     <script src="../../../assets/home/js/jquery.flexslider-min.js"></script>
     <script src="../../../assets/home/js/projects.js"></script>
-</head>
-
-<body>
-   
-
-
-	<link rel="stylesheet" href="../../../assets/home/css/common.css">
+    <link rel="stylesheet" href="../../../assets/home/css/common.css">
     <link rel="stylesheet" href="../../../assets/home/css/css.css">
     <script src="../../../assets/home/js/md5.js"></script>  
     <script src="../../../assets/home/js/common_new.js"></script>  
     <script src="../../../assets/home/js/savepath_uclick.js"></script>
     <script src="../../../assets/home/js/float_year.js"></script>
     <script src="../../../assets/home/js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
 <style>
 body{
 background:rgb(238,238,238);
@@ -335,7 +325,6 @@ background:rgb(238,238,238);
     <!-- //底部模板 -->
 <?php $this->load->view('public/footer') ?>
 
-
 </div>
 
 </div>
@@ -343,26 +332,10 @@ background:rgb(238,238,238);
 </div>
 
 </div>
-
-
-
-
-
 <link rel="stylesheet" href="../../../asset/home/css/general8.css">
-
-
 </div>
-
-
-
-
 <script src="http://www.iqiaowai.com/data/enums/country.js"></script>
 <script src="http://www.iqiaowai.com/data/enums/city.js"></script>
-
-
-
-
-
 </body>
 
 </html>

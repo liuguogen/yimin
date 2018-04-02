@@ -8,7 +8,7 @@
      <meta http-equiv="Cache-Control" content="no-siteapp" />
      <meta name="applicable-device" content="pc">	
     <link rel="shortcut icon" href="/favicon.ico" />
-    <title>【侨外移民官网】全方位海外生活规划服务平台，提供海外置业，投资移民，购房移民，教育规划，全球资产配置等一站式海外安家服务。 </title>
+    <title><?php echo $this->config->item('sitename','home') ?></title>
     <meta name="keywords" content="侨外移民,侨外移民官网,侨外投资移民,投资移民,美国移民,英国投资移民,侨外,侨外集团" />
     <meta name="description" content="侨外移民，美国投资移民EB-5、英国企业家移民引入机构，侨外为上万家庭实现移民梦想，业务涵盖美国、英国、澳大利亚、葡萄牙、西班牙等十余国，提供投资移民、海外置业、教育规划、家族财富管理、全球资产配置等专业、贴心、省心的全方位海外生活规划服务！" />
     <link rel="stylesheet" href="../../../assets/home/css/common.css">
@@ -55,7 +55,7 @@
                     </a>
                 </div> -->
 				 <script src="../../../asset/home/js/gz_d.js"></script>
-				    <!--<script  data-lxb-uid="22942246" data-lxb-gid="311488"  src="http://lxbjs.baidu.com/api/asset/api.js"></script>  -->
+				   
                 <script>
                 document.write('<script type="text/javascript"  data-lxb-uid="22942246" data-lxb-gid="311488" src="http://lxbjs.baidu.com/api/asset/api.js?t=' + new Date().getTime() + '" charset="utf-8"></scr' + 'ipt>');
                 document.getElementById("project-dial-btn").onclick = function() {
@@ -796,88 +796,11 @@
                 </p>
             </div>
         </div>
-        <div class="test-box clearfix">
-            <div class="qw-adv-test">
-                <a target="_blank" href="/pinggu/"><img src="http://www.iqiaowai.com/templets/new/index/images/testbg.jpg" alt=""></a>
-            </div>
-            <div class="qw-adv-form">
-                <form name="fcz" action="/plus/yuyue.php" enctype="multipart/form-data" method="post" onsubmit="return check_require();">
-                    <input type="hidden" name="action" value="post" />
-                    <input type="hidden" name="diyid" value="3" />
-                    <input type="hidden" name="do" value="2" />
-                    <div class="formbox">
-                        <div class="clearfix boxes">
-                            <div class="box">
-                                <input name="name" type="text" placeholder="您的姓名">
-                            </div>
-                            <div class="box">
-                                <input name="phone" type="text" placeholder="您的电话">
-                            </div>
-                            <div class="box">
-                                <i></i>
-                                <select name='message'>
-                                    <option value="null" disabled selected>移民目的</option>
-                                    <option value="子女教育">子女教育</option>
-                                    <option value="应对CRS">应对CRS</option>
-                                    <option value="养老规划">养老规划</option>
-                                    <option value="出行便利">出行便利</option>
-                                    <option value="海外置业">海外置业</option>
-                                    <option value="居住环境">居住环境</option>
-                                    <option value="投资理财">投资理财</option>
-                                    <option value="福利保障">福利保障</option>
-                                    <option value="税务规划">税务规划</option>
-                                    <option value="工作就业">工作就业</option>
-                                    <option value="创业经商">创业经商</option>
-                                    <option value="资产保值">资产保值</option>
-                                    <option value='其它'>其它</option>      
-                                </select>
-                            </div>
-                            <div class="box" style="margin-right:0;">
-                                <i></i>
-                                <select name='city'>
-                                    <option value="null" disabled selected>移民国家</option>
-                                    <option value="美国">美国</option>
-                                    <option value="马耳他">马耳他</option>
-                                    <option value="圣基茨和尼维斯">圣基茨和尼维斯</option>
-                                    <option value="英国">英国</option>
-                                    <option value="意大利">意大利</option>
-                                    <option value="西班牙">西班牙</option>
-                                    <option value="澳大利亚">澳大利亚</option>
-                                    <option value="德国">德国</option>
-                                    <option value="葡萄牙">葡萄牙</option>
-                                    <option value="荷兰">荷兰</option>
-                                    <option value="加拿大">加拿大</option>
-                                    <option value="爱尔兰">爱尔兰</option>
-                                    <option value="希腊">希腊</option>
-                                    <option value="塞浦路斯">塞浦路斯</option>
-                                    <option value="韩国">韩国</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="sub">
-                            <input type="submit" name="sub" value="获取私人定制方案"  onclick="_czc.push(['_trackEvent','新官网主页1.5-获取私人定制方案','点击','新官网主页1.5-获取私人定制方案']);">
-                        </div>
-                    </div>
-                    <input name="comeform" value="pc_shouye" type="hidden" id="comeform" />
-                    <input type="hidden" name="dede_fields" value="name,text;phone,text;message,select;city,select;comeform,text" />
-                    <input type="hidden" name="dede_fieldshash" value="c976bb97a51d6b961372e344e0c730fb" />
-                </form>
-            </div>
-        </div>
+       
     </div>
-    <!-- 侨外优势 E-->
     
-   <!-- <div class="qw-bottom">
-        <div class="w1100">
-            <div class="gd-close" onclick="$('.qw-bottom').hide();bottom_flag = false;_czc.push(['_trackEvent','新官网主页1.5-底部条幅-关闭','点击','新官网主页1.5-底部条幅-关闭']);"></div>
-            
-            <a href="http://www.iqiaowai.com/pinggu/#from=gd_bottom" onclick="_czc.push(['_trackEvent','新官网主页1.5-底部条幅-自评','点击','新官网主页1.5-底部条幅-自评']);" target="_blank" rel="nofollow"></a>
-        </div>
-    </div> -->
     <script>
-  /*  document.getElementById("bottom-dial-btn").onclick = function() {
-        lxb.call(document.getElementById("bottom-dial"));
-    };*/
+
     var bottom_flag = true;
      if (screen.height < 900) {
         $(".qw-bottom").hide();
@@ -891,321 +814,23 @@
         
      }
 	 
-	 // $(function(){
-		// 	$.post("/plus/pgnum_ajax.php",{num:$(".pgnum_ajax").html()},function(d){
-		// 			var jsono=eval('('+d+')');
-		// 			$('.pgnum_ajax').html(jsono);
-		// 	});
-	 // });
+	 
     </script>
-    <!-- 侨外优势 S-->
-
-    <div id="heibj1" class="">
-        <div id="showform1">
-            <div>
-                <div style="width: 435px;height: 20px;line-height: 20px;padding: 0 5px 0 10px;">
-                    <a  href="javascript:void(0)" onclick="guanbi();" style="float: right;color: #000;font-size: 12px;">关闭</a>
-                </div>
-                <div style="text-align:center;margin:5px auto;">
-                    <div style="font-size:20px;margin-bottom:15px;">在线预约</div>
-                    <form name="view_form2" action="http://www.iqiaowai.com/plus/yuyue.php" enctype="multipart/form-data" method="post" onsubmit="return check_view2();" style="margin-left: 25px;">
-                        <input type="hidden" name="action" value="post">
-                        <input type="hidden" name="diyid" value="3">
-                        <input type="hidden" name="do" value="2">
-                        <div style="float:left;">
-                            <span style="font-size:14px;">姓名：</span>
-                            <input type="text" name="name" value="" style="width:135px;height:27px;border:1px solid #ccc;">
-                        </div>
-                        <div>
-                            <b style='color:red;'>*</b><span style="font-size:14px;">手机：</span>
-                            <input type="text" name="phone" id="phone" value="" style="width:135px;height:27px;border:1px solid #ccc;">
-                        </div>
-                        <div style="float:left; margin-top:15px;">
-                            <span style="font-size:14px;">城市：</span>
-                            <select name="city" style="width:135px;height:27px;border:1px solid #ccc;">
-                                <option value="北京">北京总部</option>
-                                <option value="上海">上海</option>
-                                <option value="广州">广州</option>
-                                <option value="深圳">深圳</option>
-                                <option value="佛山">佛山</option>
-                                <option value="顺德">顺德</option>
-                                <option value="江苏">江苏</option>
-                                <option value="浙江">浙江</option>
-                                <option value="山东">山东</option>
-                                <option value="重庆">重庆</option>
-                                <option value="四川">四川</option>
-                                <option value="陕西">陕西</option>
-								<option value="珠海">珠海</option>
-                                <option value="湖北">湖北</option>
-								<option value="郑州">郑州</option>
-                                <option value="其他">其他</option>
-                            </select>
-                        </div>
-                        <div style="margin-top:15px;">
-                            <span style="font-size:14px;">邮箱：</span>
-                            <input type="text" name="email" id="email" value="" style="width:135px;height:27px;border:1px solid #ccc;">
-                        </div>
-                        <input name="comeform" value="pc_view" type="hidden" id="comeform">
-                        <input name="times" value="" type="hidden" id="timesddd">
-                        <script type="text/javascript">
-							window.onload = function() {
-								var nowDate2 = new Date();
-								var str2 = nowDate2.getFullYear() + "-" + (nowDate2.getMonth() + 1) + "-" + nowDate2.getDate() + " " + nowDate2.getHours() + ":" + nowDate2.getMinutes() + ":" + nowDate2.getSeconds();
-								document.getElementById("timesddd").value = str2;
-							}
-                        </script>
-                        <input type="hidden" name="dede_fields" value="name,text;email,text;phone,text;city,select;times,datetime;comeform,text">
-                        <input type="hidden" name="dede_fieldshash" value="71f229e82c53f7373512a2264811d35d">
-                        <div align="center" style="height:30px;margin-top:25px;">
-                            <input type="submit" name="submit" style="width:100px;height: 30px;margin-left: 8px;color: #fff;cursor: pointer;font-size:14px;background:#d6000f;border:0px;" value="马上预约" onclick="_czc.push(['_trackEvent','新官网主页1.5-马上预约','点击','新官网主页1.5-马上预约']);">
-                        </div>
-                    </form>
-                    <div style="font-size:14px;margin-top:10px;">
-                        如需咨询，请拨打热线电话：400-818-1100
-                    </div>
-                </div>
-               <script src="../../../asset/home/js/yz.js"></script>
-            </div>
-        </div>
-    </div>
-    <!-- 侨外优势 E-->
+    
 	<!-- //底部模板 -->
     <?php $this->load->view('public/footer') ?>
 <!-- 底部模板end-->
-<!-- <script src="http://www.iqiaowai.com/templets/new/js/theater.js"></script>
-<DIV id="kw_gd" style="width:280px;background:#555454;height:52px;border-radius:5px;rgba(85,84,84,0.72);position:absolute;top:10px;left:34%;z-index:9999;cursor:pointer;display:none;" onclick="kw_fun()">
-    <span id="vader" style="width:155px;height:40px;border:0px;margin:5px 0px 6px 10px;border-top-left-radius:5px;border-bottom-left-radius:5px;float:left;font-size:18px;color:#555454;display: block;background:#fff;line-height:40px;padding-left:15px;"></span>
-    <button type="submit"  style="cursor:pointer;float:left;width:80px;height:40px;margin-top:5px;background:url(http://www.iqiaowai.com/templets/new/images/btn.gif)no-repeat;border:0px;background-size:100% 100%;"></button>
-</DIV> -->
-<input type="hidden" value="" id="kw_hide" />
-<script>
-function getDomainQuery(url) {
-    var d = [];
-    var st = url.indexOf('//', 1);
-    var _domain = url.substring(st + 1, url.length);
-    var et = _domain.indexOf('/', 1);
-    d.push(_domain.substring(1, et));
-    d.push(_domain.substring(et + 1, url.length));
-    return d
-}
 
-function route() {
-    var eg = [];
-    eg.push(['baidu', 'wd']);
-    eg.push(['sogou', 'query']);
-    eg.push(['so', 'q']);
-    var dq = getDomainQuery(document.referrer);
-    var keyword = null;
-    var grep = null;
-    var str = null;
-    for (var el in eg) {
-        var s = eg[el];
-        var DandQ = String(s).split(","); //字符分割  
-        if (dq[0].indexOf(DandQ[0]) > 0) {
-            eval("grep=/" + DandQ[1] + "\=.*\&/i;");
-            str = dq[1].match(grep);
-            keyword = str.toString().split("=")[1].split("&")[0];
-            keyword = decodeURIComponent(keyword);
-            return keyword;
-        }
-    }
 
-}
-(function() {
-    var theater = new TheaterJS();
-    var rte = route();
-     if (rte != "" && rte != null) {
-     if(rte!="侨外移民" && rte!="侨外"){
-        $("#kw_gd").css("display", "block");
-           $("#kw_hide").val(rte);
-        }
-     }
-   
-   
-    theater
-        .describe("Vader", .5, "#vader")
-    theater
-        .write("Vader:" + $("#kw_hide").val(), 500)
-})();
 
-function kw_fun() {
-    openChat();
-    uclick("关键字按钮");
-}
-</script>
 <link rel="stylesheet" href="../../../asset/home/css/general8.css">
-<!-- <div class="qw-nav-bag"><a href="http://www.iqiaowai.com/zhuanti/survey180104/#newyear" target="_blank" rel="nofollow"></a></div> -->
-<div class="rightbar">
-   <!--  <div class="sidebar_h">
-        <i></i><p>在<br/>线<br/>咨<br/>询</p>
-    </div> -->
-    <!-- 宽屏对联 -->
-    <!-- <div class="sidebar sidebar_b">
-        <div class="closebox">
-        </div>
-        <div class="sidebar_top">
-            <p  onclick="openLy1('右侧导航宽版');">移民咨询 <i></i></p>
-            <ul>
-                <li id="side_beijing_l" onclick="openLy('北京');uclick('北京');">北 京 <i></i></li>
-                <li id="side_shanghai_l" onclick="openLy('上海');uclick('上海');">上 海 <i></i></li>
-                <li id="side_guangzhou_l" onclick="openLy('广州');uclick('广州');">广 州 <i></i></li>
-                <li id="side_shenzhen_l" onclick="openLy('深圳');uclick('深圳');">深 圳 <i></i></li>
-                <li id="side_zhejiang_l" onclick="openLy('浙江');uclick('浙江');">浙 江 <i></i></li>
-                <li id="side_jiangsu_l" onclick="openLy('江苏');uclick('江苏');">江 苏 <i></i></li>
-                <li id="side_shandong_l" onclick="openLy('山东');uclick('山东');">山 东 <i></i></li>
-                <li id="side_zhuhai_l" onclick="openLy('珠海');uclick('珠海');">珠 海 <i></i></li>
-                <li id="side_foshan_l" onclick="openLy('佛山');uclick('佛山');">佛 山 <i></i></li>
-                <li id="side_shunde_l" onclick="openLy('顺德');uclick('顺德');">顺 德 <i></i></li>
-                <li id="side_sichuan_l" onclick="openLy('四川');uclick('四川');">四 川 <i></i></li>
-                <li id="side_chongqing_l" onclick="openLy('重庆');uclick('重庆');">重 庆 <i></i></li>
-                <li id="side_shaanxi_l" onclick="openLy('陕西');uclick('陕西');">陕 西 <i></i></li>
-                <li id="side_hubei_l" onclick="openLy('湖北');uclick('湖北');">湖 北 <i></i></li>
-                <li id="side_zhengzhou_l" onclick="openLy('英国');uclick('郑州');">郑 州 <i></i></li>
-                <li id="side_england_l" onclick="openLy('英国');uclick('英国');">英 国 <i></i></li>
-                <li id="side_spain_l" onclick="openLy('西班牙');uclick('西班牙');">西班牙 <i></i></li>
-                <li id="side_portugal_l" onclick="openLy('葡萄牙');uclick('葡萄牙');">葡萄牙 <i></i></li>
-                <li id="side_italy_l" onclick="openLy('意大利');uclick('意大利');">意大利 <i></i></li>
-                <li id="side_qita_l" onclick="openLy('其他');uclick('其他');" class="last">其 他 <i></i></li>
-            </ul>
-        </div>
-        <div class="callback">
-            <div>
-                免费移民方案
-            </div>
-            <div class="callbox">
-                <div>
-                    <input type="text" placeholder="请输入您的手机号" id="dl-phone1">
-                </div>
-                <a class="takephone" id="dl-dail1" href="javascript:void(0);">立即回电</a>
-                <span></span>
-            </div>
-        </div>
-        <div class="gotop" onclick='$("body,html").animate({scrollTop: 0}, 1000);'>
-            回到顶部 <i></i>
-        </div>
-    </div> -->
-    <!-- 小屏对联 -->
-    <!-- <div class="sidebar sidebar_s">
-        <div class="closebox">
-        </div> -->
-        <!-- <div class="sidebar_top">
-            <p id="side_ask_s" class="zx" onclick="openLy1('右侧导航小版');">移民咨询 <i></i></p>
-            <div class="city">
-                <div class="branch">
-                    <ul>
-                        <li id="side_beijing_s" onclick="openLy2('北京');uclick();">北   京 </li>
-                        <li id="side_shanghai_s" onclick="openLy2('上海');uclick();">上   海 </li>
-                        <li id="side_guangzhou_s" onclick="openLy2('广州');uclick();">广   州 </li>
-                        <li id="side_shenzhen_s" onclick="openLy2('深圳');uclick();">深   圳 </li>
-                        <li id="side_zhejiang_s" onclick="openLy2('浙江');uclick();">浙   江 </li>
-                        <li id="side_jiangsu_s" onclick="openLy2('江苏');uclick();">江   苏 </li>
-                        <li id="side_shandong_s" onclick="openLy2('山东');uclick();">山   东 </li>
-                        <li id="side_zhuhai_s" onclick="openLy2('珠海');uclick();">珠   海 </li>
-                        <li id="side_foshan_s" onclick="openLy2('佛山');uclick();">佛   山 </li>
-                        <li id="side_shunde_s" onclick="openLy2('顺德');uclick();">顺   德 </li>
-                        <li id="side_sichuan_s" onclick="openLy2('四川');uclick();">四    川 </li>
-                        <li id="side_chongqing_s" onclick="openLy2('重庆');uclick();">重   庆 </li>
-                        <li id="side_shaanxi_s" onclick="openLy2('陕西');uclick();">陕   西 </li>
-                        <li id="side_hubei_s" onclick="openLy2('湖北');uclick();">湖   北 </li>
-                        <li id="side_zhengzhou_s" onclick="openLy2('郑州');uclick();" >郑   州 </li>
-                        <li id="side_england_s" onclick="openLy2('英国');uclick();" >英   国 </li>
-                        <li id="side_spain_s" onclick="openLy2('西班牙');uclick();" >西 班 牙 </li>
-                        <li id="side_portugal_s" onclick="openLy2('葡萄牙');uclick();" >葡 萄 牙 </li>
-                        <li id="side_italy_s" onclick="openLy2('意大利');uclick();" >意 大 利 </li>
-                        <li id="side_qita_s" onclick="openLy2('其他');uclick();" class="last">其   他 </li>
-                    </ul>
-                </div>
-            </div>            
-        </div> -->
-       <!--  <div class="callback">
-            <div>
-                免费移民方案
-            </div>
-            <div class="callbox">
-                <div>
-                    <input type="text" placeholder="请输入您的手机号" id="dl-phone2">
-                </div>
-                <a class="takephone" id="dl-dail2" href="javascript:void(0);">立即回电</a>
-                <span></span>
-            </div>
-        </div> -->
-       <!--  <div class="gotop" onclick='$("body,html").animate({scrollTop: 0}, 1000);'>
-            回到顶部 <i></i>
-        </div>
-    </div> -->
-</div>
-<!-- 左侧对联 -->
-<!-- <div class="leftbar">
-    <div class="sidebarLeft_h"></div>
-    <div class="sidebarLeft">
-        <div class="sidebar_top"></div>
-        <div class="list" id="slider">
-            <div class="bd">
-                <ul>
-                    <li onclick="openLy1('问题-移民美国多少钱？');">移民美国多少钱？</li>
-                    <li onclick="openLy1('问题-100万移民去哪？');">100万移民去哪？</li>
-                    <li onclick="openLy1('问题-哪国房产收益高？');">哪国房产收益高？</li>
-                    <li onclick="openLy1('问题-怎么移民澳洲？');">怎么移民澳洲？</li>
-                    <li onclick="openLy1('问题-海外教育哪国好？');">海外教育哪国好？</li>
-                    <li onclick="openLy1('问题-怎么移民加拿大？');">怎么移民加拿大？</li>
-                    <li onclick="openLy1('问题-资产如何升值？');">资产如何升值？</li>
-                </ul>
-            </div>
-            <i></i>
-        </div>
-        <div class="leftbar-test">
-            <a href="http://www.iqiaowai.com/pinggu/#form=right20171211" target="_blank" rel="nofollow">免费自测 <i style="background:url(http://www.iqiaowai.com/templets/new/images/nav/6/icon.png) 0 0 no-repeat;"></i></a>
-            <div class="test-line"></div>
-            <a href="http://www.iqiaowai.com/contrast/#form=right20171211" target="_blank" rel="nofollow">国家对比 <i style="background:url(http://www.iqiaowai.com/templets/new/images/nav/6/icon.png) -18px 0 no-repeat;"></i></a>
-        </div>
-        <div class="leftbar-lxb">
-            <p>免费<br/>移民规划</p>
-            <input type="text" placeholder="手机号" id="dl-phone3">
-            <div class="leftbar-lxb-btn" id="dl-dail3">立即获取</div>
-        </div>
-        <div class="leftbar-qrcode">
-            <img src="http://www.iqiaowai.com/templets/new/images/nav/6/code.jpg" alt="侨外移民二维码">
-        </div>
-        <script>
-            jQuery("#slider").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:3,interTime:80});
-        </script>
-        <div class="closebox">
-        </div>
-    </div>
-</div> -->
 
-<div class="leftbar" style="display:none;">
-    <div class="sidebarLeft_h"></div>
-    <div class="sidebarLeft">
-        <div class="contact-btn" style="cursor:pointer;background:#e70003;box-shadow: 0 0 12px #b20409;"  onclick="openLy1('左侧在线咨询');">
-            <i style="background:url(http://www.iqiaowai.com/templets/new/images/nav/5/ask.png) no-repeat;" class="nav-ask"></i> 在线咨询
-        </div>
-        <div class="contact-btn">
-            <a class="contact-test" target="_blank" href="http://www.iqiaowai.com/pinggu#form=left">
-                <i style="background:url(http://www.iqiaowai.com/templets/new/images/nav/5/icon.png) 0 -23px no-repeat;"></i>
-                免费自评
-            </a>
-        </div>
-        <div class="contact-btn">
-            <a class="contact-test" target="_blank" href="http://www.iqiaowai.com/contrast/#form=left">
-                <i style="background:url(http://www.iqiaowai.com/templets/new/images/nav/5/icon.png) 0 -52px no-repeat;"></i>
-                国家对比
-            </a>
-        </div>
-        <div class="contact-btn qrcode">
-            <i style="background:url(http://www.iqiaowai.com/templets/new/images/nav/5/icon.png) 0 -79px no-repeat;"></i>
-            <p>关注微信</p>
-            <div class="qrcode_box"></div>
-        </div>
-        <div class="deer"></div>
-        <div class="closebox">
-        </div>
-    </div>
-</div>
-<!-- <script type="text/javascript" charset="utf-8" src="http://www.iqiaowai.com/templets/new/index/js/sidebar1.js"></script>
-<script type="text/javascript" charset="utf-8" src="http://lead.soperson.com/20003027/10086744.js"></script> -->
-<!-- <script src="http://www.iqiaowai.com/templets/new/js/public.js"></script>
-<script src="http://www.iqiaowai.com/zhuanti/jiance.js"></script> -->
+
+<!-- 左侧对联 -->
+
+
+
+
 
 
 </body>
