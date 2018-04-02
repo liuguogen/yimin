@@ -38,128 +38,26 @@
                             侨外优势
                         </div>
                         <div class="" onclick="check_emun('part_3');">
-                            解读荷兰
+                            解读移民
                         </div>
                     </div>
                 </div>
                 <div id="part_1" class="xqf">
                     <div class="bodydiv">                        
-                        <h2 class="bt">荷兰库拉索投资移民</h2>
-                        <div class="box1"></div>
-                        <div class="box2">
-                            <p class="con">
-                                依照荷兰王国库拉索《2014投资者许可法》移民法案，投资人通过申购荷兰王国库拉索基建储备金，即可获得荷兰王国库拉索居留卡，持有满五年可以申请库拉索永居、荷兰国籍。
-                            </p>
-                        </div>
-                        <div class="box3">
-                            <p class="con">
-                                申请人只需申购18万美元起的荷兰王国基建储备金。<br/>该储备金募集规模1亿美元，普华永道（世界顶级会计师事务所）为财务监管单位，投资款满5年后全额返还，且每年有5%收益。
-                            </p>
-                        </div>
-                        <div class="box4">
-                            <p class="text1">
-                                1. 年满18周岁；<br/>2. 无犯罪记录；
-                            </p>
-                            <p class="text2">
-                                1. 父母：无年龄要求，无经济依赖要求； <br/>
-                                2. 子女：27岁以下子女均可申请。<br/>
-                                （无在读要求、无需经济依赖要求，27周岁以下已婚子女及配偶也可随行。）
-                            </p>
-                        </div>
-                        <div class="box5"></div>
-                        <div class="box6"></div>
-                        <div class="telbox">
-                            <div class="online-consult">
-                                移民后，国内养老金能不能领？
-                            </div>
-                            <p class="telnum">400-818-1100</p>
-                        </div>
+                        <?php echo $popular_data['project_intro']; ?>
                     </div>
                 </div>
                 <div id="part_2">
                     <div class="bodydiv">
-                        <h2 class="bt">荷兰移民选侨外</h2>
-                        <div class="box1"></div>
-                        <div class="box2 clearfix">
-                            <div class="item">
-                                <img src="images/img6.jpg" alt="">
-                                <p class="con">荷兰王国库拉索外商投资局，<br/>授予侨外“金牌合作伙伴”奖牌</p>
-                            </div>
-                            <div class="item">
-                                <img src="images/img7.jpg" alt="">
-                                <p class="con">荷兰政界、商界高层，频繁专访侨外，<br/>给予侨外荷兰高度评价</p>
-                            </div>
-                            <div class="item" style="margin-right:0;">
-                                <img src="images/img8.jpg" alt="">
-                                <p class="con">力邀现任荷兰阿姆斯特丹副市长，<br/>权威解读荷兰移民优势</p>
-                            </div>
-                        </div>   
-                        <div class="box3">
-                            <p class="tit">侨外客户专享特权</p>                            
-                            <img src="images/img9.jpg" alt="">
-                            <div class="clearfix">
-                                <p class="con">5年后投资款立刻返还，不必担心资产缩水</p>
-                                <p class="con">侨外客户专享免监管费特权，5年可省12万</p>
-                                <p class="con">侨外独创荷兰移民行，专供侨外荷兰客户</p>
-                            </div>
-                        </div> 
-                        <div class="telbox">
-                            <div class="online-consult">
-                                了解最新优惠政策
-                            </div>
-                            <p class="telnum">400-818-1100</p>
-                        </div> 
+                        <?php echo $popular_data['advantage']; ?>
                     </div>
                 </div>
                 <div id="part_3">
                     <div class="bodydiv">
-                        <h2 class="bt">移民马耳他，就选侨外</h2>
-                        <div class="box1"></div>
-                        <div class="clearfix box2">
-                            <div class="item">
-                                <div class="left">
-                                    <img src="images/img10.jpg" alt="">
-                                </div>
-                                <div class="right">
-                                    <p class="text1">教育</p>
-                                    <p class="text2">全球第三，仅次于英国、美国</p>
-                                    <a class="btn" href="http://www.iqiaowai.com/hotspot/37065.html" target="_blank" rel="nofollw">点击查看</a>
-                                </div>
-                            </div>
-                            <div class="item" style="margin-right:0;">
-                                <div class="left">
-                                    <img src="images/img11.jpg" alt="">
-                                </div>
-                                <div class="right">
-                                    <p class="text1">经济</p>
-                                    <p class="text2">2017年欧洲经济增长率第一</p>
-                                    <a class="btn" href="http://www.iqiaowai.com/hotspot/36800.html" target="_blank" rel="nofollw">点击查看</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="left">
-                                    <img src="images/img12.jpg" alt="">
-                                </div>
-                                <div class="right">
-                                    <p class="text1">福利</p>
-                                    <p class="text2">媲美北欧，“从摇篮到坟墓”</p>
-                                    <a class="btn" href="http://www.iqiaowai.com/hotspot/37469.html" target="_blank" rel="nofollw">点击查看</a>
-                                </div>
-                            </div>
-                            <div class="item" style="margin-right:0;">
-                                <div class="left">
-                                    <img src="images/img13.jpg" alt="">
-                                </div>
-                                <div class="right">
-                                    <p class="text1">生活</p>
-                                    <p class="text2">2017年《优良国家指数》排名第一</p>
-                                    <a class="btn" href="http://www.iqiaowai.com/hotspot/36312.html" target="_blank" rel="nofollw">点击查看</a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php echo $popular_data['unscramble']; ?>
                     </div> 
                 </div> 
-                <div id="part_4">
+               <!--  <div id="part_4">
                     <div class="bodydiv">  
                         <h2 class="bt">他们为什么移民荷兰</h2>   
                         <div class="box1"></div>                   
@@ -223,8 +121,8 @@
                             <p class="telnum">400-818-1100</p>
                         </div> 
                     </div>
-                </div>
-                <div class="formstyle">
+                </div> -->
+                <!-- <div class="formstyle">
                     <div class="bodydiv">
                         <form name="fcz3" action="/plus/yuyue.php" enctype="multipart/form-data" method="post" onsubmit="return checkForm(this);">
                             <input type="hidden" name="action" value="post" />
@@ -273,7 +171,7 @@
                             <input type="hidden" name="dede_fieldshash" value="c976bb97a51d6b961372e344e0c730fb" />
                         </form>
                     </div>
-                </div> 
+                </div>  -->
             </div>
         </div>
         <div class="clear"></div>
@@ -281,105 +179,7 @@
         <div>
 	   <!-- //底部模板 -->
 <link rel="stylesheet" href="../../../assets/home/css/footer.css">
-<div class="footer" style="">
-    <div class="friend-links">
-        <div class="friend-links-box">
-            <p class="title">友情链接</p>
-            <ul class="clearfix">
-                <li><a href="http://edu.163.com/" target="_blank">网易教育</a></li>
-                <li><a href="http://www.liuxue315.cn/" target="_blank">留学监理网</a></li>
-                <li><a href="http://edu.sina.com.cn/yimin/" target="_blank">新浪移民</a></li>
-                <li><a href="http://news.szhk.com" target="_blank">今日新闻</a></li>
-                <li><a href="http://www.23.cn/" target="_blank">招商网</a></li>
-                <li><a href="http://world.house.ifeng.com/" target="_blank">海外置业</a></li>
-                <li><a href="http://edu.qq.com/abroad/" target="_blank">海外教育</a></li>
-                <li><a href="http://www.qianzhengdaiban.com/" target="_blank">出国签证</a></li>
-                <li><a href="http://www.italyclassico.com" target="_blank">进口家具</a></li>
-                <li><a href="http://www.xuekeedu.com/" target="_blank">小学英语</a></li>
-                <li><a href="http://www.17liuxue.com" target="_blank">澳洲留学</a></li>
-                <li><a href="http://www.haitaolab.com/" target="_blank">海淘购物攻略</a></li>
-                <li><a href="http://www.beimeigoufang.com/" target="_blank">海外购房</a></li>
-            </ul>
-            <a class="qq-chat" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2880750946&site=qq&menu=yes">申请加入</a>
-        </div>        
-    </div>
-    <div class="footer-keywords">
-        <p class="title">快速移民</p>
-        <ul class="clearfix">   
-            <li><a href="http://www.iqiaowai.com/zhuanti/america171205/#footer" target="_blank">eb5投资移民排期</a></li>
-            <li><a href="http://www.iqiaowai.com/zhuanti/england170407/#footer" target="_blank">20万英镑移民英国</a></li>
-            <li><a href="http://www.iqiaowai.com/zhuanti/portugal0913/#footer" target="_blank">葡萄牙购房移民</a></li>
-            <li><a href="http://www.iqiaowai.com/expert/32791.html#footer" target="_blank">西班牙购房移民</a></li>
-            <li><a href="http://www.iqiaowai.com/zhuanti/australia1014/#footer" target="_blank">澳洲移民的条件</a></li>
-            <li><a href="http://www.iqiaowai.com/hotspot/37464.html#footer" target="_blank">德国移民新政策</a></li>
-            <li><a href="http://www.iqiaowai.com/zhuanti/saintkitts171030/#footer" target="_blank">圣基茨移民政策</a></li>
-            <li><a href="http://www.iqiaowai.com/zhuanti/malta171215/#footer" target="_blank">马耳他移民新政</a></li>
-            <li><a href="http://www.iqiaowai.com/hotspot/36994.html#footer" target="_blank">塞浦路斯购房移民</a></li>
-            <li><a href="http://www.iqiaowai.com/hotspot/37330.html#footer" target="_blank">希腊移民政策</a></li>
-            <li><a href="http://www.iqiaowai.com/zhuanti/helan180204/#footer" target="_blank">荷兰移民多少钱</a></li>
-            <li><a href="http://www.iqiaowai.com/zhuanti/ireland1214/#footer" target="_blank">爱尔兰移民新政策</a></li>
-            <li><a href="http://www.iqiaowai.com/hotspot/33813.html#footer" target="_blank">韩国移民政策</a></li>
-            <li><a href="http://www.iqiaowai.com/zhuanti/italy170420/#footer" target="_blank">意大利移民条件</a></li>
-            <li><a href="http://www.iqiaowai.com/zhuanti/canada170628/#footer" target="_blank">加拿大移民新政策</a></li>
-            <li><a href="http://www.iqiaowai.com/zhuanti/thailand171117/#footer" target="_blank">泰国移民政策</a></li>
-        </ul>
-    </div> 
-    <div class="footer-detail clearfix">
-        <div class="left">
-            <div class="qrphone">
-                <img src="http://www.iqiaowai.com/templets/new/images/qrphone.png">
-                <p>侨外出国官网<br/>手机版</p>
-            </div>
-            <div class="qrcode">
-                <img src="http://www.iqiaowai.com/templets/new/images/qrcode.png">
-                <p>侨外出国官方<br/>微信公众号</p>
-            </div>
-        </div>
-        <div class="right">
-            <div class="column clearfix">
-                <p class="title">网站栏目</p>
-                <ul class="clearfix">
-                    <li><a href="http://www.iqiaowai.com" rel="nofollow" target="_blank">网站首页 </a></li>
-                    <li><a href="http://www.iqiaowai.com/sitemap.html" rel="nofollow" target="_blank">网站地图</a></li>
-                    <li><a href="http://www.iqiaowai.com/jobs/" rel="nofollow" target="_blank">招贤纳士</a></li>
-                    <li><a href="http://www.iqiaowai.com/contactus.html" rel="nofollow" target="_blank">联系我们</a></li>
-                </ul>
-            </div>             
-            <div class="footer-list"> 
-                <ul class="clearfix">
-                    <li><a href="http://www.iqiaowai.com/projects/#footer" rel="nofollow" target="_blank">海外投资项目</a></li>
-                    <li><a href="http://house.iqiaowai.com/#footer" rel="nofollow" target="_blank">海外购房移民</a></li>
-                    <li><a href="http://www.iqiaowai.com/club/#footer" rel="nofollow" target="_blank">侨Club</a></li>
-                    <li><a href="http://www.iqiaowai.com/activity/#footer" rel="nofollow" target="_blank">侨外热门活动</a></li>
-                    <li><a href="http://www.iqiaowai.com/story/#footer" rel="nofollow" target="_blank">海外移民故事</a></li>
-                </ul>
-            </div>
-            <p class="title">侨外咨询服务热线：400-818-1100</p>
-            <div class="city">
-                <p class="title">侨外分公司</p>
-                <ul class="clearfix">
-                    <li><a href="http://www.iqiaowai.com/beijing.html#footer" rel="nofollow" target="_blank">北京</a></li>
-                    <li><a href="http://www.iqiaowai.com/shanghai.html#footer" rel="nofollow" target="_blank">上海</a></li>
-                    <li><a href="http://www.iqiaowai.com/shenzhen.html#footer" rel="nofollow" target="_blank">深圳</a></li>
-                    <li><a href="http://www.iqiaowai.com/guangzhou.html#footer" rel="nofollow" target="_blank">广州</a></li>
-                    <li><a href="http://www.iqiaowai.com/jiangsu.html#footer" rel="nofollow" target="_blank">江苏</a></li>
-                    <li><a href="http://www.iqiaowai.com/zhejiang.html#footer" rel="nofollow" target="_blank">浙江</a></li>
-                    <li><a href="http://www.iqiaowai.com/qingdao.html#footer" rel="nofollow" target="_blank">青岛</a></li>
-                    <li><a href="http://www.iqiaowai.com/hubei.html#footer" rel="nofollow" target="_blank">湖北</a></li>
-                    <li><a href="http://www.iqiaowai.com/henan.html#footer" rel="nofollow" target="_blank">河南</a></li>
-                    <li><a href="http://www.iqiaowai.com/zhuhai.html#footer" rel="nofollow" target="_blank">珠海</a></li>
-                    <li><a href="http://www.iqiaowai.com/foshan.html#footer" rel="nofollow" target="_blank">佛顺</a></li>
-                    <li><a href="http://www.iqiaowai.com/sichuan.html#footer" rel="nofollow" target="_blank">四川</a></li>
-                    <li><a href="http://www.iqiaowai.com/chongqing.html#footer" rel="nofollow" target="_blank">重庆</a></li>
-                    <li><a href="http://www.iqiaowai.com/shaanxi.html#footer" rel="nofollow" target="_blank">陕西</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>    
-    <div class="copy-right w1100">
-         <p>京公境准字[2008]0008号<img src ="http://www.iqiaowai.com/templets/new/images/gaba.png" style="display:inline-block;" />京公安备11010502033230 京ICP备11035523号  Copyright © 北京侨外出国咨询服务有限公司</p>
-    </div>     
-</div>
+<?php $this->load->view('public/footer') ?>
 
 <script>
 jQuery.divselect("#divselect", "#s-title");

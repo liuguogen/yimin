@@ -52,7 +52,13 @@ class Index_controller extends CI_Controller {
 	public function popularDetail()
 	{
 		$popular_id=$this->uri->segment(2);
-		$this->load->view('home/popular');
+		$data['popular_data'] = $this->Home_model->getRow('*','popular',array('popular_id'=>$popular_id));
+		$this->load->view('home/popular',$data);
+	}
+
+	public function projects()
+	{
+		$this->load->view('home/projects');
 	}
 	
 }

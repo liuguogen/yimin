@@ -41,15 +41,12 @@
 <!-- <iframe width="0" height="0" frameborder="0" src="https://v.myrtb.net/js/0.html"></iframe> -->
   </head>
   <body>
-    <script>var jyc_begin=new Date().getTime();</script>
+   
 
-<script>
-var _czc = _czc || [];
-_czc.push(["_setAccount", "1259783328"]);
-</script>
+
 	<link rel="stylesheet" href="../../../assets/home/css/common.css">
     <link rel="stylesheet" href="../../../assets/home/css/css.css">
-    <!-- <script language="JavaScript" src="http://pv.sohu.com/cityjson"></script> -->
+   
     <script src="../../../assets/home/js/md5.js"></script>  
 	<script src="../../../assets/home/js/common_new.js"></script>  
     <script src="../../../assets/home/js/savepath_uclick.js"></script>
@@ -225,45 +222,7 @@ body{background:rgb(238,238,238);}
           </div>
 
 
-          <!-- <div class="block material">
-            <div class="title">
-              <div class="icon"></div>
-              <h2>立即获得以下材料</h2>
-            </div>
-            <div class="box">
-              
-              <div class="item">
-                <div class="banner">
-                  <img src="http://www.iqiaowai.com/templets/new/images/logo.png">
-                  <div class="subtitle"><a href="http://www.iqiaowai.com/plus/view.php?aid=30836">2018投资移民必读手册</a></div>
-
-                </div>
-                <div class="form-area">
-                  <form action="" class="form form-inline" >
-                    <div class="form-group">
-                      <label for="">姓名：</label>
-                      <input id="name" type="text">
-                    </div>
-                    <div class="form-group">
-                      <label for="">电话：</label>
-                      <input id="mobile" type="text">
-                    </div>
-                    
-                    <div class="form-group">
-                      <label for=""></label>
-                      <div class="form-ipt">
-                        <a href="javascript:void(0);" onclick="uclick('内容页获取资料');" class="btn-req"></a>
-                      </div>
-                    </div>
-                  </form>
-
-                </div>
-              </div>
-              
-              <br class="cb"/>
-            </div>
-
-          </div> -->
+       
 
         </div>
 
@@ -272,9 +231,7 @@ body{background:rgb(238,238,238);}
           <div class="container content">
             <div class="title">
               <h1><?php echo $activity_data['title']; ?></h1>
-             <!--  <div class="collect">
-                <nofollow><input type="button" class="btn btn-default btn-collect" value="收藏"/></nofollow>
-              </div> -->
+            
             </div>
             <div class="sum">
               <div class="pubtime">
@@ -744,104 +701,8 @@ LoadCommets(1);
 
 
     <!-- //底部模板 -->
-<div class="footer" style="">
-    <div class="friend-links">
-        <div class="friend-links-box">
-            <p class="title">友情链接</p>
-            <ul class="clearfix">
-                <li><a href="http://edu.163.com/" target="_blank">网易教育</a></li>
-<li><a href="http://edu.sina.com.cn/yimin/" target="_blank">新浪移民</a></li>
-<li><a href="http://news.szhk.com" target="_blank">今日新闻</a></li>
-<li><a href="http://www.qianzhengdaiban.com/" target="_blank">出国签证</a></li>
-<li><a href="http://www.italyclassico.com" target="_blank">进口家具</a></li>
-<li><a href="http://www.xuekeedu.com/" target="_blank">小学英语</a></li>
-<li><a href="http://www.haitaolab.com/" target="_blank">海淘购物攻略</a></li>
-<li><a href="http://www.beimeigoufang.com/" target="_blank">海外购房</a></li>
-<li><a href="http://world.house.ifeng.com/" target="_blank">凤凰海外</a></li>
-<li><a href="http://edu.qq.com/abroad/" target="_blank">腾讯教育</a></li>
-<li><a href="http://www.17liuxue.com" target="_blank">一起留学网</a></li>
-
-            </ul>
-            <a class="qq-chat" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2880750946&site=qq&menu=yes">申请加入</a>
-        </div>        
-    </div>
-    <div class="footer-keywords">
-        <p class="title">快速移民</p>
-        <ul class="clearfix">   
-            <li><a href="http://www.iqiaowai.com/zhuanti/america171205/#footer" target="_blank">eb5投资移民排期</a></li>
-            <li><a href="http://www.iqiaowai.com/zhuanti/england170407/#footer" target="_blank">20万英镑移民英国</a></li>
-            <li><a href="http://www.iqiaowai.com/zhuanti/portugal0913/#footer" target="_blank">葡萄牙购房移民</a></li>
-            <li><a href="http://www.iqiaowai.com/expert/32791.html#footer" target="_blank">西班牙购房移民</a></li>
-            <li><a href="http://www.iqiaowai.com/zhuanti/australia1014/#footer" target="_blank">澳洲移民的条件</a></li>
-            <li><a href="http://www.iqiaowai.com/hotspot/37464.html#footer" target="_blank">德国移民新政策</a></li>
-            <li><a href="http://www.iqiaowai.com/zhuanti/saintkitts171030#footer" target="_blank">圣基茨移民政策</a></li>
-            <li><a href="http://www.iqiaowai.com/zhuanti/malta171215/#footer" target="_blank">马耳他移民新政</a></li>
-            <li><a href="http://www.iqiaowai.com/hotspot/36994.html#footer" target="_blank">塞浦路斯购房移民</a></li>
-            <li><a href="http://www.iqiaowai.com/hotspot/37330.html#footer" target="_blank">希腊移民政策</a></li>
-            <li><a href="http://www.iqiaowai.com/zhuanti/helan180204/#footer" target="_blank">荷兰移民多少钱</a></li>
-            <li><a href="http://www.iqiaowai.com/zhuanti/ireland1214/#footer" target="_blank">爱尔兰移民新政策</a></li>
-            <li><a href="http://www.iqiaowai.com/hotspot/33813.html#footer" target="_blank">韩国移民政策</a></li>
-            <li><a href="http://www.iqiaowai.com/zhuanti/italy170420/#footer" target="_blank">意大利移民条件</a></li>
-            <li><a href="http://www.iqiaowai.com/zhuanti/canada170628/#footer" target="_blank">加拿大移民新政策</a></li>
-            <li><a href="http://www.iqiaowai.com/zhuanti/thailand171117/#footer" target="_blank">泰国移民政策</a></li>
-        </ul>
-    </div> 
-    <div class="footer-detail clearfix">
-        <div class="left">
-            <div class="qrphone">
-                <img src="http://www.iqiaowai.com/templets/new/images/qrphone.png">
-                <p>侨外出国官网<br/>手机版</p>
-            </div>
-            <div class="qrcode">
-                <img src="http://www.iqiaowai.com/templets/new/images/qrcode.png">
-                <p>侨外出国官方<br/>微信公众号</p>
-            </div>
-        </div>
-        <div class="right">
-            <div class="column clearfix">
-                <p class="title">网站栏目</p>
-                <ul class="clearfix">
-                    <li><a href="http://www.iqiaowai.com" rel="nofollow" target="_blank">网站首页 </a></li>
-                    <li><a href="http://www.iqiaowai.com/sitemap.html" rel="nofollow" target="_blank">网站地图</a></li>
-                    <li><a href="http://www.iqiaowai.com/jobs/" rel="nofollow" target="_blank">招贤纳士</a></li>
-                    <li><a href="http://www.iqiaowai.com/contactus.html" rel="nofollow" target="_blank">联系我们</a></li>
-                </ul>
-            </div>            
-            <div class="footer-list"> 
-                <ul class="clearfix">
-                    <li><a href="http://www.iqiaowai.com/projects/#footer" rel="nofollow" target="_blank">海外投资项目</a></li>
-                    <li><a href="http://house.iqiaowai.com/#footer" rel="nofollow" target="_blank">海外购房移民</a></li>
-                    <li><a href="http://www.iqiaowai.com/club/#footer" rel="nofollow" target="_blank">侨Club</a></li>
-                    <li><a href="http://www.iqiaowai.com/activity/#footer" rel="nofollow" target="_blank">侨外热门活动</a></li>
-                    <li><a href="http://www.iqiaowai.com/story/#footer" rel="nofollow" target="_blank">海外移民故事</a></li>
-                </ul>
-            </div>
-            <p class="title">侨外咨询服务热线：400-818-1100</p>
-            <div class="city">
-                <p class="title">侨外分公司</p>
-                <ul class="clearfix">
-                    <li><a href="http://www.iqiaowai.com/beijing.html#footer" rel="nofollow" target="_blank">北京</a></li>
-                    <li><a href="http://www.iqiaowai.com/shanghai.html#footer" rel="nofollow" target="_blank">上海</a></li>
-                    <li><a href="http://www.iqiaowai.com/shenzhen.html#footer" rel="nofollow" target="_blank">深圳</a></li>
-                    <li><a href="http://www.iqiaowai.com/guangzhou.html#footer" rel="nofollow" target="_blank">广州</a></li>
-                    <li><a href="http://www.iqiaowai.com/jiangsu.html#footer" rel="nofollow" target="_blank">江苏</a></li>
-                    <li><a href="http://www.iqiaowai.com/zhejiang.html#footer" rel="nofollow" target="_blank">浙江</a></li>
-                    <li><a href="http://www.iqiaowai.com/qingdao.html#footer" rel="nofollow" target="_blank">青岛</a></li>
-                    <li><a href="http://www.iqiaowai.com/hubei.html#footer" rel="nofollow" target="_blank">湖北</a></li>
-                    <li><a href="http://www.iqiaowai.com/henan.html#footer" rel="nofollow" target="_blank">河南</a></li>
-                    <li><a href="http://www.iqiaowai.com/zhuhai.html#footer" rel="nofollow" target="_blank">珠海</a></li>
-                    <li><a href="http://www.iqiaowai.com/foshan.html#footer" rel="nofollow" target="_blank">佛顺</a></li>
-                    <li><a href="http://www.iqiaowai.com/sichuan.html#footer" rel="nofollow" target="_blank">四川</a></li>
-                    <li><a href="http://www.iqiaowai.com/chongqing.html#footer" rel="nofollow" target="_blank">重庆</a></li>
-                    <li><a href="http://www.iqiaowai.com/shaanxi.html#footer" rel="nofollow" target="_blank">陕西</a></li>
-                </ul>
-            </div>
-        </div>
-    </div> 
-    <div class="copy-right w1100">
-         <p>京公境准字[2008]0008号<img src ="http://www.iqiaowai.com/templets/new/images/gaba.png" />京公安备11010502033230 京ICP备11035523号  Copyright © 北京侨外出国咨询服务有限公司</p>
-    </div>      
-</div>
+    <?php $this->load->view('public/footer') ?>
+<!-- 底部模板end-->
 <div class="rh-cover opacity80 hide">
     <div class="rh-close"></div>
 </div>
@@ -1120,175 +981,12 @@ function kw_fun() {
         </script>
     </div>
 </div>
-<link rel="stylesheet" href="http://www.iqiaowai.com/templets/new/css/general8.css">
-<!-- <div class="qw-nav-bag"><a href="http://www.iqiaowai.com/zhuanti/survey180104/#newyear" target="_blank" rel="nofollow"></a></div> -->
-<div class="rightbar">
-    <div class="sidebar_h">
-        <i></i><p>在<br/>线<br/>咨<br/>询</p>
-    </div>
-    <!-- 宽屏对联 -->
-    <!-- <div class="sidebar sidebar_b">
-        <div class="closebox">
-        </div>
-        <div class="sidebar_top">
-            <p  onclick="openLy1('左侧导航宽版');">移民咨询 <i></i></p>
-            <ul>
-                <li id="side_beijing_l" onclick="openLy('北京');uclick('北京');">北 京 <i></i></li>
-                <li id="side_shanghai_l" onclick="openLy('上海');uclick('上海');">上 海 <i></i></li>
-                <li id="side_guangzhou_l" onclick="openLy('广州');uclick('广州');">广 州 <i></i></li>
-                <li id="side_shenzhen_l" onclick="openLy('深圳');uclick('深圳');">深 圳 <i></i></li>
-                <li id="side_zhejiang_l" onclick="openLy('浙江');uclick('浙江');">浙 江 <i></i></li>
-                <li id="side_jiangsu_l" onclick="openLy('江苏');uclick('江苏');">江 苏 <i></i></li>
-                <li id="side_shandong_l" onclick="openLy('山东');uclick('山东');">山 东 <i></i></li>
-                <li id="side_zhuhai_l" onclick="openLy('珠海');uclick('珠海');">珠 海 <i></i></li>
-                <li id="side_foshan_l" onclick="openLy('佛山');uclick('佛山');">佛 山 <i></i></li>
-                <li id="side_shunde_l" onclick="openLy('顺德');uclick('顺德');">顺 德 <i></i></li>
-                <li id="side_sichuan_l" onclick="openLy('四川');uclick('四川');">四 川 <i></i></li>
-                <li id="side_chongqing_l" onclick="openLy('重庆');uclick('重庆');">重 庆 <i></i></li>
-                <li id="side_shaanxi_l" onclick="openLy('陕西');uclick('陕西');">陕 西 <i></i></li>
-                <li id="side_hubei_l" onclick="openLy('湖北');uclick('湖北');">湖 北 <i></i></li>
-                <li id="side_zhengzhou_l" onclick="openLy('英国');uclick('郑州');">郑 州 <i></i></li>
-                <li id="side_england_l" onclick="openLy('英国');uclick('英国');">英 国 <i></i></li>
-                <li id="side_spain_l" onclick="openLy('西班牙');uclick('西班牙');">西班牙 <i></i></li>
-                <li id="side_portugal_l" onclick="openLy('葡萄牙');uclick('葡萄牙');">葡萄牙 <i></i></li>
-                <li id="side_italy_l" onclick="openLy('意大利');uclick('意大利');">意大利 <i></i></li>
-                <li id="side_qita_l" onclick="openLy('其他');uclick('其他');" class="last">其 他 <i></i></li>
-            </ul>
-        </div>
-        <div class="callback">
-            <div>
-                免费移民方案
-            </div>
-            <div class="callbox">
-                <div>
-                    <input type="text" placeholder="请输入您的手机号" id="dl-phone1">
-                </div>
-                <a class="takephone" id="dl-dail1" href="javascript:void(0);">立即回电</a>
-                <span></span>
-            </div>
-        </div>
-        <div class="gotop" onclick='$("body,html").animate({scrollTop: 0}, 1000);'>
-            回到顶部 <i></i>
-        </div>
-    </div> -->
-    <!-- 小屏对联 -->
-    <!-- <div class="sidebar sidebar_s">
-        <div class="closebox">
-        </div>
-        <div class="sidebar_top">
-            <p id="side_ask_s" class="zx" onclick="openLy1('右侧导航小版');">移民咨询 <i></i></p>
-            <div class="city">
-                <div class="branch">
-                    <ul>
-                        <li id="side_beijing_s" onclick="openLy2('北京');uclick();">北   京 </li>
-                        <li id="side_shanghai_s" onclick="openLy2('上海');uclick();">上   海 </li>
-                        <li id="side_guangzhou_s" onclick="openLy2('广州');uclick();">广   州 </li>
-                        <li id="side_shenzhen_s" onclick="openLy2('深圳');uclick();">深   圳 </li>
-                        <li id="side_zhejiang_s" onclick="openLy2('浙江');uclick();">浙   江 </li>
-                        <li id="side_jiangsu_s" onclick="openLy2('江苏');uclick();">江   苏 </li>
-                        <li id="side_shandong_s" onclick="openLy2('山东');uclick();">山   东 </li>
-                        <li id="side_zhuhai_s" onclick="openLy2('珠海');uclick();">珠   海 </li>
-                        <li id="side_foshan_s" onclick="openLy2('佛山');uclick();">佛   山 </li>
-                        <li id="side_shunde_s" onclick="openLy2('顺德');uclick();">顺   德 </li>
-                        <li id="side_sichuan_s" onclick="openLy2('四川');uclick();">四    川 </li>
-                        <li id="side_chongqing_s" onclick="openLy2('重庆');uclick();">重   庆 </li>
-                        <li id="side_shaanxi_s" onclick="openLy2('陕西');uclick();">陕   西 </li>
-                        <li id="side_hubei_s" onclick="openLy2('湖北');uclick();">湖   北 </li>
-                        <li id="side_zhengzhou_s" onclick="openLy2('郑州');uclick();" >郑   州 </li>
-                        <li id="side_england_s" onclick="openLy2('英国');uclick();" >英   国 </li>
-                        <li id="side_spain_s" onclick="openLy2('西班牙');uclick();" >西 班 牙 </li>
-                        <li id="side_portugal_s" onclick="openLy2('葡萄牙');uclick();" >葡 萄 牙 </li>
-                        <li id="side_italy_s" onclick="openLy2('意大利');uclick();" >意 大 利 </li>
-                        <li id="side_qita_s" onclick="openLy2('其他');uclick();" class="last">其   他 </li>
-                    </ul>
-                </div>
-            </div>            
-        </div> -->
-    <!--     <div class="callback">
-            <div>
-                免费移民方案
-            </div>
-            <div class="callbox">
-                <div>
-                    <input type="text" placeholder="请输入您的手机号" id="dl-phone2">
-                </div>
-                <a class="takephone" id="dl-dail2" href="javascript:void(0);">立即回电</a>
-                <span></span>
-            </div>
-        </div> -->
-        <!-- <div class="gotop" onclick='$("body,html").animate({scrollTop: 0}, 1000);'>
-            回到顶部 <i></i>
-        </div> -->
-    </div>
-</div>
-<!-- 左侧对联 -->
-<!-- <div class="leftbar">
-    <div class="sidebarLeft_h"></div>
-    <div class="sidebarLeft">
-        <div class="sidebar_top"></div>
-        <div class="list" id="slider">
-            <div class="bd">
-                <ul>
-                    <li onclick="openLy1('问题-移民美国多少钱？');">移民美国多少钱？</li>
-                    <li onclick="openLy1('问题-100万移民去哪？');">100万移民去哪？</li>
-                    <li onclick="openLy1('问题-哪国房产收益高？');">哪国房产收益高？</li>
-                    <li onclick="openLy1('问题-怎么移民澳洲？');">怎么移民澳洲？</li>
-                    <li onclick="openLy1('问题-海外教育哪国好？');">海外教育哪国好？</li>
-                    <li onclick="openLy1('问题-怎么移民加拿大？');">怎么移民加拿大？</li>
-                    <li onclick="openLy1('问题-资产如何升值？');">资产如何升值？</li>
-                </ul>
-            </div>
-            <i></i>
-        </div>
-        <div class="leftbar-test">
-            <a href="http://www.iqiaowai.com/pinggu/#form=right20171211" target="_blank" rel="nofollow">免费自测 <i style="background:url(http://www.iqiaowai.com/templets/new/images/nav/6/icon.png) 0 0 no-repeat;"></i></a>
-            <div class="test-line"></div>
-            <a href="http://www.iqiaowai.com/contrast/#form=right20171211" target="_blank" rel="nofollow">国家对比 <i style="background:url(http://www.iqiaowai.com/templets/new/images/nav/6/icon.png) -18px 0 no-repeat;"></i></a>
-        </div>
-        <div class="leftbar-lxb">
-            <p>免费<br/>移民规划</p>
-            <input type="text" placeholder="手机号" id="dl-phone3">
-            <div class="leftbar-lxb-btn" id="dl-dail3">立即获取</div>
-        </div>
-        <div class="leftbar-qrcode">
-            <img src="http://www.iqiaowai.com/templets/new/images/nav/6/code.jpg" alt="侨外移民二维码">
-        </div>
-        <script>
-            jQuery("#slider").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:3,interTime:80});
-        </script>
-        <div class="closebox">
-        </div>
-    </div>
-</div> -->
+<link rel="stylesheet" href="../../../asset/home/css/general8.css">
 
-<div class="leftbar" style="display:none;">
-    <div class="sidebarLeft_h"></div>
-    <div class="sidebarLeft">
-        <div class="contact-btn" style="cursor:pointer;background:#e70003;box-shadow: 0 0 12px #b20409;"  onclick="openLy1('左侧在线咨询');">
-            <i style="background:url(http://www.iqiaowai.com/templets/new/images/nav/5/ask.png) no-repeat;" class="nav-ask"></i> 在线咨询
-        </div>
-        <div class="contact-btn">
-            <a class="contact-test" target="_blank" href="http://www.iqiaowai.com/pinggu#form=left">
-                <i style="background:url(http://www.iqiaowai.com/templets/new/images/nav/5/icon.png) 0 -23px no-repeat;"></i>
-                免费自评
-            </a>
-        </div>
-        <div class="contact-btn">
-            <a class="contact-test" target="_blank" href="http://www.iqiaowai.com/contrast/#form=left">
-                <i style="background:url(http://www.iqiaowai.com/templets/new/images/nav/5/icon.png) 0 -52px no-repeat;"></i>
-                国家对比
-            </a>
-        </div>
-        <div class="contact-btn qrcode">
-            <i style="background:url(http://www.iqiaowai.com/templets/new/images/nav/5/icon.png) 0 -79px no-repeat;"></i>
-            <p>关注微信</p>
-            <div class="qrcode_box"></div>
-        </div>
-        <div class="deer"></div>
-        <div class="closebox">
-        </div>
-    </div>
 </div>
+
+
+
 <!-- <script type="text/javascript" charset="utf-8" src="http://www.iqiaowai.com/templets/new/index/js/sidebar1.js"></script> -->
 <!--script type="text/javascript" src="http://lead.soperson.com/20003027/10086744.js"></script-->
  <!-- <script type="text/javascript" charset="utf-8" src="http://lead.soperson.com/20003027/10086744.js"></script> -->
