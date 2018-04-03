@@ -420,7 +420,7 @@ header .index-header-menu i{
 	height: .4rem;
 	display: block;
 	margin: 0 auto .05rem;
-	background-image:url(/m/web/img/xinimg/bottom_icon.png);
+	background-image:url(../../../assets/images/bottom_icon.png);
 	background-size:  .8rem 2rem;
 	background-position-x: 0;
 	

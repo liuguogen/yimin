@@ -6,14 +6,11 @@
     <title>投资移民旗舰品牌，全方位海外生活规划服务平台【侨外集团官网】</title>
 	 <meta name="keywords" content="移民机构，投资移民，购房移民，海外移民，海外房产，侨外集团，侨外投资移民，侨外移民，侨外" />
     <meta name="description" content="专注投资移民，购房移民，海外投资，海外房产的移民公司，提供全方位海外生活规划服务平台，成立18年来已助上万个家庭圆梦移民梦想，并为办理投资移民者提供专业订制方案。400-818-1100" />
-	
-	
-	
     <link href="../../../assets/css/wap/mui.min.css" rel="stylesheet"/>
     <link href="../../../assets/css/wap/index.css" rel="stylesheet"/>
 	<script src="../../../assets/js/wap/jquery-1.9.1.min.js"></script>
 	<script src="../../../assets/js/wap/mui.min.js"></script>
-	 <script type="text/javascript" charset="utf-8" src="../../../assets/js/wap/kf10086.js"></script>
+	 
     <script type="text/javascript" charset="utf-8">
       	mui.init({
       		gestureConfig:{
@@ -31,7 +28,7 @@
     </script>
 </head>
 <body>	
-	<header class="mui-bar mui-bar-nav">
+	<!-- <header class="mui-bar mui-bar-nav">
     	<a clas='mui-tab-a' href='/m'><img src="/m/web/img/xinimg/logo.png" alt="" class="logo"/></a>
         <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-right" href="#index-header-menu"></a>
         <div class="index-header-menu mui-popover" id="index-header-menu">
@@ -56,8 +53,8 @@
         		</a>
         	</div>
         </div>
-    </header>
-    <nav class="mui-bar mui-bar-tab m-qw-footer">
+    </header> -->
+    <!-- <nav class="mui-bar mui-bar-tab m-qw-footer">
 	    <a href='/m' class="mui-tab-item mui-active mui-tab-a">
 	        <i style="background-position-y: 0;"></i>
 	        <p>首页</p>
@@ -74,7 +71,7 @@
 	        <i style="background-position-y: -1.6rem ;"></i>
 	        <p>客服电话</p>
 	    </a>
-	</nav>
+	</nav> -->
     <div class="mui-content mui-scroll-wrapper" id="mui-content">
       <div class="mui-scroll m-qw-main">
         <!-- 主界面具体展示内容 -->
@@ -128,19 +125,19 @@
       	    <div class="mui-scroll  m-qw-nav-items clearfix">
       	        <!--这里放置真实显示的DOM内容-->
       	        <div class="item" onclick='javascript:window.location.href="/m/project"'>
-      	        	<img src="/m/web/img/xinimg/item1.png" alt="" />
-      	        	<p>移民项目</p>
+      	        	<img src="../../../assets/images/item1.png" alt="" />
+      	        	<p>移民国家</p>
       	        </div>
       	        <div class="item" onclick='javascript:window.location.href="/m/evaluate"'>
-      	        	<img src="/m/web/img/xinimg/item2.png" alt="" />
-      	        	<p>移民自测</p>
+      	        	<img src="../../../assets/images/item2.png" alt="" />
+      	        	<p>移民类别</p>
       	        </div>
       	        <div class="item" onclick='javascript:window.location.href="/m/strategy"'>
-      	        	<img src="/m/web/img/xinimg/item3.png" alt="" />
-      	        	<p>移民攻略</p>
+      	        	<img src="../../../assets/images/item3.png" alt="" />
+      	        	<p>热门项目</p>
       	        </div>
       	        <div class="item" onclick='javascript:window.location.href="/m/house"'>
-      	        	<img src="/m/web/img/xinimg/item4.png" alt="" />
+      	        	<img src="../../../assets/images/item4.png" alt="" />
       	        	<p>海外房产</p>
       	        </div>
       	        <!--div class="item" onclick='javascript:window.location.href="http://www.iqiaowai.com/zhuanti/edu170808/#title"'>
@@ -148,13 +145,13 @@
       	        	<p>海外教育</p>
       	        </div-->
 				<div class="item" onclick='javascript:window.location.href="/m/about"'>
-      	        	<img src="/m/web/img/xinimg/item6.png" alt="" />
-      	        	<p>关于侨外</p>
+      	        	<img src="../../../assets/images/item6.png" alt="" />
+      	        	<p>关于我们</p>
       	        </div>
       	    </div>
       	</div>
       	<!--移民自测-->
-      	<div class="m-qw-test clearfix">
+      	<!-- <div class="m-qw-test clearfix">
       		<div class="item" style="border-right: 1px solid #e6e6e6;">
       			<a href="javascript:openChat();" rel="nofollow" class='mui-tab-a'>
       				<div class="left">
@@ -181,83 +178,31 @@
 	      			</div>
       			</a>
       		</div>
-      	</div>
+      	</div> -->
       	<!--侨外活动-->
       	<div class="m-qw-activity">
-      		<h2 class="m-qw-title">侨外活动 <i style="background: url(/m/web/img/xinimg/icon.png) top left no-repeat;background-size:2.8rem 1.84rem ;"></i></h2>
+      		<h2 class="m-qw-title">侨外活动 <i style="background: url(../../../assets/images/icon.png) top left no-repeat;background-size:2.8rem 1.84rem ;"></i></h2>
       		<ul class="mui-table-view">
+
+      			<?php if($activity_data){
+      				foreach ($activity_data as $key => $value) {
+      					
+      				
+      			 ?>
 			       		    <li class="mui-table-view-cell mui-media lihe">
       		         <a class='mui-tab-a' href="details?id=38628&tid=395&city=4500" onclick="_czc.push(['_trackEvent','手机站主页->推荐活动->详情','点击','推荐活动->详情'])">
-      		            <img class="mui-media-object mui-pull-right"  src="/uploads/allimg/180302/206-1P3021034570-L.jpg" alt=""/>
+      		            <img class="mui-media-object mui-pull-right"  src="../../../<?php echo $value['thumb']; ?>" alt=""/>
       		            <div class="mui-media-body">
-		      		         <p class="title qwactiv">【江苏3.10】西班牙、希腊投资移民私享会</p>
+		      		         <p class="title qwactiv"><?php echo $value['title']; ?></p>
 		      		         <p class="time">
-		      		         	<i></i>2018-03-10 13:30:17:00		      		         </p>
+		      		         	<i></i><?php echo $value['activity_time']; ?></p>
 		      		         <p class="address mui-ellipsis">
-		      		         	<i></i>南京市玄武区洪武北路55号置地广场15层		      		         </p>
+		      		         	<i></i><?php echo $value['prace']; ?>	      		         </p>
       		            </div>
       		        </a>
       		    </li>
-			       		    <li class="mui-table-view-cell mui-media lihe">
-      		         <a class='mui-tab-a' href="details?id=38764&tid=565&city=6000" onclick="_czc.push(['_trackEvent','手机站主页->推荐活动->详情','点击','推荐活动->详情'])">
-      		            <img class="mui-media-object mui-pull-right"  src="/uploads/allimg/180313/206-1P3131I6190-L.jpg" alt=""/>
-      		            <div class="mui-media-body">
-		      		         <p class="title qwactiv">【青岛4.7】北美投资嘉年华活动·青岛站</p>
-		      		         <p class="time">
-		      		         	<i></i>2018-04-07 09:00:18:00		      		         </p>
-		      		         <p class="address mui-ellipsis">
-		      		         	<i></i>青岛市市南区香格里拉大酒店2层		      		         </p>
-      		            </div>
-      		        </a>
-      		    </li>
-			       		    <li class="mui-table-view-cell mui-media lihe">
-      		         <a class='mui-tab-a' href="details?id=38872&tid=565&city=3000" onclick="_czc.push(['_trackEvent','手机站主页->推荐活动->详情','点击','推荐活动->详情'])">
-      		            <img class="mui-media-object mui-pull-right"  src="/uploads/allimg/180323/206-1P323115Z50-L.jpg" alt=""/>
-      		            <div class="mui-media-body">
-		      		         <p class="title qwactiv">【珠海4.1】2018北美投资/教育/移民嘉年华</p>
-		      		         <p class="time">
-		      		         	<i></i>2018-04-01 10:00:17:00		      		         </p>
-		      		         <p class="address mui-ellipsis">
-		      		         	<i></i>珠海吉大新骏景万豪酒店3楼（吉大九洲城）		      		         </p>
-      		            </div>
-      		        </a>
-      		    </li>
-			       		    <li class="mui-table-view-cell mui-media lihe">
-      		         <a class='mui-tab-a' href="details?id=38707&tid=208&city=2000" onclick="_czc.push(['_trackEvent','手机站主页->推荐活动->详情','点击','推荐活动->详情'])">
-      		            <img class="mui-media-object mui-pull-right"  src="http://img2.iqiaowai.com/uploads/allimg/180309/206-1P3091F143140.jpg" alt=""/>
-      		            <div class="mui-media-body">
-		      		         <p class="title qwactiv">【深圳3.31】北美投资嘉年华活动</p>
-		      		         <p class="time">
-		      		         	<i></i>2018-03-31 10:00:17:00		      		         </p>
-		      		         <p class="address mui-ellipsis">
-		      		         	<i></i>深圳市南山区华侨城洲际酒店马德里3+5厅		      		         </p>
-      		            </div>
-      		        </a>
-      		    </li>
-			       		    <li class="mui-table-view-cell mui-media lihe">
-      		         <a class='mui-tab-a' href="details?id=38888&tid=208&city=3500" onclick="_czc.push(['_trackEvent','手机站主页->推荐活动->详情','点击','推荐活动->详情'])">
-      		            <img class="mui-media-object mui-pull-right"  src="/uploads/allimg/180326/206-1P3261G0230-L.jpg" alt=""/>
-      		            <div class="mui-media-body">
-		      		         <p class="title qwactiv">【西安3.31】侨club·美国移民税务、保险、教育私享会</p>
-		      		         <p class="time">
-		      		         	<i></i>2018-03-31 14:00:17:00		      		         </p>
-		      		         <p class="address mui-ellipsis">
-		      		         	<i></i>西安·唐延南路·都市之门C座1504		      		         </p>
-      		            </div>
-      		        </a>
-      		    </li>
-			       		    <li class="mui-table-view-cell mui-media lihe">
-      		         <a class='mui-tab-a' href="details?id=38735&tid=565&city=0" onclick="_czc.push(['_trackEvent','手机站主页->推荐活动->详情','点击','推荐活动->详情'])">
-      		            <img class="mui-media-object mui-pull-right"  src="/uploads/allimg/180313/206-1P313105A00-L.png" alt=""/>
-      		            <div class="mui-media-body">
-		      		         <p class="title qwactiv">【广州3.31】北美投资移民嘉年华暨侨外集团文件中心成立十八周年庆典</p>
-		      		         <p class="time">
-		      		         	<i></i>2018-03-31 13:00:18:00		      		         </p>
-		      		         <p class="address mui-ellipsis">
-		      		         	<i></i>广州·珠江新城丽思卡尔顿酒店二层豪华宴会AB厅		      		         </p>
-      		            </div>
-      		        </a>
-      		    </li>
+			       		<?php }} ?>  
+			       		 
 			       		</ul>
 			<div class="more_hot" style="height: .42rem;width: 100%;margin-top:.15rem;">
 				<div class="m-more-btn" style="margin:0 auto;"></div>
