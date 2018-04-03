@@ -57,8 +57,66 @@ class Index_controller extends CI_Controller {
 	}
 
 	public function projects()
+	{   
+		$data['data'] = $this->Home_model->getList('*','popular',array(),0,-1,'orderby desc');
+		$this->load->view('home/projects',$data);
+	}
+
+	public function getProjects()
 	{
-		$this->load->view('home/projects');
+		$post = $this->input->post();
+
+		if($post['city']=='cityall' && $post['objective']=='objectiveall'){
+			$filter=array();
+		}elseif ($post['city']!='cityall' && $post['objective']=='objectiveall') {
+			$filter=array('city'=>$post['city']);
+		}elseif ($post['city']=='cityall' && $post['objective']!='objectiveall') {
+			$filter=array('objective'=>$post['objective']);
+		}else {
+			$filter=array('city'=>$post['city'],'objective'=>$post['objective']);
+		}
+		
+		$data = $this->Home_model->getList('*','popular',$filter,0,-1,'orderby desc');
+		if(!$data) {
+			echo 'no';exit;
+		}
+		$html = '';
+		foreach ($data as $key => $value) {
+			$html.= '<div class="project clearfix project-hot">';
+			$html.='<a href="'.site_url('popular/'.$value['popular_id']).'" target="_blank" rel="nofollow">';
+			$html.='<div class="left"><img alt="" src="../../../'.$value['thumb'].'" /></div>';
+			$html.='<div class="right">
+							<div class="title">
+								<div class="flag">
+									<img src="../../../'.$value['icon'].'" alt="" />
+								</div>
+								<h3>'.$value['title'].'</h3>
+							</div>
+							<div class="type types">
+								
+							</div>
+							<div class="detail">
+								<p class="text">
+										'.mb_substr($value['brief'],0,120,'utf8').'
+								</p>
+							</div>
+							<div class="time">
+								<i></i>办理周期：<span>'.$value['cycle'].'</span>
+							</div>
+							<div class="money">
+								<i></i>资产要求：<span>'.$value['price'].'</span>
+							</div>
+							<p class="link">查看详情 <i></i></p>
+						</div>
+					</a>';
+			$html.='<div class="btns">
+						
+					</div>	
+					<i class="hot"></i>				
+				</div>';
+		}
+
+		echo $html;exit;
 	}
 	
 }

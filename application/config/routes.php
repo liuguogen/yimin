@@ -53,5 +53,6 @@ $route['default_controller'] = 'Index_controller/index';
 $route['activity/(:num)'] = 'Index_controller/activityDeatail/$1';
 $route['popular/(:num)'] = 'Index_controller/popularDetail/$1';
 $route['projects'] = 'Index_controller/projects';
+$route['getprojects'] = 'Index_controller/getProjects';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

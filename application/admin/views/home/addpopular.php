@@ -84,8 +84,28 @@
             <td><input type="text" name="follow" class="form-control" value="<?php if(isset($data['follow']) && $data['follow']){ echo $data['follow'];}else{echo 0;} ?>" /></td>
         </tr>
         <tr>
+            <th>办理周期 <span style="color: red;">*</span></th>
+            <td><input type="text" name="cycle" class="form-control" value="<?php if(isset($data['cycle']) && $data['cycle']){ echo $data['cycle'];}else{echo '';} ?>" /></td>
+        </tr>
+        <tr>
+            <th>移民目的 <span style="color: red;">*</span></th>
+            <td><input type="text" name="objective" class="form-control" value="<?php if(isset($data['objective']) && $data['objective']){ echo $data['objective'];}else{echo '';} ?>" /></td>
+        </tr>
+        
+        <tr>
             <th>价格 <span style="color: red;">*</span></th>
             <td><input type="text" name="price" class="form-control" value="<?php if(isset($data['price']) && $data['price']){ echo $data['price'];}else{echo '';} ?>" /></td>
+        </tr>
+         <tr>
+            <th>国家图标 <span style="color: red;">*</span></th>
+            
+               <td>
+                   <div id="icon" ></div>
+                   <div id="add_icon"></div>
+                <?php if(isset($data['icon']) && $data['icon']){ ?>
+                <img src="../../../<?php echo $data['icon'] ?>" height="120" />
+                <?php }?>
+               </td>
         </tr>
          <tr>
             <th>热门项目封面图 <span style="color: red;">*</span></th>
@@ -142,6 +162,16 @@ $('#thumb').diyUpload({
     url:"<?php echo site_url('images/upload') ?>",
     success:function( data ) {
         $('#add_thumb').append('<input type="hidden" name="thumb" value='+data._raw+' />');
+        
+    },
+    error:function( err ) {
+        console.info( err );    
+    }
+});
+$('#icon').diyUpload({
+    url:"<?php echo site_url('images/upload') ?>",
+    success:function( data ) {
+        $('#add_icon').append('<input type="hidden" name="icon" value='+data._raw+' />');
         
     },
     error:function( err ) {
