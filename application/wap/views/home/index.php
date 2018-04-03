@@ -190,7 +190,7 @@
       				
       			 ?>
 			       		    <li class="mui-table-view-cell mui-media lihe">
-      		         <a class='mui-tab-a' href="details?id=38628&tid=395&city=4500" onclick="_czc.push(['_trackEvent','手机站主页->推荐活动->详情','点击','推荐活动->详情'])">
+      		         <a class='mui-tab-a' href="details?id=38628&tid=395&city=4500" href="">
       		            <img class="mui-media-object mui-pull-right"  src="../../../<?php echo $value['thumb']; ?>" alt=""/>
       		            <div class="mui-media-body">
 		      		         <p class="title qwactiv"><?php echo $value['title']; ?></p>
