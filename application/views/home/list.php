@@ -99,46 +99,18 @@ margin:0 auto;
 							<h2>成功案例</h2>
 						</div>
 						<div class="box">
+
+                             <?php if($this->config->item('case','case')){
+
+                foreach($this->config->item('case','case') as $v){
+               ?>
 							<div class="item">
 								<div class="text">
 									<div class="order"></div>
-									<div class="subtitle"><a href="http://www.iqiaowai.com/case/38505.html">让孩子有一个新起点！</a></div>
+									<div class="subtitle"><a href="<?php echo site_url('activity/'.$v['case_id'].'/case') ?>" target='_blank'><?php  echo mb_substr($v['title'], 0,16,'utf-8').'...'; ?></a></div>
 								</div>
 							</div>
-
-
-
-
-<div class="item">
-								<div class="text">
-									<div class="order"></div>
-									<div class="subtitle"><a href="http://www.iqiaowai.com/case/38290.html">侨外英国的专业让移民英国就这么</a></div>
-								</div>
-							</div>
-<div class="item">
-								<div class="text">
-									<div class="order"></div>
-									<div class="subtitle"><a href="http://www.iqiaowai.com/case/38247.html">“护照之王”圣基茨移民低价通道</a></div>
-								</div>
-							</div>
-<div class="item">
-								<div class="text">
-									<div class="order"></div>
-									<div class="subtitle"><a href="http://www.iqiaowai.com/case/38224.html">33年一遇的低价良机，被我抓住了</a></div>
-								</div>
-							</div>
-<div class="item">
-								<div class="text">
-									<div class="order"></div>
-									<div class="subtitle"><a href="http://www.iqiaowai.com/case/38114.html">20万英镑如何安全快速移民英国？</a></div>
-								</div>
-							</div>
-<div class="item">
-								<div class="text">
-									<div class="order"></div>
-									<div class="subtitle"><a href="http://www.iqiaowai.com/case/38113.html">高管移民葡萄牙，为未来提前做规</a></div>
-								</div>
-							</div>
+<?php }} ?>
 
 							<br class="cb"/>
 						</div>
@@ -153,66 +125,17 @@ margin:0 auto;
 							<h2>热门资讯</h2>
 						</div>
 						<div class="box">
+                            <?php if($this->config->item('hot','hot')){
+
+                foreach($this->config->item('hot','hot') as $v){
+               ?>
 							<div class="item">
 								<div class="text">
 									<div class="order"></div>
-									<div class="subtitle"><a href="http://www.iqiaowai.com/hotspot/38923.html">马德里将进行重新规划，西班牙房</a></div>
+									<div class="subtitle"><a target="_blank" href="<?php echo site_url('activity/'.$v['activity_id'].'/activity') ?>"><?php  echo mb_substr($v['title'], 0,16,'utf-8').'...'; ?></a></div>
 								</div>
 							</div>
-<div class="item">
-								<div class="text">
-									<div class="order"></div>
-									<div class="subtitle"><a href="http://www.iqiaowai.com/hotspot/38922.html">超七成家庭移民西班牙是为了孩子</a></div>
-								</div>
-							</div>
-<div class="item">
-								<div class="text">
-									<div class="order"></div>
-									<div class="subtitle"><a href="http://www.iqiaowai.com/hotspot/38919.html">BIG建筑设计：蔑视一切公约，大胆</a></div>
-								</div>
-							</div>
-<div class="item">
-								<div class="text">
-									<div class="order"></div>
-									<div class="subtitle"><a href="http://www.iqiaowai.com/hotspot/38909.html">英国移民签证费上涨，投资要尽快</a></div>
-								</div>
-							</div>
-<div class="item">
-								<div class="text">
-									<div class="order"></div>
-									<div class="subtitle"><a href="http://www.iqiaowai.com/hotspot/38906.html">美国“报税季”接近尾声，这份报</a></div>
-								</div>
-							</div>
-<div class="item">
-								<div class="text">
-									<div class="order"></div>
-									<div class="subtitle"><a href="http://www.iqiaowai.com/hotspot/38904.html">世界财富报告：曼哈顿商业地产成</a></div>
-								</div>
-							</div>
-<div class="item">
-								<div class="text">
-									<div class="order"></div>
-									<div class="subtitle"><a href="http://www.iqiaowai.com/hotspot/38889.html">强强联手：历史项目迎I-526获批，纽</a></div>
-								</div>
-							</div>
-<div class="item">
-								<div class="text">
-									<div class="order"></div>
-									<div class="subtitle"><a href="http://www.iqiaowai.com/hotspot/38886.html">美国EB-5区域中心计划顺延至9月30日</a></div>
-								</div>
-							</div>
-<div class="item">
-								<div class="text">
-									<div class="order"></div>
-									<div class="subtitle"><a href="http://www.iqiaowai.com/hotspot/38882.html">中美贸易战谁更受伤？鸡蛋最好还</a></div>
-								</div>
-							</div>
-<div class="item">
-								<div class="text">
-									<div class="order"></div>
-									<div class="subtitle"><a href="http://www.iqiaowai.com/hotspot/38881.html">侨外英国移民：学校免费就读，入</a></div>
-								</div>
-							</div>
+                        <?php }} ?>
                             
 							<br class="cb"/>
 

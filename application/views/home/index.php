@@ -39,7 +39,7 @@
     <?php $this->load->view('public/thumb') ?>
     
     <div class="qw-project">
-        <div class="qw-center" onclick="_czc.push(['_trackEvent','新官网主页1.5-热门项目','点击','新官网主页1.5-热门项目']);">
+        <div class="qw-center">
             <div class="title-box clearfix">
                 <i></i>
                 <div class="title">热门项目 <span>Popular project</span></div>
@@ -500,168 +500,53 @@
     </div>
     <!-- 侨外动态 E-->
     <!-- 项目案例 S-->
-    <div class="qw-case">
+   <div class="qw-activity">
         <div class="qw-center">
             <div class="title-box clearfix">
                 <i></i>
-                <div class="title">项目案例 <span>Project case</span></div>
+                <div class="title">成功案例 <span>Case</span></div>
+                <div class="more"><a href="<?php echo site_url('list/case') ?>" target="_blank">更多...</a></div>
             </div>
-            <div class="items clearfix">
-                <div class="item">
-                    <p class="name">美国项目案例<i style="background:url(http://www.iqiaowai.com/templets/new/index/images/icon.png) -47px -40px no-repeat;"></i></p>
-                    <div id="case-slide" class="list-box">
-                        <ul>
-						<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/case/38303.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-项目案例','点击','新官网主页1.5-项目案例']);">侨外解决资金证明难题，快速获</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/case/38090.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-项目案例','点击','新官网主页1.5-项目案例']);">美国投资移民免排期获批</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/case/37669.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-项目案例','点击','新官网主页1.5-项目案例']);">一年不到获批美国绿卡</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/case/37558.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-项目案例','点击','新官网主页1.5-项目案例']);">为事业发展，高管移民美国</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/case/37429.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-项目案例','点击','新官网主页1.5-项目案例']);">告别职场重压，赴美开启新生活</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/case/36247.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-项目案例','点击','新官网主页1.5-项目案例']);">移民美国上法律名校</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/case/37032.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-项目案例','点击','新官网主页1.5-项目案例']);">贾老师谈美国投资移民之——</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/case/36248.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-项目案例','点击','新官网主页1.5-项目案例']);">美式教育完美过渡</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/case/36246.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-项目案例','点击','新官网主页1.5-项目案例']);">教育规划圆音乐梦想</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/case/36188.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-项目案例','点击','新官网主页1.5-项目案例']);">为儿女教育移民美国</a>
-                            </li>
+            <div class="qw-activity-box clearfix">
 
-                        </ul>
-                    </div>
-                    <div class="link-box">
-                        <p>侨外美国90个项目,26批还款</p>
-                        <a href="/case/america/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-项目案例-更多','点击','新官网主页1.5-项目案例-更多']);">more</a>
+                <?php if($case_data){
+
+                    foreach ($case_data as $ak => $av) {
+                        
+                    
+                  ?>
+            <div class="detail" data-num="<?php echo $av['case_id'] ?>">
+                    <i></i>
+                    <a href="<?php echo site_url('activity/'.$av['case_id'].'/case')?>" target="_blank"><img src="../../../<?php echo $av['thumb'] ?>" alt="<?php echo $av['title'] ?>"></a>
+                    <div class="text-box">
+                        <a href="<?php echo site_url('activity/'.$av['case_id'].'/activity')?>" target="_blank"><p class="profile"><?php echo mb_substr($av['abstract'],0,60,'utf-8').'...'; ?></p></a>
+                       
                     </div>
                 </div>
-                <div class="item">
-                    <p class="name">其他国家案例 <i style="background:url(http://www.iqiaowai.com/templets/new/index/images/icon.png) -72px -40px no-repeat;"></i></p>
-                    <div class="list-box">
-                        <ul>
-						<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/case/38533.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-其他国家案例','点击','新官网主页1.5-其他国家案例']);">25岁毕业生2天获批，侨外英国，助你圆梦…</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/case/38505.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-其他国家案例','点击','新官网主页1.5-其他国家案例']);">让孩子有一个新起点！</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/plus/view.php?aid=38491" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-其他国家案例','点击','新官网主页1.5-其他国家案例']);">移民加拿大，“意外的”必然之选</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/plus/view.php?aid=38490" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-其他国家案例','点击','新官网主页1.5-其他国家案例']);">选择加拿大从遥不可及到梦想成真</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/plus/view.php?aid=38489" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-其他国家案例','点击','新官网主页1.5-其他国家案例']);">赴美还是赴加？适合孩子的就是最好</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/plus/view.php?aid=38488" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-其他国家案例','点击','新官网主页1.5-其他国家案例']);">感受加拿大天翻地覆的生活环境大逆转…</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/plus/view.php?aid=38487" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-其他国家案例','点击','新官网主页1.5-其他国家案例']);">诗和远方都在加拿大</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/plus/view.php?aid=38486" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-其他国家案例','点击','新官网主页1.5-其他国家案例']);">加拿大——为了孩子，我又来了</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/case/38484.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-其他国家案例','点击','新官网主页1.5-其他国家案例']);">侨外英国一直都在，圆您英伦梦不是问题…</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/case/38461.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-其他国家案例','点击','新官网主页1.5-其他国家案例']);">＂双非＂院校毕业生也能申请到英国名校…</a>
-                            </li>
+<?php }}?>
 
-                        </ul>
-                    </div>
-                    <div class="link-box">
-                        <p>侨外,已帮助2万余家庭成功移民</p>
-                        <a href="/case/" target="_blank">more</a>
-                    </div>
-                </div>
-                <div class="item">
-                    <p class="name">每日移问<i style="background:url(http://www.iqiaowai.com/templets/new/index/images/icon.png) 0px -63px no-repeat;"></i></p>
-                    <div class="list-box">
-                        <ul>
-                          <li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/interact/37974.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-每日移问','点击','新官网主页1.5-每日移问']);">2018圣基茨和尼维斯护照移民需要多少钱？</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/interact/37984.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-每日移问','点击','新官网主页1.5-每日移问']);">移民加拿大的费用大概是多少？</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/interact/37985.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-每日移问','点击','新官网主页1.5-每日移问']);">加拿大移民过去的方式有哪几种？如何移民</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/interact/37987.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-每日移问','点击','新官网主页1.5-每日移问']);">加拿大曼省移民政策怎样的？曼省移民费用</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/interact/37988.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-每日移问','点击','新官网主页1.5-每日移问']);">加拿大投资移民是否有风险?</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/interact/37989.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-每日移问','点击','新官网主页1.5-每日移问']);">魁北克投资移民申请流程具体是什么？难吗</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/interact/38201.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-每日移问','点击','新官网主页1.5-每日移问']);">加拿大永久居民和公民有什么区别？</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/interact/38203.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-每日移问','点击','新官网主页1.5-每日移问']);">魁省投资移民什么时候打投资款？安全吗？</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/interact/38204.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-每日移问','点击','新官网主页1.5-每日移问']);">听说魁省都说法语，生活起来很困难吧？</a>
-                            </li>
-<li>
-                                <i></i>
-                                <a href="http://www.iqiaowai.com/interact/38202.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-每日移问','点击','新官网主页1.5-每日移问']);">加拿大的福利有哪些？</a>
-                            </li>
 
-                        </ul>
-                    </div>
-                    <div class="link-box">
-                        <p>侨外19年,值得每个家庭托付</p>
-                        <a href="/interact/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-每日移问-更多','点击','新官网主页1.5-每日移问-更多']);">more</a>
-                    </div>
+                <div class="list" id="pro_end">
+                    <ul>
+
+                       <?php if($case_data){
+
+                    foreach ($case_data as $ak => $av) {
+                        
+                    
+                  ?>
+                    <input type="hidden" value="<?php echo $av['case_id'] ?>" class="act_id"/>
+                        <li class="clearfix now" data-num="<?php echo $av['case_id'] ?>">
+                            <input type="hidden" value="<?php echo date('Y-m-d',$av['create_time']); ?>" class=""/>
+                            <a  target="_blank" href="<?php echo site_url('activity/'.$av['case_id'].'/case')?>" alt="<?php echo $av['title'] ?>" ><?php echo $av['title'] ?></a>
+                            <span onclick="window.open('<?php echo site_url('activity/'.$av['case_id'].'/case')?>')" class="act34">查看</span>
+                        </li>
+
+                    
+<?php }} ?>
+
+                    </ul>   
+                    <script src="../../../asset/home/js/active_sort.js"></script>
                 </div>
             </div>
         </div>

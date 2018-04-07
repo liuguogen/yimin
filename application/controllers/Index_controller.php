@@ -22,8 +22,13 @@ class Index_controller extends CI_Controller {
 	{
 
 		parent::__construct();
+		$case['case'] = $this->Home_model->getList('case_id,title','casetable');
+		$hot['hot'] = $this->Home_model->getList('activity_id,title','activity');
+		$this->config->set_item('hot',$hot);
+		$this->config->set_item('case',$case);
 		$data=$this->Home_model->getRow('*','setting',array(),0,1);
 		$this->config->set_item('home',$data);
+		
 		if($this->agent->is_mobile()) {
 			redirect(base_url().'wap');
 		}
@@ -34,7 +39,8 @@ class Index_controller extends CI_Controller {
 		$activity_data = $this->Home_model->getList('*','activity');
 		$popular_data = $this->Home_model->getList('*','popular');
 		$news_data = $this->Home_model->getList('*','news');
-		$this->load->view('home/index',array('activity_data'=>$activity_data,'popular_data'=>$popular_data,'news_data'=>$news_data));
+		$case_data = $this->Home_model->getList('*','casetable');
+		$this->load->view('home/index',array('activity_data'=>$activity_data,'popular_data'=>$popular_data,'news_data'=>$news_data,'case_data'=>$case_data));
 	}
 
 	public function activityDeatail()
@@ -45,10 +51,20 @@ class Index_controller extends CI_Controller {
 			$table ='news';
 			$id_type = 'news_id';
 			$url_type = 'news';
+			$data['header'] = '裕鉴动态';
+			$data['url'] = site_url('list/yujian');
+		}elseif ($type=='case') {
+			$table ='casetable';
+			$id_type = 'case_id';
+			$url_type = 'case';
+			$data['header'] = '成功案例';
+			$data['url'] = site_url('list/case');
 		}else {
 			$table = 'activity';
 			$id_type  = 'activity_id';
 			$url_type = 'activity';
+			$data['header'] = '移民热点';
+			$data['url'] = site_url('list/activity');
 		}
 		
 		$data['activity_data']=$this->Home_model->getRow('*',$table,array($id_type=>$id));
@@ -148,6 +164,10 @@ class Index_controller extends CI_Controller {
 			$table ='news';
 			$id_type = 'news_id';
 			$data['header'] = '裕鉴动态';
+		}elseif ($type=='case') {
+			$table ='casetable';
+			$id_type = 'case_id';
+			$data['header'] = '成功案例';
 		}else {
 			$table = 'activity';
 			$id_type  = 'activity_id';
@@ -181,6 +201,8 @@ class Index_controller extends CI_Controller {
 		foreach ($data['row'] as $key => &$value) {
 			if($type =='yujian') {
 				$value['url'] = site_url('activity/'.$value['news_id'].'/yujian');
+			}elseif ($type=='case') {
+				$value['url'] = site_url('activity/'.$value['case_id'].'/case');
 			}else {
 				$value['url'] = site_url('activity/'.$value['activity_id'].'/activity');
 			}

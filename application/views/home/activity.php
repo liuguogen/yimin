@@ -55,7 +55,7 @@ body{background:rgb(238,238,238);}
         <ul>
           <li>当前位置：<a href="<?php echo site_url() ?>">首页</a><span>></span></li>
           <li>
-            <a href="http://www.iqiaowai.com/activity/" target='_blank'><?php if(isset($activity_data['content'])){echo '裕鉴动态';}else{echo '移民热点';} ?></a>
+            <a href="<?php echo $url ?>" target='_blank'><?php echo $header; ?></a>
             <span>></span>
           </li>
           <li class="current"><?php echo $activity_data['title']; ?></li>
@@ -72,67 +72,18 @@ body{background:rgb(238,238,238);}
               <h2>成功案例</h2>
             </div>
             <div class="box">
-                            <div class="item">
-                <div class="text">
-                  <div class="order"></div>
-                  <div class="subtitle"><a href="http://www.iqiaowai.com/story/38655.html">中国新移民|美国，我的梦想和孩</a></div>
-                </div>
-              </div>
-<div class="item">
-                <div class="text">
-                  <div class="order"></div>
-                  <div class="subtitle"><a href="http://www.iqiaowai.com/story/38597.html">中国妈妈的心声：美国教育让我</a></div>
-                </div>
-              </div>
-<div class="item">
-                <div class="text">
-                  <div class="order"></div>
-                  <div class="subtitle"><a href="http://www.iqiaowai.com/story/38572.html">老师送子女出国，移民留学各有</a></div>
-                </div>
-              </div>
-<div class="item">
-                <div class="text">
-                  <div class="order"></div>
-                  <div class="subtitle"><a href="http://www.iqiaowai.com/story/38562.html">自助申请失败，成年人留学也需</a></div>
-                </div>
-              </div>
-<div class="item">
-                <div class="text">
-                  <div class="order"></div>
-                  <div class="subtitle"><a href="http://www.iqiaowai.com/story/38540.html">移民求学两不误：我和女儿在美</a></div>
-                </div>
-              </div>
-<div class="item">
-                <div class="text">
-                  <div class="order"></div>
-                  <div class="subtitle"><a href="http://www.iqiaowai.com/story/38539.html">全球化时代，让孩子学贯中西才</a></div>
-                </div>
-              </div>
-<div class="item">
-                <div class="text">
-                  <div class="order"></div>
-                  <div class="subtitle"><a href="http://www.iqiaowai.com/story/38526.html">总有一种选择，能呵护孩子纯真</a></div>
-                </div>
-              </div>
-<div class="item">
-                <div class="text">
-                  <div class="order"></div>
-                  <div class="subtitle"><a href="http://www.iqiaowai.com/story/38507.html">为什么要移民美国？孩子的笑脸</a></div>
-                </div>
-              </div>
-<div class="item">
-                <div class="text">
-                  <div class="order"></div>
-                  <div class="subtitle"><a href="http://www.iqiaowai.com/plus/view.php?aid=38467">“双非”院校毕业生也能申请到</a></div>
-                </div>
-              </div>
-<div class="item">
-                <div class="text">
-                  <div class="order"></div>
-                  <div class="subtitle"><a href="http://www.iqiaowai.com/story/38418.html">去英国开启事业新高峰，只是思</a></div>
-                </div>
-              </div>
 
+              <?php if($this->config->item('case','case')){
+
+                foreach($this->config->item('case','case') as $v){
+               ?>
+              <div class="item">
+                <div class="text">
+                  <div class="order"></div>
+                  <div class="subtitle"><a href="<?php echo site_url('activity/'.$v['case_id'].'/case') ?>" target='_blank'><?php  echo mb_substr($v['title'], 0,16,'utf-8').'...'; ?></a></div>
+                </div>
+              </div>
+<?php }} ?>
               <br class="cb"/>
             </div>
           </div>
@@ -146,67 +97,17 @@ body{background:rgb(238,238,238);}
               <h2>热门资讯</h2>
             </div>
             <div class="box">
+               <?php if($this->config->item('hot','hot')){
+
+                foreach($this->config->item('hot','hot') as $v){
+               ?>
               <div class="item">
                 <div class="text">
                   <div class="order"></div>
-                  <div class="subtitle"><a href="http://www.iqiaowai.com/hotspot/38718.html">赴美留学越来越贵？其实只是你</a></div>
+                  <div class="subtitle"><a href="<?php echo site_url('activity/'.$v['activity_id'].'/activity') ?>" target='_blank'><?php  echo mb_substr($v['title'], 0,16,'utf-8').'...'; ?></a></div>
                 </div>
               </div>
-<div class="item">
-                <div class="text">
-                  <div class="order"></div>
-                  <div class="subtitle"><a href="http://www.iqiaowai.com/hotspot/38717.html">干货来袭！帮你看懂英国升学考</a></div>
-                </div>
-              </div>
-<div class="item">
-                <div class="text">
-                  <div class="order"></div>
-                  <div class="subtitle"><a href="http://www.iqiaowai.com/hotspot/38716.html">侨外重磅推出英国移民深度考察</a></div>
-                </div>
-              </div>
-<div class="item">
-                <div class="text">
-                  <div class="order"></div>
-                  <div class="subtitle"><a href="http://www.iqiaowai.com/hotspot/38709.html">侨外纽约时代广场701TSQ项目进展</a></div>
-                </div>
-              </div>
-<div class="item">
-                <div class="text">
-                  <div class="order"></div>
-                  <div class="subtitle"><a href="http://www.iqiaowai.com/hotspot/38682.html">侨外佛罗里达朱庇特市政中心运</a></div>
-                </div>
-              </div>
-<div class="item">
-                <div class="text">
-                  <div class="order"></div>
-                  <div class="subtitle"><a href="http://www.iqiaowai.com/hotspot/38681.html">报税季，你没有美国绿卡也要了</a></div>
-                </div>
-              </div>
-<div class="item">
-                <div class="text">
-                  <div class="order"></div>
-                  <div class="subtitle"><a href="http://www.iqiaowai.com/hotspot/38674.html">海外房源：西班牙马德里西北富</a></div>
-                </div>
-              </div>
-<div class="item">
-                <div class="text">
-                  <div class="order"></div>
-                  <div class="subtitle"><a href="http://www.iqiaowai.com/hotspot/38660.html">海外房源：西班牙巴塞罗那富人</a></div>
-                </div>
-              </div>
-<div class="item">
-                <div class="text">
-                  <div class="order"></div>
-                  <div class="subtitle"><a href="http://www.iqiaowai.com/hotspot/38656.html">移民美国，上世界最优秀的大学</a></div>
-                </div>
-              </div>
-<div class="item">
-                <div class="text">
-                  <div class="order"></div>
-                  <div class="subtitle"><a href="http://www.iqiaowai.com/hotspot/38651.html">侨外投资人出席美国EB-5项目还款</a></div>
-                </div>
-              </div>
-
+            <?php }} ?>
               <br class="cb"/>
             </div>
           </div>
@@ -250,7 +151,7 @@ body{background:rgb(238,238,238);}
               <div class="detail news">
                 <div>
   &nbsp;</div>
-  <?php if(isset($activity_data['activity_time']) || isset($activity_data['prace']) || isset($activity_data['theme'])){ ?>
+  <?php if(isset($activity_data['activity_time']) && isset($activity_data['prace']) && isset($activity_data['theme'])){ ?>
 <div style="text-align: center;">
   <span style="color:#ff0000;"><strong><span style="font-size:14px;">　　时间：<?php echo $activity_data['activity_time']; ?></span></strong></span></div>
 <div style="text-align: center;">
