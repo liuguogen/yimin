@@ -7,7 +7,7 @@
     <title><?php echo $activity_data['title']; ?></title>
     <meta name="renderer" content="webkit">
     <meta name="keywords" content="<?php echo $activity_data['title']; ?>" />
-    <meta name="description" content="<?php echo $activity_data['abstract']; ?>" />
+    <meta name="description" content="<?php echo isset($activity_data['abstract'])?$activity_data['abstract'] : $activity_data['title']; ?>" />
     <meta http-equiv="Cache-Control" content="no-transform" /> 
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <meta name="applicable-device" content="pc,mobile">	
@@ -55,7 +55,7 @@ body{background:rgb(238,238,238);}
         <ul>
           <li>当前位置：<a href="<?php echo site_url() ?>">首页</a><span>></span></li>
           <li>
-            <a href="http://www.iqiaowai.com/activity/" target='_blank'>投资移民活动</a>
+            <a href="http://www.iqiaowai.com/activity/" target='_blank'><?php if(isset($activity_data['content'])){echo '裕鉴动态';}else{echo '移民热点';} ?></a>
             <span>></span>
           </li>
           <li class="current"><?php echo $activity_data['title']; ?></li>
@@ -245,17 +245,19 @@ body{background:rgb(238,238,238);}
             </div>
             <div class="text">
               <p class="brief news">
-                <span><?php echo $activity_data['abstract']; ?></span>
+                <span><?php echo  isset($activity_data['abstract'])?$activity_data['abstract']:$activity_data['title'] ; ?></span>
               </p>
               <div class="detail news">
                 <div>
   &nbsp;</div>
+  <?php if(isset($activity_data['activity_time']) || isset($activity_data['prace']) || isset($activity_data['theme'])){ ?>
 <div style="text-align: center;">
   <span style="color:#ff0000;"><strong><span style="font-size:14px;">　　时间：<?php echo $activity_data['activity_time']; ?></span></strong></span></div>
 <div style="text-align: center;">
   <span style="color:#ff0000;"><strong><span style="font-size:14px;">　　地点：<?php echo $activity_data['prace']; ?></span></strong></span></div>
 <div style="text-align: center;">
   <span style="color:#ff0000;"><strong><span style="font-size:14px;">　　主题：<?php echo $activity_data['theme']; ?></span></strong></span></div>
+  <?php }?>
 <!--  内容区域-->
     <?php echo $activity_data['content']; ?>
 </div>                        
@@ -287,15 +289,9 @@ body{background:rgb(238,238,238);}
 </div>
 </div>
 </div>
-<link rel="stylesheet" href="../../../asset/home/css/general8.css">
+
 </div>
-<script src="http://www.iqiaowai.com/data/enums/country.js"></script>
-<script src="http://www.iqiaowai.com/data/enums/city.js"></script>
-<script src="http://www.iqiaowai.com/min/f=/templets/new/js/divselect.js,
-/templets/new/js/index.js"></script>
-<script src="/templets/new/js/footer.js"></script>
-<script src="http://www.iqiaowai.com/templets/new/js/jquery.lazyload.js"></script>
-<script src="http://www.iqiaowai.com/templets/new/js/lazyimg_qw.js"></script>
+
 
 </body>
 </html>

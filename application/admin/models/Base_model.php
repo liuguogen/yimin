@@ -56,6 +56,7 @@ class Base_model extends CI_Model
 		if($orderBy) {
 			$sql.=" ORDER BY {$orderBy}";
 		}
+		if($limit>=0 && $offset!=-1)$sql.= " limit {$limit},{$offset}";
 		$rRow=$this->db->query($sql);
 
 		$data=$rRow->result_array()? $rRow->result_array():array();

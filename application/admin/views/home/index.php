@@ -142,13 +142,13 @@
                                     <li class="b-nav-li">
                                         <a href="<?php echo site_url('Admin_controller/newsList') ?>" target="right_content">
                                             <i class="icon-double-angle-right"></i>
-                                            新闻列表
+                                            裕鉴动态
                                         </a>
                                     </li>
                                     <li class="b-nav-li">
                                         <a href="<?php echo site_url('Admin_controller/activityList') ?>" target="right_content">
                                             <i class="icon-double-angle-right"></i>
-                                            移民活动
+                                            移民热点
                                         </a>
                                     </li>
                                     <li class="b-nav-li">

@@ -155,9 +155,9 @@ class Admin_controller extends CI_Controller {
 				$news_id=$post['news_id'];
 				unset($post['news_id']);
 				//更新除了自己
-				if($post['is_recommend']=='1') {
-					$this->Admin_model->update('news',array('is_recommend'=>0),array('news_id|notin'=>$news_id));
-				}
+				// if($post['is_recommend']=='1') {
+				// 	$this->Admin_model->update('news',array('is_recommend'=>0),array('news_id|notin'=>array($news_id)));
+				// }
 				//更新
 				$flag=$this->Admin_model->update('news',$post,array('news_id'=>$news_id));
 			}else {

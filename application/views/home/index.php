@@ -56,12 +56,7 @@
                 </div> -->
 				 <script src="../../../asset/home/js/gz_d.js"></script>
 				   
-                <script>
-                document.write('<script type="text/javascript"  data-lxb-uid="22942246" data-lxb-gid="311488" src="http://lxbjs.baidu.com/api/asset/api.js?t=' + new Date().getTime() + '" charset="utf-8"></scr' + 'ipt>');
-                document.getElementById("project-dial-btn").onclick = function() {
-                    lxb.call(document.getElementById("project-dial"));
-                };
-                </script>
+               
 
                  <?php if($popular_data){
 
@@ -77,7 +72,7 @@
                     <p class="desc rom_desc"><a class="rom_a" href="<?php echo site_url('popular/'.$v['popular_id'].'')?>" target="_blank"><?php echo mb_substr($v['brief'],0,120,'utf-8').'...'; ?></a></p>
                     <p class="price">价格：<span class="rom_bud"><?php echo $v['price'] ?></span></p>
                     <div class="project-consult clearfix">
-                        <a href="<?php echo site_url('popular/'.$v['popular_id'].'')?>"><div class="" style="width: 300px;background: #3ab6ca;line-height: 36px;height: 36p;margin:10px 22px;color: white;text-align: center;">查看详情</div></a>
+                        <a href="<?php echo site_url('popular/'.$v['popular_id'].'')?>" target="_blank"><div class="" style="width: 300px;background: #3ab6ca;line-height: 36px;height: 36p;margin:10px 22px;color: white;text-align: center;">查看详情</div></a>
                        
                     </div>
                 </div>
@@ -95,9 +90,9 @@
             <div class="title-box clearfix">
                 <i></i>
                 <div class="title">移民热点 <span>Hotspot</span></div>
-                <div class="more"><a href="/activity/" target="_blank">更多>></a></div>
+                <div class="more"><a href="<?php echo site_url('list/activity') ?>" target="_blank">更多...</a></div>
             </div>
-            <div class="qw-activity-box clearfix" onclick="_czc.push(['_trackEvent','新官网主页1.5-侨外活动','点击','新官网主页1.5-侨外活动']);">
+            <div class="qw-activity-box clearfix">
 
                 <?php if($activity_data){
 
@@ -107,9 +102,9 @@
                   ?>
             <div class="detail" data-num="<?php echo $av['activity_id'] ?>">
                     <i></i>
-                    <a href="<?php echo site_url('activity/'.$av['activity_id'].'')?>" target="_blank"><img src="../../../<?php echo $av['thumb'] ?>" alt="<?php echo $av['title'] ?>"></a>
+                    <a href="<?php echo site_url('activity/'.$av['activity_id'].'/activity')?>" target="_blank"><img src="../../../<?php echo $av['thumb'] ?>" alt="<?php echo $av['title'] ?>"></a>
                     <div class="text-box">
-                        <a href="<?php echo site_url('activity/'.$av['activity_id'].'')?>" target="_blank"><p class="profile"><?php echo mb_substr($av['abstract'],0,60,'utf-8').'...'; ?></p></a>
+                        <a href="<?php echo site_url('activity/'.$av['activity_id'].'/activity')?>" target="_blank"><p class="profile"><?php echo mb_substr($av['abstract'],0,60,'utf-8').'...'; ?></p></a>
                         <p class="time">
                             时间：<?php echo $av['activity_time']; ?>
                         </p>
@@ -133,8 +128,8 @@
                     <input type="hidden" value="<?php echo $av['activity_id'] ?>" class="act_id"/>
                         <li class="clearfix now" data-num="<?php echo $av['activity_id'] ?>">
                             <input type="hidden" value="<?php echo date('Y-m-d',$av['create_time']); ?>" class=""/>
-                            <a  target="_blank" href="<?php echo site_url('activity/'.$av['activity_id'].'')?>" alt="<?php echo $av['title'] ?>" ><?php echo $av['title'] ?></a>
-                            <span onclick="tanchu();" class="act34">预约</span>
+                            <a  target="_blank" href="<?php echo site_url('activity/'.$av['activity_id'].'/activity')?>" alt="<?php echo $av['title'] ?>" ><?php echo $av['title'] ?></a>
+                            <span onclick="window.open('<?php echo site_url('activity/'.$av['activity_id'].'/activity')?>')" class="act34">查看</span>
                         </li>
 
                     
@@ -476,122 +471,32 @@
         <div class="qw-news">
             <div class="title-box clearfix">
                 <i></i>
-                <div class="title" style="width:275px;">侨外动态 <span>Qiaowai news</span></div>
-				<span style="float:right;line-height: 53px;"><a href='/trends/' style="color:#c1c1c1;" target="_blank">更多>></a></span>
+                <div class="title" style="width:275px;">裕鉴动态 <span>Yujian news</span></div>
+				<span style="float:right;line-height: 53px;"><a href="<?php echo site_url('list/yujian') ?>" style="color:#c1c1c1;" target="_blank">更多...</a></span>
             </div>
-            <div class="items clearfix" id="slide" onclick="_czc.push(['_trackEvent','新官网主页1.5-侨外动态','点击','新官网主页1.5-侨外动态']);">
+            <div class="items clearfix" id="slide">
                 <ul>
-                    
+                    <?php if($news_data){
+
+                        foreach ($news_data as $key => $value) {
+                            
+                        
+                     ?>
 						<li class="clearfix">
 								<div class="item">
-									<a target="_blank" href="http://www.iqiaowai.com/trends/37130.html"><img src="http://img1.iqiaowai.com/uploads/171106/156-1G1061Q42XN.jpg" alt="美国投资移民行业盛典来了！" width='270px' height='180px'/></a>
-									<p class="name"><b><a href="http://www.iqiaowai.com/trends/37130.html" target="_blank">美国投资移民行业盛典来了！…</a></b></p>
-									<p class="desc"><a href="http://www.iqiaowai.com/trends/37130.html" target="_blank">11月3日，侨外集团联袂美国权威地产媒体《The …</a></p>
-									<a class="link" href="http://www.iqiaowai.com/trends/37130.html" target="_blank">详情>></a>
+									<a target="_blank" href="<?php echo site_url('news/'.$value['news_id'].'')?>"><img src="../../../<?php echo $value['thumb']?>" alt="<?php echo $value['title'] ?>" width='270px' height='180px'/></a>
+									<p class="name"><b><a href="<?php echo site_url('news/'.$value['news_id'].'')?>" target="_blank"><?php  echo  mb_substr($value['title'],0,14,'utf-8').'...';?></a></b></p>
+									<p class="desc"><a href="http://www.iqiaowai.com/trends/37130.html" target="_blank"><?php  echo  htmlspecialchars_decode(mb_substr($value['content'],0,60,'utf-8')).'...';?></a></p>
+									<a class="link" href="<?php echo site_url('news/'.$value['news_id'].'')?>" target="_blank">详情>></a>
 								</div> 
-							</li>
-<li class="clearfix">
-								<div class="item">
-									<a target="_blank" href="http://www.iqiaowai.com/plus/view.php?aid=36932"><img src="http://img2.iqiaowai.com/uploads/allimg/171020/153-1G0201R0210-L.jpg" alt="侨外移民带您走进英联邦" width='270px' height='180px'/></a>
-									<p class="name"><b><a href="http://www.iqiaowai.com/plus/view.php?aid=36932" target="_blank">侨外移民带您走进英联邦</a></b></p>
-									<p class="desc"><a href="http://www.iqiaowai.com/plus/view.php?aid=36932" target="_blank">10月20日，侨外集团第五次在英国驻华大使官邸举…</a></p>
-									<a class="link" href="http://www.iqiaowai.com/plus/view.php?aid=36932" target="_blank">详情>></a>
-								</div> 
-							</li>
-<li class="clearfix">
-								<div class="item">
-									<a target="_blank" href="http://www.iqiaowai.com/trends/36540.html"><img src="http://img6.iqiaowai.com/uploads/allimg/170926/156-1F9261159210-L.jpg" alt="有一种标准，叫侨外" width='270px' height='180px'/></a>
-									<p class="name"><b><a href="http://www.iqiaowai.com/trends/36540.html" target="_blank">有一种标准，叫侨外</a></b></p>
-									<p class="desc"><a href="http://www.iqiaowai.com/trends/36540.html" target="_blank">2004年侨外移民创始人丁颖将美国投资移民EB-5项目…</a></p>
-									<a class="link" href="http://www.iqiaowai.com/trends/36540.html" target="_blank">详情>></a>
-								</div> 
-							</li>
-<li class="clearfix">
-								<div class="item">
-									<a target="_blank" href="http://www.iqiaowai.com/trends/36324.html"><img src="http://img6.iqiaowai.com/uploads/allimg/170906/153-1FZ61IH90-L.jpg" alt="《中国新移民》在京开播" width='270px' height='180px'/></a>
-									<p class="name"><b><a href="http://www.iqiaowai.com/trends/36324.html" target="_blank">《中国新移民》在京开播</a></b></p>
-									<p class="desc"><a href="http://www.iqiaowai.com/trends/36324.html" target="_blank">由凤凰卫视与侨外移民联合打造的《逐梦彼岸-…</a></p>
-									<a class="link" href="http://www.iqiaowai.com/trends/36324.html" target="_blank">详情>></a>
-								</div> 
-							</li>
-<li class="clearfix">
-								<div class="item">
-									<a target="_blank" href="http://www.iqiaowai.com/plus/view.php?aid=36310"><img src="http://img6.iqiaowai.com/uploads/allimg/170711/156-1FG11R602L3.jpg" alt="侨外海外规划展催热学区房" width='270px' height='180px'/></a>
-									<p class="name"><b><a href="http://www.iqiaowai.com/plus/view.php?aid=36310" target="_blank">侨外海外规划展催热学区房…</a></b></p>
-									<p class="desc"><a href="http://www.iqiaowai.com/plus/view.php?aid=36310" target="_blank">7月8日、9日，侨外海外生活规划服务展在青岛、…</a></p>
-									<a class="link" href="http://www.iqiaowai.com/plus/view.php?aid=36310" target="_blank">详情>></a>
-								</div> 
-							</li>
-<li class="clearfix">
-								<div class="item">
-									<a target="_blank" href="http://www.iqiaowai.com/plus/view.php?aid=36309"><img src="http://img4.iqiaowai.com/uploads/170711/194-1FG109111K52.jpg" alt="《私校见面会》解析英国教育" width='270px' height='180px'/></a>
-									<p class="name"><b><a href="http://www.iqiaowai.com/plus/view.php?aid=36309" target="_blank">《私校见面会》解析英国教育…</a></b></p>
-									<p class="desc"><a href="http://www.iqiaowai.com/plus/view.php?aid=36309" target="_blank">2017年7月9日，侨外集团联合英国大使馆文化教育…</a></p>
-									<a class="link" href="http://www.iqiaowai.com/plus/view.php?aid=36309" target="_blank">详情>></a>
-								</div> 
-							</li>
-<li class="clearfix">
-								<div class="item">
-									<a target="_blank" href="http://www.iqiaowai.com/plus/view.php?aid=36307"><img src="http://img5.iqiaowai.com/uploads/allimg/170627/153-1F62G436430-L.jpg" alt="英国投资移民趋势看过来！" width='270px' height='180px'/></a>
-									<p class="name"><b><a href="http://www.iqiaowai.com/plus/view.php?aid=36307" target="_blank">英国投资移民趋势看过来！…</a></b></p>
-									<p class="desc"><a href="http://www.iqiaowai.com/plus/view.php?aid=36307" target="_blank">6月23日，恰逢脱欧公投一周年之际，由侨外集团…</a></p>
-									<a class="link" href="http://www.iqiaowai.com/plus/view.php?aid=36307" target="_blank">详情>></a>
-								</div> 
-							</li>
-<li class="clearfix">
-								<div class="item">
-									<a target="_blank" href="http://www.iqiaowai.com/trends/36541.html"><img src="http://img6.iqiaowai.com/uploads/170926/156-1F92612142A93.jpg" alt="马光远解析海外投资机遇" width='270px' height='180px'/></a>
-									<p class="name"><b><a href="http://www.iqiaowai.com/trends/36541.html" target="_blank">马光远解析海外投资机遇</a></b></p>
-									<p class="desc"><a href="http://www.iqiaowai.com/trends/36541.html" target="_blank">9月23日，独立经济学家马光远在“侨外海外生活…</a></p>
-									<a class="link" href="http://www.iqiaowai.com/trends/36541.html" target="_blank">详情>></a>
-								</div> 
-							</li>
-<li class="clearfix">
-								<div class="item">
-									<a target="_blank" href="http://www.iqiaowai.com/plus/view.php?aid=36308"><img src="http://img2.iqiaowai.com/uploads/allimg/170628/156-1F62QFA1c6.jpg" alt="李稻葵侨外谈海外规划重要性" width='270px' height='180px'/></a>
-									<p class="name"><b><a href="http://www.iqiaowai.com/plus/view.php?aid=36308" target="_blank">李稻葵侨外谈海外规划重要性…</a></b></p>
-									<p class="desc"><a href="http://www.iqiaowai.com/plus/view.php?aid=36308" target="_blank">对于移民目的国的选择，部分投资人目标极为明…</a></p>
-									<a class="link" href="http://www.iqiaowai.com/plus/view.php?aid=36308" target="_blank">详情>></a>
-								</div> 
-							</li>
-<li class="clearfix">
-								<div class="item">
-									<a target="_blank" href="http://www.iqiaowai.com/plus/view.php?aid=35093"><img src="http://img6.iqiaowai.com/uploads/170901/153-1FZ11P05Q19.jpg" alt="侨外：“全方位海外生活规划服务平台”" width='270px' height='180px'/></a>
-									<p class="name"><b><a href="http://www.iqiaowai.com/plus/view.php?aid=35093" target="_blank">侨外：“全方位海外生活规划…</a></b></p>
-									<p class="desc"><a href="http://www.iqiaowai.com/plus/view.php?aid=35093" target="_blank">2017年4月23日，“侨首以待-侨外品牌战略升级发布…</a></p>
-									<a class="link" href="http://www.iqiaowai.com/plus/view.php?aid=35093" target="_blank">详情>></a>
-								</div> 
-							</li>
-
+							
+                    </li>
+                <?php }}?>
                    
                 </ul>
             </div>
         </div>
-        <div class="qw-video" onclick="_czc.push(['_trackEvent','新官网主页1.5-侨外视频','点击','新官网主页1.5-侨外视频']);">
-            <div class="video-box">
-                <div class="title-box clearfix">
-                    <div class="title" style="width:275px;">侨外视频 <span>Qiaowai video</span><span style="margin-left:10px;"><a href='/video/' style="color:#fff;" target="_blank">更多>></a></span></div>
-                </div>
-                <div class="video" id="player"></div>
-				<script type="text/javascript">
-                jwplayer("player").setup({
-                    stretching: "fill",
-                    flashplayer: "http://www.iqiaowai.com/templets/new/js/player.swf",
-                    image: "http://img4.iqiaowai.com/uploads/170929/156-1F9291R0235F.png",
-                    width: 270,
-                    height: 180,
-                    levels: [{
-                        file: "http://img4.iqiaowai.com/uploads/video/20170929yjcy.flv"
-                    }]
-                });
-                </script>
-
-                <p>
-                  作为侨外一年一度最为重要的答谢新老客户的品牌活动之一，侨CLUB中秋答谢到2017年已经连续举办了十一届，今年的晚会尤为精彩。...
-                </p>
-                <a target="_blank" href="http://www.iqiaowai.com/trends/36542.html" class="link">详情>></a>
-            </div>
-        </div>
+      
     </div>
     <!-- 侨外动态 E-->
     <!-- 项目案例 S-->
@@ -814,7 +719,10 @@
         
      }
 	 
-	 
+	 $(function(){
+        $('.tempWrap').css('width',"1120px")
+       
+     })
     </script>
     
 	<!-- //底部模板 -->

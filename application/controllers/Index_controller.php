@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Index_controller extends CI_Controller {
-
+	private $limit = 10;
 	/**
 	 * Index Page for this controller.
 	 *
@@ -21,9 +21,8 @@ class Index_controller extends CI_Controller {
 	public function __construct()
 	{
 
-
 		parent::__construct();
-		$data=$this->Home_model->getRow('*','setting');
+		$data=$this->Home_model->getRow('*','setting',array(),0,1);
 		$this->config->set_item('home',$data);
 		if($this->agent->is_mobile()) {
 			redirect(base_url().'wap');
@@ -34,21 +33,43 @@ class Index_controller extends CI_Controller {
 
 		$activity_data = $this->Home_model->getList('*','activity');
 		$popular_data = $this->Home_model->getList('*','popular');
-		$this->load->view('home/index',array('activity_data'=>$activity_data,'popular_data'=>$popular_data));
+		$news_data = $this->Home_model->getList('*','news');
+		$this->load->view('home/index',array('activity_data'=>$activity_data,'popular_data'=>$popular_data,'news_data'=>$news_data));
 	}
 
 	public function activityDeatail()
 	{
-		$activity_id=$this->uri->segment(2);
-		$data['activity_data']=$this->Home_model->getRow('*','activity',array('activity_id'=>$activity_id));
+		$id = $this->uri->segment(2);
+		$type = $this->uri->segment(3);
+		if($type=='yujian') {
+			$table ='news';
+			$id_type = 'news_id';
+			$url_type = 'news';
+		}else {
+			$table = 'activity';
+			$id_type  = 'activity_id';
+			$url_type = 'activity';
+		}
+		
+		$data['activity_data']=$this->Home_model->getRow('*',$table,array($id_type=>$id));
 		//上一篇 下一篇
-		$prev_data= $this->Home_model->query("select activity_id,title from activity where activity_id<".$activity_id." order by activity_id desc limit 1");
-		$data['prev_data'] = $prev_data ?  "<a href='".site_url('activity/'.$prev_data['activity_id'].'')."'>".$prev_data['title']."</a>"  : "没有了";
-		$next_data = $this->Home_model->query("select activity_id,title from activity where activity_id>".$activity_id." order by activity_id desc limit 1");
-		$data['next_data'] = $next_data ?  "<a href='".site_url('activity/'.$next_data['activity_id'].'')."'>".$next_data['title']."</a>"  : "没有了";
+		$prev_data= $this->Home_model->query("select {$id_type},title from {$table} where {$id_type}<".$id." order by {$id_type} desc limit 1");
+		$data['prev_data'] = $prev_data ?  "<a href='".site_url('activity/'.$prev_data[$id_type].'/'.$url_type.'')."'>".$prev_data['title']."</a>"  : "没有了";
+		$next_data = $this->Home_model->query("select {$id_type},title from {$table} where {$id_type}>".$id." order by {$id_type} desc limit 1");
+		$data['next_data'] = $next_data ?  "<a href='".site_url('activity/'.$next_data[$id_type].'/'.$url_type.'')."'>".$next_data['title']."</a>"  : "没有了";
 		$this->load->view('home/activity',$data);
 	}
-
+	public function newsDeatail()
+	{
+		$news_id=$this->uri->segment(2);
+		$data['activity_data']=$this->Home_model->getRow('*','news',array('news_id'=>$news_id));
+		//上一篇 下一篇
+		$prev_data= $this->Home_model->query("select news_id,title from news where news_id<".$news_id." order by news_id desc limit 1");
+		$data['prev_data'] = $prev_data ?  "<a href='".site_url('activity/'.$prev_data['news_id'].'')."'>".$prev_data['title']."</a>"  : "没有了";
+		$next_data = $this->Home_model->query("select news_id,title from news where news_id>".$news_id." order by news_id desc limit 1");
+		$data['next_data'] = $next_data ?  "<a href='".site_url('news/'.$next_data['news_id'].'')."'>".$next_data['title']."</a>"  : "没有了";
+		$this->load->view('home/activity',$data);
+	}
 	public function popularDetail()
 	{
 		$popular_id=$this->uri->segment(2);
@@ -117,6 +138,56 @@ class Index_controller extends CI_Controller {
 		}
 
 		echo $html;exit;
+	}
+	public function listDetail()
+	{
+
+		//$id = $this->uri->segment(2);
+		$type = $this->uri->segment(2);
+		if($type=='yujian') {
+			$table ='news';
+			$id_type = 'news_id';
+			$data['header'] = '裕鉴动态';
+		}else {
+			$table = 'activity';
+			$id_type  = 'activity_id';
+			$data['header'] = '移民热点';
+		}
+		
+		$total=$this->Home_model->getCount($table); 
+		$this->load->library('pagination');
+		$limit = $this->limit;
+		$config['base_url'] = site_url('list/'.$type).'?page=p';
+		$config['total_rows'] = $total;
+		$config['per_page'] = $limit;
+		$config['full_tag_open'] = '<div class="pagination">'; // 分页开始样式
+		$config['full_tag_close'] = '</div>'; // 分页结束样式
+		$config['first_link'] = '首页'; // 第一页显示
+		$config['last_link'] = '末页'; // 最后一页显示
+		$config['next_link'] = '下一页 '; // 下一页显示
+		$config['prev_link'] = '上一页'; // 上一页显示
+		$config['cur_tag_open'] = ' <a class="current">'; // 当前页开始样式
+		$config['cur_tag_close'] = '</a>'; // 当前页结束样式
+		$config['num_links'] = 2;// 当前连接前后显示页码个数
+		$config['page_query_string']=TRUE;
+		//$config['uri_segment'] = 4;
+		$config['use_page_numbers'] = TRUE;
+		$config['page_query_string']=TRUE;
+		$config['use_page_numbers'] = TRUE;
+		$per_page=$this->input->get('per_page');
+		$start=$per_page?($per_page-1)*$limit:0; 
+		
+		$data['row']=$this->Home_model->getList('*',$table,array(),$start,$limit,'create_time DESC');
+		foreach ($data['row'] as $key => &$value) {
+			if($type =='yujian') {
+				$value['url'] = site_url('activity/'.$value['news_id'].'/yujian');
+			}else {
+				$value['url'] = site_url('activity/'.$value['activity_id'].'/activity');
+			}
+		}
+		$this->pagination->initialize($config);
+		$data['page_links']=$this->pagination->create_links();
+		$this->load->view('home/list',$data);
 	}
 	
 }

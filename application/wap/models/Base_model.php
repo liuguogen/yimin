@@ -28,7 +28,7 @@ class Base_model extends CI_Model
 	/**
 	**获取单条数据
 	**/	
-	public function getRow($fildes='*',$table,$filter=array(),$limit=0,$offset=-1,$orderBy="") {
+	public function getRow($fildes='*',$table,$filter=array(),$limit=0,$offset=1,$orderBy="") {
 		$data=$this->getList($fildes,$table,$filter,$limit,$offset,$orderBy);
 		return !empty($data) ? $data[0] :array();
 	}
@@ -56,6 +56,7 @@ class Base_model extends CI_Model
 		if($orderBy) {
 			$sql.=" ORDER BY {$orderBy}";
 		}
+		if($limit>=0 && $offset!=-1)$sql.=" limit {$limit},{$offset}";
 		$rRow=$this->db->query($sql);
 
 		$data=$rRow->result_array()? $rRow->result_array():array();

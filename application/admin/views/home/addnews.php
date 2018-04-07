@@ -75,6 +75,10 @@
             <td><input type="text" name="title" class="form-control" value="<?php if(isset($data['title']) && $data['title']){ echo $data['title'];}else{echo '';} ?>" /></td>
         </tr>
         <tr>
+            <th>摘要 <span style="color: red;">*</span></th>
+            <td><input type="text" name="abstract" class="form-control" value="<?php if(isset($data['abstract']) && $data['abstract']){ echo $data['abstract'];}else{echo '';} ?>" /></td>
+        </tr>
+        <tr>
             <th>作者 <span style="color: red;">*</span></th>
             <td><input type="text" name="author" class="form-control" value="<?php if(isset($data['author']) && $data['author']){ echo $data['author'];}else{echo '';} ?>" /></td>
         </tr>

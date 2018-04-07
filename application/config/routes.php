@@ -50,7 +50,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'Index_controller/index';
-$route['activity/(:num)'] = 'Index_controller/activityDeatail/$1';
+$route['activity/(:num)/[a-z]+'] = 'Index_controller/activityDeatail/$1';
+$route['news/(:num)'] = 'Index_controller/newsDeatail/$1';
+$route['list/[a-z]+'] = 'Index_controller/listDetail/$1';
 $route['popular/(:num)'] = 'Index_controller/popularDetail/$1';
 $route['projects'] = 'Index_controller/projects';
 $route['getprojects'] = 'Index_controller/getProjects';

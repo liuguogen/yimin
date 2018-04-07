@@ -194,7 +194,7 @@
                 </div>
             </li>
             <li class="nav-box nav-project-box">
-                <a href="http://www.iqiaowai.com/projects/#title" class="nav-link" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-导航-热门项目','点击','新官网主页1.5-导航-热门项目']);">热门项目</a>
+                <a href="<?php echo site_url('projects'); ?>" class="nav-link" target="_blank">热门项目</a>
                 <i class="nav-line"></i>
             </li>
            
