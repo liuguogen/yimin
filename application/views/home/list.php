@@ -7,8 +7,8 @@
 		<meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
 		<title>侨外动态_新闻动态_侨外移民官网_第 1 页-投资移民项目进展</title>
         <meta name="renderer" content="webkit">
-        <meta name="keywords" content="侨外移民动态,移民行业动态,侨外移民官网" />
-		<meta name="description" content="侨外移民，美国投资移民EB-5、英国企业家移民引入机构，侨外为上万家庭实现移民梦想，业务涵盖美国、英国、澳大利亚、葡萄牙、西班牙等十余国，提供投资移民、海外置业、教育规划、家族财富管理、全球资产配置等专业、贴心、省心的全方位海外生活规划服务！" />
+        <meta name="keywords" content="" />
+		<meta name="description" content="" />
 
 		<meta http-equiv="Cache-Control" content="no-transform" /> 
         <meta http-equiv="Cache-Control" content="no-siteapp" />

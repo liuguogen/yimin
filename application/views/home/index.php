@@ -9,8 +9,8 @@
      <meta name="applicable-device" content="pc">	
     <link rel="shortcut icon" href="/favicon.ico" />
     <title><?php echo $this->config->item('sitename','home') ?></title>
-    <meta name="keywords" content="侨外移民,侨外移民官网,侨外投资移民,投资移民,美国移民,英国投资移民,侨外,侨外集团" />
-    <meta name="description" content="侨外移民，美国投资移民EB-5、英国企业家移民引入机构，侨外为上万家庭实现移民梦想，业务涵盖美国、英国、澳大利亚、葡萄牙、西班牙等十余国，提供投资移民、海外置业、教育规划、家族财富管理、全球资产配置等专业、贴心、省心的全方位海外生活规划服务！" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
     <link rel="stylesheet" href="../../../assets/home/css/common.css">
     <link rel="stylesheet" href="../../../assets/home/css/css.css">
     <link rel="stylesheet" href="../../../assets/home/css/banner.css">

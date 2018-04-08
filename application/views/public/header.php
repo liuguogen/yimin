@@ -201,7 +201,7 @@
             <li class="nav-box"><a href="http://house.iqiaowai.com/" class="nav-link" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-导航-海外房产','点击','新官网主页1.5-导航-海外房产']);">海外房产</a><i class="nav-line"></i></li>
             
             <li class="nav-box nav-about-box">
-                <a href="http://www.iqiaowai.com/aboutus.html" class="nav-link" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-导航-关于侨外','点击','新官网主页1.5-导航-关于侨外']);">关于我们</a>
+                <a href="<?php echo site_url('aboutus') ?>" class="nav-link" target="_blank">关于我们</a>
                <!--  <i class="nav-line"></i>
                 <div class="qw-about-menu">
                     <i></i>

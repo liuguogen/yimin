@@ -25,12 +25,7 @@
     <script src="http://www.iqiaowai.com/templets/new/index/js/imageflow.js"></script>
 </head>
 <body>
-	<script>var jyc_begin=new Date().getTime();</script>
 
-<script>
-var _czc = _czc || [];
-_czc.push(["_setAccount", "1259783328"]);
-</script>
 	<link rel="stylesheet" href="http://www.iqiaowai.com/templets/new/index/css/common.css">
     <link rel="stylesheet" href="http://www.iqiaowai.com/templets/new/index/css/css.css?171025">
     <script language="JavaScript" src="http://pv.sohu.com/cityjson"></script>

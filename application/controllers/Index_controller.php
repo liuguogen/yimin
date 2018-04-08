@@ -43,6 +43,11 @@ class Index_controller extends CI_Controller {
 		$this->load->view('home/index',array('activity_data'=>$activity_data,'popular_data'=>$popular_data,'news_data'=>$news_data,'case_data'=>$case_data));
 	}
 
+	public function aboutus()
+	{
+		$this->load->view('home/aboutus');
+	}
+
 	public function activityDeatail()
 	{
 		$id = $this->uri->segment(2);

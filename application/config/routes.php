@@ -55,6 +55,7 @@ $route['news/(:num)'] = 'Index_controller/newsDeatail/$1';
 $route['list/[a-z]+'] = 'Index_controller/listDetail/$1';
 $route['popular/(:num)'] = 'Index_controller/popularDetail/$1';
 $route['projects'] = 'Index_controller/projects';
+$route['aboutus'] = 'Index_controller/aboutus';
 $route['getprojects'] = 'Index_controller/getProjects';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
