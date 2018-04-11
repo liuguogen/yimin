@@ -6,61 +6,21 @@
                     <img src="../../../<?php echo $this->config->item('top_logo','home') ?>" style="width:436px;height:40px;" alt="<?php echo $this->config->item('sitename','home') ?>">
                 </a>
             </div>
-            <div class="qw-company">
-                <i></i>
-                <p>
-                    北京总部 <span></span>
-                </p>
-                <div class="qw-company-box">
-                    <div style="margin-right:35px;">
-                        <span>华北</span>
-                        <a  href="http://www.iqiaowai.com/beijing.html" target="_blank">北京总部</a>
-                    </div>
-                    <div>
-                        <span>华东</span>
-                        <a href="http://www.iqiaowai.com/shanghai.html" target="_blank"  onclick="_czc.push(['_trackEvent','新官网主页1.5-城市-上海','点击','新官网主页1.5-城市-上海']);">上海</a>
-                        <a href="http://www.iqiaowai.com/jiangsu.html" target="_blank"   onclick="_czc.push(['_trackEvent','新官网主页1.5-城市-江苏','点击','新官网主页1.5-城市-江苏']);">江苏</a>
-                        <a href="http://www.iqiaowai.com/zhejiang.html" target="_blank"  onclick="_czc.push(['_trackEvent','新官网主页1.5-城市-浙江','点击','新官网主页1.5-城市-浙江']);">浙江</a>
-                        <a href="http://www.iqiaowai.com/qingdao.html" target="_blank"   onclick="_czc.push(['_trackEvent','新官网主页1.5-城市-山东','点击','新官网主页1.5-城市-山东']);">山东</a>
-                    </div>
-                    <div>
-                        <span>华中</span>
-                        <a href="http://www.iqiaowai.com/hubei.html" target="_blank"    onclick="_czc.push(['_trackEvent','新官网主页1.5-城市-湖北','点击','新官网主页1.5-城市-湖北']);">湖北</a>
-                        <a href="http://www.iqiaowai.com/henan.html" target="_blank"               onclick="_czc.push(['_trackEvent','新官网主页1.5-城市-郑州','点击','新官网主页1.5-城市-郑州']);">郑州</a>
-                    </div>
-                    <div>
-                        <span>华南</span>
-                        <a href="http://www.iqiaowai.com/shenzhen.html" target="_blank"   onclick="_czc.push(['_trackEvent','新官网主页1.5-城市-深圳','点击','新官网主页1.5-城市-深圳']);">深圳</a>
-                        <a href="http://www.iqiaowai.com/guangzhou.html" target="_blank"  onclick="_czc.push(['_trackEvent','新官网主页1.5-城市-广州','点击','新官网主页1.5-城市-广州']);">广州</a>
-                        <a href="http://www.iqiaowai.com/zhuhai.html" target="_blank"     onclick="_czc.push(['_trackEvent','新官网主页1.5-城市-珠海','点击','新官网主页1.5-城市-珠海']);">珠海</a>
-                        <a href="http://www.iqiaowai.com/foshan.html?fs" target="_blank"  onclick="_czc.push(['_trackEvent','新官网主页1.5-城市-佛山','点击','新官网主页1.5-城市-佛山']);">佛山</a>
-                        <a href="http://www.iqiaowai.com/foshan.html?sd" target="_blank"  onclick="_czc.push(['_trackEvent','新官网主页1.5-城市-顺德','点击','新官网主页1.5-城市-顺德']);">顺德</a>
-                    </div>
-                    <div>
-                        <span>西南</span>
-                        <a href="http://www.iqiaowai.com/sichuan.html" target="_blank"   onclick="_czc.push(['_trackEvent','新官网主页1.5-城市-四川','点击','新官网主页1.5-城市-四川']);">四川</a>
-                        <a href="http://www.iqiaowai.com/chongqing.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-城市-重庆','点击','新官网主页1.5-城市-重庆']);">重庆</a>
-                    </div>
-                    <div>
-                        <span>西北</span>
-                        <a href="http://www.iqiaowai.com/shaanxi.html" target="_blank"  onclick="_czc.push(['_trackEvent','新官网主页1.5-城市-陕西','点击','新官网主页1.5-城市-陕西']);">陕西</a>
-                    </div>
-                </div>
-            </div>
+            
             <!-- 手机二维码 -->
             <div class="qr-code">
-                <a href='http://www.iqiaowai.com/m/?from=clickheader' target="_blank">
+                <a href='/wap' target="_blank">
                     <p>进入手机版</p>
                     <i></i>
                 </a>
                 <div class="codeimg" style="">
-                    <img src="http://www.iqiaowai.com/templets/new/images/cmoveon2.png" alt="侨外移民官方网站">
+                    <img src="../../../<?php echo $this->config->item('mobile_qrcode','home') ?>" alt="<?php echo $this->config->item('sitename','home') ?>">
                 </div>
             </div>
             <!-- 官网电话 -->
             <div class="qw-phone">
                 <i></i>
-                <p style="">24小时移民热线：<span>400-818-1100</span></p>
+                <p style="">24小时移民热线：<span><?php echo $this->config->item('hot_tel','home') ?></span></p>
             </div>
         </div>
     </div>
@@ -202,21 +162,7 @@
             
             <li class="nav-box nav-about-box">
                 <a href="<?php echo site_url('aboutus') ?>" class="nav-link" target="_blank">关于我们</a>
-               <!--  <i class="nav-line"></i>
-                <div class="qw-about-menu">
-                    <i></i>
-                    <ul>
-						<li><a href="http://www.iqiaowai.com/aboutus.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-导航-关于侨外-侨外介绍','点击','新官网主页1.5-导航-关于侨外-侨外介绍']);">侨外介绍</a></li>
-						<li><a href="http://www.iqiaowai.com/elitenteam" target="_blank"   onclick="_czc.push(['_trackEvent','新官网主页1.5-导航-关于侨外-精英团队','点击','新官网主页1.5-导航-关于侨外-精英团队']);">精英团队</a></li>
-						<li><a href="http://www.iqiaowai.com/mediareport" target="_blank"  onclick="_czc.push(['_trackEvent','新官网主页1.5-导航-关于侨外-媒体资讯','点击','新官网主页1.5-导航-关于侨外-媒体资讯']);">媒体资讯</a></li>
-						<li><a href="http://www.iqiaowai.com/servicecase" target="_blank"  onclick="_czc.push(['_trackEvent','新官网主页1.5-导航-关于侨外-服务案例','点击','新官网主页1.5-导航-关于侨外-服务案例']);">服务案例</a></li>
-						<li><a href="http://www.iqiaowai.com/video" target="_blank"        onclick="_czc.push(['_trackEvent','新官网主页1.5-导航-关于侨外-侨外视频','点击','新官网主页1.5-导航-关于侨外-侨外视频']);">侨外视频</a></li>
-                        <li><a href="http://www.iqiaowai.com/jobs" target="_blank"         onclick="_czc.push(['_trackEvent','新官网主页1.5-导航-关于侨外-招贤纳士','点击','新官网主页1.5-导航-关于侨外-招贤纳士']);">招贤纳士</a></li>
-                        <li><a href="http://www.iqiaowai.com/contactus.html" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-导航-关于侨外-联系我们','点击','新官网主页1.5-导航-关于侨外-联系我们']);">联系我们</a></li>
-					
-					
-					</ul>
-                </div> -->
+             
             </li>
         </ul>
     </div>

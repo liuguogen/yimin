@@ -71,6 +71,32 @@
             <th>站点名称 <span style="color: red;">*</span></th>
             <td><input type="text" name="sitename" class="form-control" value="<?php if(isset($data['sitename']) && $data['sitename']){echo $data['sitename'];}else{echo '';} ?>"  style="width: 800px;" /></td>
         </tr>
+         <tr>
+            <th>服务热线 <span style="color: red;">*</span></th>
+            <td><input type="text" name="hot_tel" class="form-control" value="<?php if(isset($data['hot_tel']) && $data['hot_tel']){echo $data['hot_tel'];}else{echo '';} ?>"  style="width: 800px;" /></td>
+        </tr>
+        <tr>
+            <th>手机版二维码 <span style="color: red;">*</span></th>
+            
+               <td>
+                   <div id="mobile_qrcode" ></div>
+                   <div id="add_mobile_qrcode"></div>
+                <?php if(isset($data['mobile_qrcode']) && $data['mobile_qrcode']){ ?>
+                <img src="../../../<?php echo $data['mobile_qrcode'] ?>" height="80" />
+                <?php }?>
+               </td>
+        </tr>
+        <tr>
+            <th>微信公众号二维码 <span style="color: red;">*</span></th>
+            
+               <td>
+                   <div id="wechat_qrcode" ></div>
+                   <div id="add_wechat_qrcode"></div>
+                <?php if(isset($data['wechat_qrcode']) && $data['wechat_qrcode']){ ?>
+                <img src="../../../<?php echo $data['wechat_qrcode'] ?>" height="80" />
+                <?php }?>
+               </td>
+        </tr>
         <tr>
             <th>LOGO <span style="color: red;">*</span></th>
             
@@ -161,6 +187,27 @@ $('#thumb').diyUpload({
         console.info( err );    
     }
 });
+$('#mobile_qrcode').diyUpload({
+    url:"<?php echo site_url('images/upload') ?>",
+    success:function( data ) {
+        $('#add_mobile_qrcode').append('<input type="hidden" name="mobile_qrcode" value='+data._raw+' />');
+        
+    },
+    error:function( err ) {
+        console.info( err );    
+    }
+});
+$('#wechat_qrcode').diyUpload({
+    url:"<?php echo site_url('images/upload') ?>",
+    success:function( data ) {
+        $('#add_wechat_qrcode').append('<input type="hidden" name="wechat_qrcode" value='+data._raw+' />');
+        
+    },
+    error:function( err ) {
+        console.info( err );    
+    }
+});
+
 //合作伙伴
 $('#partner_img').diyUpload({
     url:"<?php echo site_url('images/upload') ?>",

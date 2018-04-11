@@ -4,11 +4,11 @@
     <div class="footer-detail clearfix">
         <div class="left">
             <div class="qrphone">
-                <img src="http://www.iqiaowai.com/templets/new/images/qrphone.png">
+                <img src="../../../<?php echo $this->config->item('mobile_qrcode','home') ?>">
                 <p>侨外出国官网<br/>手机版</p>
             </div>
             <div class="qrcode">
-                <img src="http://www.iqiaowai.com/templets/new/images/qrcode.png">
+                <img src="../../../<?php echo $this->config->item('wechat_qrcode','home') ?>">
                 <p>侨外出国官方<br/>微信公众号</p>
             </div>
         </div>
@@ -32,7 +32,7 @@
                     <li><a href="http://www.iqiaowai.com/story/#footer" rel="nofollow" target="_blank">成功案例</a></li>
                 </ul>
             </div>
-            <p class="title">咨询服务热线：400-818-1100</p>
+            <p class="title">咨询服务热线：<?php echo $this->config->item('hot_tel','home') ?></p>
             <div class="city">
                 <p class="title">&nbsp;</p>
                 <!-- <ul class="clearfix">
@@ -55,6 +55,6 @@
         </div>
     </div>    
     <div class="copy-right w1100">
-         <p>京公境准字[2008]0008号<img src ="http://www.iqiaowai.com/templets/new/images/gaba.png" style="display:inline-block;" />京公安备11010502033230 京ICP备11035523号  Copyright © 北京侨外出国咨询服务有限公司</p>
+         <?php echo $this->config->item('copy_info','home') ?>
     </div>     
 </div>
