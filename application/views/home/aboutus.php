@@ -8,8 +8,8 @@
     <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8" />
     <title>关于我们</title>
     <meta name="renderer" content="webkit">
-    <meta name="keywords" content="" />
-    <meta name="description" content="" /> 
+    <meta name="keywords" content="<?php echo $this->config->item('keywords','home') ?>" />
+    <meta name="description" content="<?php echo $this->config->item('description','home') ?>" /> 
     
     <link rel="stylesheet" href="./../../assets/home/css/aboutus.css" />
     <meta http-equiv="Cache-Control" content="no-transform" /> 

@@ -9,9 +9,10 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <meta name="applicable-device" content="pc"> 
     <link rel="shortcut icon" href="/favicon.ico" />
-    <title>【希腊移民】_投资移民中介_希腊购房移民费用_希腊移民条件_侨外移民官网</title>
-    <meta name="keywords" content="希腊移民,希腊签证查询,希腊购房移民,希腊房产价格,移民希腊的条件,希腊买房移民，侨外移民官网" />
-    <meta name="description" content="希腊移民网是移民行业最权威快速移民平台，频道涵盖最新希腊移民条件,希腊投资移民政策,帮你成功选择希腊移民投资项,希腊移民购房等，详情可参看侨外移民官网希腊移民频道。" />
+    <title><?php echo $activity_data['title']; ?></title>
+     <meta name="keywords" content="<?php echo $this->config->item('keywords','home') ?>" />
+    <meta name="description" content="<?php echo $this->config->item('description','home') ?>" /> 
+    
 	<link href="http://www.iqiaowai.com/templets/new/css/footer.css" rel='stylesheet' type='text/css'/>
     <link rel="stylesheet" href="http://www.iqiaowai.com/templets/new/index/css/flexslider.css">
     <script src="http://www.iqiaowai.com/templets/wf/js/jquery.min.js"></script>

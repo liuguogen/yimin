@@ -5,10 +5,11 @@
 <meta name="renderer" content="webkit"> 
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
-		<title>侨外动态_新闻动态_侨外移民官网_第 1 页-投资移民项目进展</title>
+		<title><?php echo $activity_data['title']; ?></title>
         <meta name="renderer" content="webkit">
-        <meta name="keywords" content="" />
-		<meta name="description" content="" />
+         <meta name="keywords" content="<?php echo $this->config->item('keywords','home') ?>" />
+    <meta name="description" content="<?php echo $this->config->item('description','home') ?>" /> 
+    
 
 		<meta http-equiv="Cache-Control" content="no-transform" /> 
         <meta http-equiv="Cache-Control" content="no-siteapp" />

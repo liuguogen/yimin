@@ -7,8 +7,8 @@
     <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8" />
     <title><?php echo $this->config->item('sitename','home') ?></title>
     <meta name="renderer" content="webkit">
-    <meta name="keywords" content="移民项目,投资移民项目,购房移民,永居移民,海外移民房源介绍,海外购房费用,技术移民项目" />
-    <meta name="description" content="侨外移民官网投资移民项目甄选栏目诚心为您提供移民项目,投资移民项目,移民项目介绍,海外购房移民,海外房源等相关信息，侨外移民官网为您推荐更合适自身的移民项目." /> 
+    <meta name="keywords" content="<?php echo $this->config->item('keywords','home') ?>" />
+    <meta name="description" content="<?php echo $this->config->item('description','home') ?>" /> 
     <link rel="stylesheet" href="../../../assets/home/css/flexslider.css">
     <link rel="stylesheet" href="../../../assets/home/css/project.css" />
     <meta http-equiv="Cache-Control" content="no-transform" /> 

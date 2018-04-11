@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>荷兰库拉索移民_荷兰库拉索投资移民_荷兰绿卡_【侨外移民官网】</title>
-    <meta class="keywords" name="keywords" content="荷兰移民多少钱，荷兰库拉索投资移民，荷兰投资移民条件，侨外荷兰移民" />
-    <meta class="description" name="description" content="侨外荷兰库拉索投资移民项目首发机构，净收益30万+荷兰身份。申请荷兰移民方式简单，只需申购18万美元起的荷兰王国基建储备金；荷兰移民条件宽松，投资移民荷兰选择多样。侨外荷兰移民客户更多专享特权立省12万400-818-1100" />
+    <title><?php echo $activity_data['title']; ?></title>
+   <meta name="keywords" content="<?php echo $this->config->item('keywords','home') ?>" />
+    <meta name="description" content="<?php echo $this->config->item('description','home') ?>" /> 
     <link href="../../../assets/home/css/popular_css.css" rel="stylesheet" />
     <script src="../../../assets/home/js/jquery.min.js"></script>
     <script src="../../../assets/home/js/jquery.flexslider-min.js"></script>
