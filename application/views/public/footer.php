@@ -18,7 +18,7 @@
                 <ul class="clearfix">
                     <li><a href="/" rel="nofollow" target="_blank">网站首页 </a></li>
                     
-                    <li><a href="http://www.iqiaowai.com/jobs/" rel="nofollow" target="_blank">热门项目</a></li>
+                    <li><a href="<?php echo site_url('projects'); ?>" rel="nofollow" target="_blank">热门项目</a></li>
                     <li><a href="http://www.iqiaowai.com/jobs/" rel="nofollow" target="_blank">海外房产</a></li>
                     <li><a href="<?php echo site_url('aboutus') ?>" rel="nofollow" target="_blank">联系我们</a></li>
                 </ul>
