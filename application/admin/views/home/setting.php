@@ -76,6 +76,14 @@
             <td><input type="text" name="hot_tel" class="form-control" value="<?php if(isset($data['hot_tel']) && $data['hot_tel']){echo $data['hot_tel'];}else{echo '';} ?>"  style="width: 800px;" /></td>
         </tr>
         <tr>
+            <th>网站关键字 <span style="color: red;">*</span></th>
+            <td><input type="text" name="keywords" class="form-control" value="<?php if(isset($data['keywords']) && $data['keywords']){echo $data['keywords'];}else{echo '';} ?>"  style="width: 800px;" /></td>
+        </tr>
+        <tr>
+            <th>网站介绍 <span style="color: red;">*</span></th>
+            <td><input type="text" name="description" class="form-control" value="<?php if(isset($data['description']) && $data['description']){echo $data['description'];}else{echo '';} ?>"  style="width: 800px;" /></td>
+        </tr>
+        <tr>
             <th>手机版二维码 <span style="color: red;">*</span></th>
             
                <td>
