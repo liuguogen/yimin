@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title><?php echo $activity_data['title']; ?></title>
+    <title><?php echo $this->config->item('sitename','home') ?></title>
    <meta name="keywords" content="<?php echo $this->config->item('keywords','home') ?>" />
     <meta name="description" content="<?php echo $this->config->item('description','home') ?>" /> 
     <link href="../../../assets/home/css/popular_css.css" rel="stylesheet" />

@@ -4,7 +4,7 @@
 <meta name="renderer" content="webkit"> 
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
-    <title><?php echo $activity_data['title']; ?></title>
+    <title><?php echo $this->config->item('sitename','home') ?></title>
     <meta name="renderer" content="webkit">
     <meta name="keywords" content="<?php echo $activity_data['title']; ?>" />
     <meta name="description" content="<?php echo isset($activity_data['abstract'])?$activity_data['abstract'] : $activity_data['title']; ?>" />

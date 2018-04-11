@@ -9,7 +9,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <meta name="applicable-device" content="pc"> 
     <link rel="shortcut icon" href="/favicon.ico" />
-    <title><?php echo $activity_data['title']; ?></title>
+    <title><?php echo $this->config->item('sitename','home') ?></title>
      <meta name="keywords" content="<?php echo $this->config->item('keywords','home') ?>" />
     <meta name="description" content="<?php echo $this->config->item('description','home') ?>" /> 
     
