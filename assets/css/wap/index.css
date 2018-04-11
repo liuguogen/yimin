@@ -190,7 +190,8 @@ header .index-header-menu i{
 }
 .m-qw-activity .title{
 	font-size: .26rem;
-	line-height: .36rem;
+	/*line-height: .36rem;*/
+	text-indent: 0.5rem;
 }
 .m-qw-activity .time{
 	color: #959494;
@@ -211,7 +212,7 @@ header .index-header-menu i{
 }
 .m-qw-activity .address{
 	width: 4.45rem;
-	color: #959494;
+	color: #b37272;
 	font-size: .22rem;
 	position: absolute;
     padding-left: .26rem;

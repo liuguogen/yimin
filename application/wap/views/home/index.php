@@ -152,11 +152,11 @@
       		         <a class='mui-tab-a' href="details?id=38628&tid=395&city=4500" href="">
       		            <img class="mui-media-object mui-pull-right"  src="../../../<?php echo $value['thumb']; ?>" alt=""/>
       		            <div class="mui-media-body">
-		      		         <p class="title qwactiv"><?php echo mb_substr($value['title'], 0,30,'utf-8').'...'; ?></p>
+		      		         <p class="title qwactiv"><?php echo $value['title']; ?></p>
 		      		         <p class="time">
-		      		         	<i></i><?php echo date('Y-m-m H:i:s',$value['create_time']); ?></p>
+		      		         	<?php echo mb_substr($value['brief'],0,18,'utf-8').'...' ?></p>
 		      		         <p class="address mui-ellipsis">
-		      		         	<i></i><?php echo $value['brief']; ?>	      		         </p>
+		      		         	<?php echo $value['price']; ?>	      		         </p>
       		            </div>
       		        </a>
       		    </li>
