@@ -12,5 +12,5 @@
             </li>
             <?php }}?>
         </ul> 
-        <div class="hotspot banner-leyu" onclick="_czc.push(['_trackEvent','新官网主页1.5-banner-leyu','点击','新官网主页1.5-banner-leyu']);"></div>
+        
     </div>

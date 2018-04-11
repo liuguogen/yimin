@@ -24,12 +24,18 @@ class Wap_controller extends CI_Controller {
 
 
 		parent::__construct();
+
+		$data=$this->Home_model->getRow('*','setting',array(),0,1);
+		$this->config->set_item('home',$data);
 		
 	}
 	public function index()
 	{
 		$activity_data = $this->Home_model->getList('*','activity');
-		$this->load->view('home/index',array('activity_data'=>$activity_data));
+		$popular_data = $this->Home_model->getList('*','popular');
+		$case_data = $this->Home_model->getList('*','casetable');
+		$news_data = $this->Home_model->getList('*','news');
+		$this->load->view('home/index',array('activity_data'=>$activity_data,'popular_data'=>$popular_data,'case_data'=>$case_data,'news_data'=>$news_data));
 	}
 	
 }

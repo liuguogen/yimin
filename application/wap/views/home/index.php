@@ -76,50 +76,9 @@
       <div class="mui-scroll m-qw-main">
         <!-- 主界面具体展示内容 -->
         <!--轮播图-->
-        <div id="slider" class="mui-slider" >
-          <div class="mui-slider-group mui-slider-loop">
-            <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
-			                    						<div class="mui-slider-item mui-slider-item-duplicate">
-								<a href="http://www.iqiaowai.com/plus/view.php?aid=38756" class='mui-tab-a'>
-										<img src="http://www.iqiaowai.com/uploads/180313/180313/200-1P31316310Y96.jpg"  alt="">
-								</a>
-						</div>
-                                          <!-- 第一张 -->
-			                     						<div class="mui-slider-item">
-							<a href="http://www.iqiaowai.com/plus/view.php?aid=38756" class='mui-tab-a'>
-								<img src="http://www.iqiaowai.com/uploads/180313/180313/200-1P31316310Y96.jpg"  alt="">
-							</a>
-						</div>
-                                                  						<div class="mui-slider-item">
-							<a href="http://www.iqiaowai.com/plus/view.php?aid=38807" class='mui-tab-a'>
-								<img src="http://www.iqiaowai.com/uploads/180316/180316/200-1P316155223C8.jpg"  alt="">
-							</a>
-						</div>
-                                                  						<div class="mui-slider-item">
-							<a href="http://www.iqiaowai.com/plus/view.php?aid=37589" class='mui-tab-a'>
-								<img src="http://www.iqiaowai.com/uploads/171229/171229/200-1G2291500512X.jpg"  alt="">
-							</a>
-						</div>
-                                                  						<div class="mui-slider-item">
-							<a href="http://www.iqiaowai.com/plus/view.php?aid=38144" class='mui-tab-a'>
-								<img src="http://www.iqiaowai.com/uploads/180109/180110/200-1P110105159648.jpg"  alt="">
-							</a>
-						</div>
-                                          <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
-			                    						<div class="mui-slider-item mui-slider-item-duplicate">
-								<a href="http://www.iqiaowai.com/plus/view.php?aid=38756" class='mui-tab-a'>
-										<img src="http://www.iqiaowai.com/uploads/180313/180313/200-1P31316310Y96.jpg"  alt="">
-								</a>
-						</div>
-                              
-          </div>
-          <div class="mui-slider-indicator">
-            <div class="mui-indicator mui-active"></div>
-			 					 <div class="mui-indicator"></div>
-            					 <div class="mui-indicator"></div>
-            					 <div class="mui-indicator"></div>
-                      </div>
-        </div>
+
+        <?php $this->load->view('public/thumb') ?>
+       <!-- 轮播图end -->
       	<!--导航-->
 		<div class="mui-scroll-wrapper  mui-slider-indicator mui-segmented-control mui-segmented-control-inverted  m-qw-nav">
       	    <div class="mui-scroll  m-qw-nav-items clearfix">
@@ -181,11 +140,11 @@
       	</div> -->
       	<!--侨外活动-->
       	<div class="m-qw-activity">
-      		<h2 class="m-qw-title">侨外活动 <i style="background: url(../../../assets/images/icon.png) top left no-repeat;background-size:2.8rem 1.84rem ;"></i></h2>
+      		<h2 class="m-qw-title">热门项目 <i style="background: url(../../../assets/images/icon.png) top left no-repeat;background-size:2.8rem 1.84rem ;"></i></h2>
       		<ul class="mui-table-view">
 
-      			<?php if($activity_data){
-      				foreach ($activity_data as $key => $value) {
+      			<?php if($popular_data){
+      				foreach ($popular_data as $key => $value) {
       					
       				
       			 ?>
@@ -193,11 +152,11 @@
       		         <a class='mui-tab-a' href="details?id=38628&tid=395&city=4500" href="">
       		            <img class="mui-media-object mui-pull-right"  src="../../../<?php echo $value['thumb']; ?>" alt=""/>
       		            <div class="mui-media-body">
-		      		         <p class="title qwactiv"><?php echo $value['title']; ?></p>
+		      		         <p class="title qwactiv"><?php echo mb_substr($value['title'], 0,30,'utf-8').'...'; ?></p>
 		      		         <p class="time">
-		      		         	<i></i><?php echo $value['activity_time']; ?></p>
+		      		         	<i></i><?php echo date('Y-m-m H:i:s',$value['create_time']); ?></p>
 		      		         <p class="address mui-ellipsis">
-		      		         	<i></i><?php echo $value['prace']; ?>	      		         </p>
+		      		         	<i></i><?php echo $value['brief']; ?>	      		         </p>
       		            </div>
       		        </a>
       		    </li>
@@ -224,9 +183,45 @@
 		})(jQuery);
 				
 		</script>
+
+
+		<!--热点资讯-->
+      	<div class="m-qw-news">
+      		<div class="m-qw-title-box">
+      			<h2 class="m-qw-title">移民热点 <i style="background: url(../../../assets/images/icon.png) -.72rem 0 no-repeat;background-size:2.8rem 1.84rem ;"></i></h2>
+      			<a href="/m/hotlist" class="more" target="_blank" rel="nofollow">【更多】</a>
+      		</div>
+      		
+      		<ul class="mui-table-view">
+			   <?php if($activity_data){
+
+                    foreach ($activity_data as $ak => $av) {
+                        
+                    
+                  ?>
+      		    <li class="mui-table-view-cell mui-media newli">
+      		        <a class='mui-tab-a' href="details?id=38890&tid=679">
+      		            <img class="mui-media-object mui-pull-left" src="../../../<?php echo $av['thumb']; ?>">
+      		            <div class="mui-media-body">
+		      		         <p class="title hotnews"><?php echo mb_substr($av['title'],0,18,'utf-8').'...' ?></p>
+		      		         <p class="keywords">
+		      		         	<i></i><?php echo mb_substr($av['abstract'],0,18,'utf-8').'...' ?>
+		      		         </p>
+		      		         <p class="time">
+		      		         	<i></i><?php echo date('Y-m-d H:i:s',$av['create_time']) ?>		      		         </p>
+		      		         <p class="num">
+		      		         	<i></i><?php echo $av['read_num'] ?>		      		         </p>
+      		            </div>
+      		        </a>
+      		    </li>
+			  
+      		   <?php }} ?>
+      		   
+			       		</ul>
+      	</div>
       	<!--侨外国家-->
       	<div class="m-qw-contury">
-      		<h2 class="m-qw-title">移民国家 <i style="background: url(/m/web/img/xinimg/icon.png) -.34rem 0 no-repeat;background-size:2.8rem 1.84rem ;"></i></h2>
+      		<h2 class="m-qw-title">移民国家 <i style="background: url(../../../assets/images/icon.png) -.34rem 0 no-repeat;background-size:2.8rem 1.84rem ;"></i></h2>
       		<div class="mui-slider">
       		  <div class="mui-slider-group">
       		    <!--第一个内容区容器-->
@@ -438,64 +433,7 @@
 		          </div>
       		</div>
       	</div>
-      	<!--热点资讯-->
-      	<div class="m-qw-news">
-      		<div class="m-qw-title-box">
-      			<h2 class="m-qw-title">热点资讯 <i style="background: url(/m/web/img/xinimg/icon.png) -.72rem 0 no-repeat;background-size:2.8rem 1.84rem ;"></i></h2>
-      			<a href="/m/hotlist" class="more" target="_blank" rel="nofollow">【更多】</a>
-      		</div>
-      		
-      		<ul class="mui-table-view">
-			  
-      		    <li class="mui-table-view-cell mui-media newli">
-      		        <a class='mui-tab-a' href="details?id=38890&tid=679">
-      		            <img class="mui-media-object mui-pull-left" src="/uploads/allimg/180326/153-1P3261T2080-L.jpg">
-      		            <div class="mui-media-body">
-		      		         <p class="title hotnews">多米尼克将建区块链经济特区,护照移民申请数破纪录！</p>
-		      		         <p class="keywords">
-		      		         	<i></i>欧洲购房移民
-		      		         </p>
-		      		         <p class="time">
-		      		         	<i></i>2018-03-26		      		         </p>
-		      		         <p class="num">
-		      		         	<i></i>19100		      		         </p>
-      		            </div>
-      		        </a>
-      		    </li>
-			  
-      		    <li class="mui-table-view-cell mui-media newli">
-      		        <a class='mui-tab-a' href="details?id=38889&tid=230">
-      		            <img class="mui-media-object mui-pull-left" src="/uploads/180326/153-1P3261RQ2I6.jpg">
-      		            <div class="mui-media-body">
-		      		         <p class="title hotnews">强强联手：历史项目迎I-526获批，纽约金融中心项目首发热销</p>
-		      		         <p class="keywords">
-		      		         	<i></i>欧洲购房移民
-		      		         </p>
-		      		         <p class="time">
-		      		         	<i></i>2018-03-26		      		         </p>
-		      		         <p class="num">
-		      		         	<i></i>20346		      		         </p>
-      		            </div>
-      		        </a>
-      		    </li>
-			  
-      		    <li class="mui-table-view-cell mui-media newli">
-      		        <a class='mui-tab-a' href="details?id=38887&tid=833">
-      		            <img class="mui-media-object mui-pull-left" src="/uploads/180326/153-1P326105444Q9.jpg">
-      		            <div class="mui-media-body">
-		      		         <p class="title hotnews">欧盟、申根、英联邦国家的福利都想要？马耳他满足你</p>
-		      		         <p class="keywords">
-		      		         	<i></i>欧洲购房移民
-		      		         </p>
-		      		         <p class="time">
-		      		         	<i></i>2018-03-26		      		         </p>
-		      		         <p class="num">
-		      		         	<i></i>74485		      		         </p>
-      		            </div>
-      		        </a>
-      		    </li>
-			       		</ul>
-      	</div>
+      	
 		<script>/*
 				$(function(){
 					if($('.newli').length>3){
@@ -510,46 +448,26 @@
       	<!--媒体报道-->
       	<div class="m-qw-report">
       		<div class="m-qw-title-box">
-      			<h2 class="m-qw-title">媒体报道 <i style="background: url(/m/web/img/xinimg/icon.png) -1.1rem 0 no-repeat;background-size:2.8rem 1.84rem ;"></i></h2>
+      			<h2 class="m-qw-title">裕鉴动态<i style="background: url(../../../assets/images/icon.png) -1.1rem 0 no-repeat;background-size:2.8rem 1.84rem ;"></i></h2>
       			<a  href="/m/mtbdlist" class="more mui-tab-a" target="_blank" rel="nofollow">【更多】</a>
       		</div>
       		<ul class="mui-table-view mui-grid-view">
-				 
+				 <?php if($news_data){
+
+                        foreach ($news_data as $key => $value) {
+                            
+                        
+                     ?>
 					<li class="mui-table-view-cell mui-media mui-col-xs-6">
 						<a href="mtdetails?id=38714&tid=242" class='mui-tab-a'>
-							<img class="mui-media-object" src="/uploads/180309/153-1P309102532325.jpg">
-							<div class="mui-media-body mtbdtitle" style='width:4.1rem;'>侨外特邀荷兰市长中国见面会</div>
-							<p class="time"><i></i>2018-03-10</p>
-							<p class="keywords keys"><i></i>荷兰移民,移民荷</p>
+							<img class="mui-media-object" src="../../../<?php echo $value['thumb'] ?>">
+							<div class="mui-media-body mtbdtitle" style='width:4.1rem;'><?php echo mb_substr($value['title'],0,10,'utf-8').'...' ?></div>
+							<p class="time"><i></i><?php echo date('Ymd',$value['create_time']) ?></p>
+							<p class="keywords keys"><i></i><?php echo $value['abstract'] ?></p>
 						</a>
 					</li>
 				 
-					<li class="mui-table-view-cell mui-media mui-col-xs-6">
-						<a href="mtdetails?id=37130&tid=242" class='mui-tab-a'>
-							<img class="mui-media-object" src="/uploads/171106/156-1G1061Q42XN.jpg">
-							<div class="mui-media-body mtbdtitle" style='width:4.1rem;'>侨外美国投资移民行业盛典</div>
-							<p class="time"><i></i>2017-11-03</p>
-							<p class="keywords keys"><i></i>美国投资移民,美</p>
-						</a>
-					</li>
-				 
-					<li class="mui-table-view-cell mui-media mui-col-xs-6">
-						<a href="mtdetails?id=38713&tid=242" class='mui-tab-a'>
-							<img class="mui-media-object" src="/uploads/allimg/171030/156-1G030164I20-L.jpg">
-							<div class="mui-media-body mtbdtitle" style='width:4.1rem;'>阿姆斯特丹副市长专访侨外</div>
-							<p class="time"><i></i>2017-10-27</p>
-							<p class="keywords keys"><i></i>荷兰投资移民,侨</p>
-						</a>
-					</li>
-				 
-					<li class="mui-table-view-cell mui-media mui-col-xs-6">
-						<a href="mtdetails?id=36932&tid=242" class='mui-tab-a'>
-							<img class="mui-media-object" src="/uploads/allimg/171020/153-1G0201R0210-L.jpg">
-							<div class="mui-media-body mtbdtitle" style='width:4.1rem;'>侨外移民带您走进英联邦</div>
-							<p class="time"><i></i>2017-10-23</p>
-							<p class="keywords keys"><i></i>英国移民,英国投</p>
-						</a>
-					</li>
+					 <?php }} ?>
 				      		</ul>
 			<script>            
                 mui('.mui-scroll-wrapper').scroll({
@@ -600,9 +518,47 @@
 				}
 			</script>
       	</div>
+
+
+      	<!--热点资讯-->
+      	<div class="m-qw-news">
+      		<div class="m-qw-title-box">
+      			<h2 class="m-qw-title">成功案例 <i style="background: url(../../../assets/images/icon.png) -.72rem 0 no-repeat;background-size:2.8rem 1.84rem ;"></i></h2>
+      			<a href="/m/hotlist" class="more" target="_blank" rel="nofollow">【更多】</a>
+      		</div>
+      		
+      		<ul class="mui-table-view">
+			   <?php if($case_data){
+
+                    foreach ($case_data as $ak => $av) {
+                        
+                    
+                  ?>
+      		    <li class="mui-table-view-cell mui-media newli">
+      		        <a class='mui-tab-a' href="details?id=38890&tid=679">
+      		            <img class="mui-media-object mui-pull-left" src="../../../<?php echo $av['thumb']; ?>">
+      		            <div class="mui-media-body">
+		      		         <p class="title hotnews"><?php echo mb_substr($av['title'],0,18,'utf-8').'...' ?></p>
+		      		         <p class="keywords">
+		      		         	<i></i><?php echo mb_substr($av['abstract'],0,18,'utf-8').'...' ?>
+		      		         </p>
+		      		         <p class="time">
+		      		         	<i></i><?php echo date('Y-m-d H:i:s',$av['create_time']) ?>		      		         </p>
+		      		         <p class="num">
+		      		         	<i></i><?php echo $av['read_num'] ?>		      		         </p>
+      		            </div>
+      		        </a>
+      		    </li>
+			  
+      		   <?php }} ?>
+      		   
+			       		</ul>
+      	</div>
+
+      	<!--  -->
       </div>
     </div>  	    
     <script src="../../../assets/js/wap/index.js"></script>
-	<script type="text/javascript" src="../../../assets/js/wap/common.js"></script>
+	
 </body>
 </html>
