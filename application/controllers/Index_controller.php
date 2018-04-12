@@ -22,8 +22,8 @@ class Index_controller extends CI_Controller {
 	{
 
 		parent::__construct();
-		$case['case'] = $this->Home_model->getList('case_id,title','casetable');
-		$hot['hot'] = $this->Home_model->getList('activity_id,title','activity');
+		$case['case'] = $this->Home_model->getList('case_id,title','casetable',array(),0,10,'create_time desc');
+		$hot['hot'] = $this->Home_model->getList('activity_id,title','activity',array(),0,10,'create_time desc');
 		$this->config->set_item('hot',$hot);
 		$this->config->set_item('case',$case);
 		$data=$this->Home_model->getRow('*','setting',array(),0,1);
