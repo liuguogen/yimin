@@ -1,5 +1,5 @@
  <nav class="mui-bar mui-bar-tab m-qw-footer">
-        <a href='/' class="mui-tab-item mui-tab-a">
+        <a href='/wap' class="mui-tab-item mui-tab-a">
             <i style="background-position-y: 0;"></i>
             <p>首页</p>
         </a>
