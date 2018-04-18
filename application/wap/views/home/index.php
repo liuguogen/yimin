@@ -54,7 +54,7 @@
         	</div>
         </div>
     </header> -->
-    <!-- <nav class="mui-bar mui-bar-tab m-qw-footer">
+    <nav class="mui-bar mui-bar-tab m-qw-footer">
 	    <a href='/m' class="mui-tab-item mui-active mui-tab-a">
 	        <i style="background-position-y: 0;"></i>
 	        <p>首页</p>
@@ -71,7 +71,7 @@
 	        <i style="background-position-y: -1.6rem ;"></i>
 	        <p>客服电话</p>
 	    </a>
-	</nav> -->
+	</nav>
     <div class="mui-content mui-scroll-wrapper" id="mui-content">
       <div class="mui-scroll m-qw-main">
         <!-- 主界面具体展示内容 -->
@@ -189,7 +189,7 @@
       	<div class="m-qw-news">
       		<div class="m-qw-title-box">
       			<h2 class="m-qw-title">移民热点 <i style="background: url(../../../assets/images/icon.png) -.72rem 0 no-repeat;background-size:2.8rem 1.84rem ;"></i></h2>
-      			<a href="/m/hotlist" class="more" target="_blank" rel="nofollow">【更多】</a>
+      			<a href="<?php echo site_url('list/activity') ?>" class="more" target="_blank" rel="nofollow">【更多】</a>
       		</div>
       		
       		<ul class="mui-table-view">
@@ -200,7 +200,7 @@
                     
                   ?>
       		    <li class="mui-table-view-cell mui-media newli">
-      		        <a class='mui-tab-a' href="details?id=38890&tid=679">
+      		        <a class='mui-tab-a' href="<?php echo site_url('activity/'.$av['activity_id'].'/activity')?>">
       		            <img class="mui-media-object mui-pull-left" src="../../../<?php echo $av['thumb']; ?>">
       		            <div class="mui-media-body">
 		      		         <p class="title hotnews"><?php echo mb_substr($av['title'],0,18,'utf-8').'...' ?></p>
@@ -449,7 +449,7 @@
       	<div class="m-qw-report">
       		<div class="m-qw-title-box">
       			<h2 class="m-qw-title">裕鉴动态<i style="background: url(../../../assets/images/icon.png) -1.1rem 0 no-repeat;background-size:2.8rem 1.84rem ;"></i></h2>
-      			<a  href="/m/mtbdlist" class="more mui-tab-a" target="_blank" rel="nofollow">【更多】</a>
+      			<a  href="<?php echo site_url('list/yujian') ?>" class="more mui-tab-a" target="_blank" rel="nofollow">【更多】</a>
       		</div>
       		<ul class="mui-table-view mui-grid-view">
 				 <?php if($news_data){
@@ -459,7 +459,7 @@
                         
                      ?>
 					<li class="mui-table-view-cell mui-media mui-col-xs-6">
-						<a href="mtdetails?id=38714&tid=242" class='mui-tab-a'>
+						<a href="<?php echo site_url('activity/'.$value['news_id'].'/yujian')?>" class='mui-tab-a'>
 							<img class="mui-media-object" src="../../../<?php echo $value['thumb'] ?>">
 							<div class="mui-media-body mtbdtitle" style='width:4.1rem;'><?php echo mb_substr($value['title'],0,10,'utf-8').'...' ?></div>
 							<p class="time"><i></i><?php echo date('Ymd',$value['create_time']) ?></p>
@@ -524,7 +524,7 @@
       	<div class="m-qw-news">
       		<div class="m-qw-title-box">
       			<h2 class="m-qw-title">成功案例 <i style="background: url(../../../assets/images/icon.png) -.72rem 0 no-repeat;background-size:2.8rem 1.84rem ;"></i></h2>
-      			<a href="/m/hotlist" class="more" target="_blank" rel="nofollow">【更多】</a>
+      			<a href="<?php echo site_url('list/case') ?>" class="more" target="_blank" rel="nofollow">【更多】</a>
       		</div>
       		
       		<ul class="mui-table-view">
@@ -535,7 +535,7 @@
                     
                   ?>
       		    <li class="mui-table-view-cell mui-media newli">
-      		        <a class='mui-tab-a' href="details?id=38890&tid=679">
+      		        <a class='mui-tab-a' href="<?php echo site_url('activity/'.$av['case_id'].'/case')?>">
       		            <img class="mui-media-object mui-pull-left" src="../../../<?php echo $av['thumb']; ?>">
       		            <div class="mui-media-body">
 		      		         <p class="title hotnews"><?php echo mb_substr($av['title'],0,18,'utf-8').'...' ?></p>

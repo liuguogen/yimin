@@ -1,0 +1,226 @@
+*{
+	box-sizing:content-box;
+}
+.qw_header{
+	width: 7.5rem;
+	height: 0.88rem;
+	background: #fff;
+}
+.qw_header .qw_icon{
+	display: block;
+	width: 2.6rem;
+	height: 0.88rem;
+	margin-left: 0.3rem;
+	background: url(../img/qw_logo.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.qw_header .right{
+	margin-right: 0.3rem;
+}
+.qw_header .right a{
+	display: block;
+	float: left;
+	font-size: 0.22rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	border-radius: 0.2rem;
+	border: 1px solid #dcdcdc;
+	padding: 0 15px;
+	color: #000;
+	margin-top: 0.28rem;
+}
+.qw_nav{
+	width: 7.5rem;
+	height: 0.72rem;
+	background: #d7000f;
+}
+.qw_nav li{
+	float: left;
+	height: 0.72rem;
+	width: 25%;
+	box-sizing:border-box;
+	border-right: 1px solid #fff;
+}
+.qw_nav li.now{
+	background: #fff;
+	border: 1px solid #c9c9c9;
+}
+.qw_nav li.now a{
+	color: #000;
+}
+.qw_nav li a{
+	display: block;
+	font-size: 0.28rem;
+	line-height: 0.72rem;
+	color: #fff;
+	text-align: center;
+}
+.footer{
+	width: 100%;
+	height: 0.86rem;
+	background: #d7000f;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 33;
+}
+.footer div{
+	width: 33.33%;
+	height: 0.86rem;
+	line-height: 0.86rem;
+	padding-left: 0.9rem;
+	box-sizing:border-box;
+	color: #fff;
+	font-family: Mcrosoft yahei;
+	font-size: 0.28rem;
+	float: left;
+	border-right: 2px solid #fff;
+	background: url(../img/h_ph.png) no-repeat;
+	background-size: 0.4rem 0.47rem;
+	background-position: 0.3rem 0.17rem;
+}
+.footer .abtm{
+	display: block;
+	width: 33.33%;
+	height: 0.86rem;
+	line-height: 0.86rem;
+	padding-left: 0.9rem;
+	box-sizing:border-box;
+	font-family: Mcrosoft yahei;
+	color: #fff;
+	border-right:2px solid #fff;
+	font-size: 0.28rem;
+	float: left;
+	background: url(../img/h_zx.png) no-repeat;
+	background-size: 0.43rem 0.36rem;
+	background-position: 0.3rem 0.25rem;
+}
+.footer .abtm2{
+	display: block;
+	width: 33.33%;
+	height: 0.86rem;
+	line-height: 0.86rem;
+	padding-left: 0.75rem;
+	font-family: Mcrosoft yahei;
+	box-sizing:border-box;
+	color: #fff;
+	font-size: 0.28rem;
+	float: left;
+	background: url(../img/h_mb.png) no-repeat;
+	background-size: 0.2rem 0.36rem;
+	background-position: 0.3rem 0.25rem;
+}
+.popup,.sharebox{
+	background: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	display: none;
+}
+.showform{
+	width: 6.5rem;
+	background: #fff;
+	margin: 0 auto;
+	margin-top: 3.2rem;
+	border-radius: 0.2rem;
+	position: relative;
+}
+.popup .formlogo{
+	height: 1.01rem;
+	background: url(../img/qw_logo1.jpg) center no-repeat #d6000f;
+	background-size: auto 100%;
+	border-radius: 0.2rem 0.2rem 0 0;
+}
+.showform input{
+	width: 5.9rem;
+	height: 0.66rem;
+	border-radius: 0.6rem;
+	background: #f1f1f1;
+	font-size: 0.28rem;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	margin-top: 0.3rem;
+	font-family: "微软雅黑",arial,sans-serif;
+}
+.showform input[type="submit"]{
+	background: #d6000f;
+	color: #fff;
+}
+.showform form{
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid #f1f1f1;
+}
+.showform p{
+	font-size: 0.22rem;
+	color: #727272;
+	text-align: center;
+	line-height: 0.36rem;
+	padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+}
+.popup .closeform{
+	width: 0.52rem;
+	height: 0.52rem;
+	background: url(../img/close.png) center no-repeat;
+	background-size: 100%;
+	position: absolute;
+	right: 0;
+	top: -0.9rem;
+}
+.popup i{
+	width: 1px;
+	height: 0.38rem;
+	background: #f1f1f1;
+	position: absolute;
+	right: 0.26rem;
+	top: -0.38rem;
+}
+
+.gotop{
+	width: 0.71rem;
+	height: 0.71rem;
+	background: url(../img/gotop.png) no-repeat;
+	background-size: 100%;	
+	position: fixed;
+	right: 0.3rem;
+	top: 8.5rem;
+	opacity: 0.8;
+	z-index: 99;
+}
+.goback{
+	width: 0.8rem;
+	height: 0.8rem;
+	background: url(../img/return.png) no-repeat;
+	background-size: 100%;	
+	position: fixed;
+	left: 0.2rem;
+	bottom: 2.2rem;
+	opacity: 0.8;
+	z-index: 99;
+}
+.collect{
+	width: 0.71rem;
+	height: 0.71rem;
+	background: url(../img/collect.png) no-repeat;
+	background-size: 100%;	
+	position: fixed;
+	right: 2.16rem;
+	top: 8.5rem;
+	opacity: 0.8;
+	z-index: 99;
+}
+.share{
+	width: 0.71rem;
+	height: 0.71rem;
+	background: url(../img/share.png) no-repeat;
+	background-size: 100%;	
+	position: fixed;
+	right: 1.23rem;
+	top: 8.5rem;
+	opacity: 0.8;
+	z-index: 99;
+}

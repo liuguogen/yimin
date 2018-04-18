@@ -50,5 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'Wap_controller';
+$route['list/[a-z]+']  = 'Wap_controller/newsList/$1';
+$route['activity/(:num)/[a-z]+'] = 'Wap_controller/activityDeatail/$1';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

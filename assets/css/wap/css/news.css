@@ -1,0 +1,158 @@
+.listname{
+	font-size: 0.31rem;
+	color: #d6000f;
+	line-height: 0.6rem;
+	padding-left: 0.3rem;
+	margin-top: 0.1rem;
+	background: #fff;
+}
+.area{
+	background: #fff;
+	padding:0  0.3rem ;
+	border-bottom: 1px solid #e5e5e5;
+}
+.area p{
+	width: 1.3rem;
+	font-size: 0.3rem;
+	color: #595959;
+	float: left;
+}
+.area .part{
+	padding-top: 0.3rem ;
+	border-bottom: 1px solid #e5e5e5;
+}
+.area ul{
+	width: 5.2rem;
+	float: right;
+}
+.area ul li{
+	width: 1.4rem;
+	height: 0.42rem;
+	font-size: 0.24rem;
+	color: #000;
+	float: left;
+	background: #f6f6f6;
+	border: 1px solid #d2d2d2;
+	margin-right: 0.4rem;
+	margin-bottom: 0.25rem;
+	text-align: center;
+	line-height: 0.42rem;
+}
+.area ul li.now{
+	color: #d6000f;
+}
+.area ul li.now a{
+	color: #d6000f;
+}
+.content{
+	margin-top: 0.1rem;
+	border-top: 1px solid #e5e5e5;
+	background: #fff;
+}
+
+.content .item{
+	padding: 0.2rem 0.3rem;
+	border-bottom: 1px solid #eeeeee;
+}
+.content .left{
+	width: 3.1rem;
+}
+.content .right{
+	width: 3.45rem;
+	padding-left: 0.3rem;
+}
+.content img{
+	width: 3.1rem;
+	height: 2.06rem;
+}
+.content .content_title{
+	line-height: 0.45rem;
+	font-size: 0.28rem;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.content .content_desc{
+	height: 0.75rem;
+	color: #7e7e7e;
+	font-size: 0.26rem;
+	line-height: 0.4rem;
+	margin-top: 0.2rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.page{
+	width: 6.8rem;
+	padding: 0.25rem 0;
+	margin: 0 auto;
+	margin-bottom: 1rem;
+}
+.page .unable{
+	color: #a9a9a9;
+}
+.prepage{
+	width: 1.26rem;
+	height: 0.43rem;
+	background: #f5f5f5;
+	font-size: 0.25rem;
+	border: 1px solid #dcdcdc;
+	text-align: center;
+	line-height: 0.43rem;
+	border-radius: 0.4rem;
+	float: left;
+	margin-right: 0.3rem;
+}
+.nextpage{
+	width: 1.26rem;
+	height: 0.44rem;
+	background: #f5f5f5;
+	font-size: 0.25rem;
+	border: 1px solid #dcdcdc;
+	text-align: center;
+	line-height: 0.44rem;
+	border-radius: 0.4rem;
+	float: left;
+}
+.page ul{
+	float: left;
+}
+.page ul li{
+	float: left;
+	width: 0.44rem;
+	height: 0.44rem;
+	border: 1px solid #bfbfbf;
+	border-radius: 0.1rem;
+	font-size: 0.27rem;
+	margin-right: 0.3rem;
+	text-align: center;
+	line-height: 0.44rem;
+}
+.page ul li.now{
+	background: #d7000f;
+	color: #fff;
+	border: 1px solid #d7000f;
+}
+.page ul li.now a{
+	color: #fff;
+}
+.itembox{
+	width: 6.6rem;
+	padding: 0.2rem 0.3rem;
+	border-bottom: 1px solid #eeeeee;
+	margin: 0 auto;
+}
+.honoritem{
+	width: 2.8rem;
+	height: 1.9rem;
+	margin: 0.2rem;
+	float: left;
+}
+.honoritem img{
+	width: 100%;
+	height: 100%;
+}

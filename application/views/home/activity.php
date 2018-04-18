@@ -36,9 +36,7 @@
     <script src="../../../assets/home/js/savepath_uclick.js"></script>
     <script src="../../../assets/home/js/float_year.js"></script>
     <script src="../../../assets/home/js/jquery.SuperSlide.2.1.1.js"></script>
-<script>
-    beheActiveView({at: "arrive", src: "1697009109", cid: "", sid: "27206"})
-</script>
+
 </head>
 <body>
 	
