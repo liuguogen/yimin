@@ -143,7 +143,7 @@
     </div>
     <!-- 侨外活动 E-->
     <!-- 移民国家 S-->
-    <div class="qw-country">
+    <!--<div class="qw-country">
         <div class="qw-center">
             <div class="title-box clearfix">
                 <i></i>
@@ -464,7 +464,7 @@
 			</script>
             <div class="country-add"  onclick="_czc.push(['_trackEvent','新官网主页1.5-查看更多移民国家','点击','新官网主页1.5-查看更多移民国家']);">查看更多移民国家  <i></i></div>
         </div>
-    </div>
+    </div>-->
     <!-- 移民国家 E-->
     <!-- 侨外动态 S-->
     <div class="qw-news-video qw-center clearfix">

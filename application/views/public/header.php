@@ -29,7 +29,7 @@
     <div class="qw-nav" style="background: #3ab6ca;">
         <ul class="qw-center">
             <li class="on nav-box"><a href="/" class="nav-link"    onclick="_czc.push(['_trackEvent','新官网主页1.5-导航首页','点击','新官网主页1.5-导航首页']);">首  页</a><i class="nav-line"></i></li>
-            <li class="nav-box nav-country-box">
+            <!-- <li class="nav-box nav-country-box">
                 <a href="http://www.iqiaowai.com/country/" class="nav-link" target="_blank"  onclick="_czc.push(['_trackEvent','新官网主页1.5-导航移民国家','点击','新官网主页1.5-导航移民国家']);">移民国家</a>
                 <i class="nav-line"></i>
                 <div class="qw-country-menu">
@@ -43,7 +43,7 @@
 							<li><a href="http://www.iqiaowai.com/zhuanti/dominic171204/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-导航国家-多米尼克','点击','新官网主页1.5-导航国家-多米尼克']);">多米尼克</a></li>
 							<li><a href="http://www.iqiaowai.com/zhuanti/saintlucia180117/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-导航国家-圣卢西亚','点击','新官网主页1.5-导航国家-圣卢西亚']);">圣卢西亚</a></li>
 					   </ul>
-                    </div>
+                    </div> 
                     <div class="country-menu clearfix">
                         <p>欧洲：</p>
                         <ul class="clearfix">
@@ -57,7 +57,7 @@
 							<li><a href="http://www.iqiaowai.com/germany/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-导航国家-德国','点击','新官网主页1.5-导航国家-德国']);">德国</a></li>
 							<li><a href="http://www.iqiaowai.com/ireland/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-导航国家-爱尔兰','点击','新官网主页1.5-导航国家-爱尔兰']);">爱尔兰</a></li>
 							<li><a href="http://www.iqiaowai.com/cyprus/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-导航国家-塞浦路斯','点击','新官网主页1.5-导航国家-塞浦路斯']);">塞浦路斯</a></li>
-                            <!--<li><a href="http://www.iqiaowai.com/hungary/" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-导航国家-匈牙利','点击','新官网主页1.5-导航国家-匈牙利']);">匈牙利</a></li>-->
+                            
                         </ul>
                     </div>
                     <div class="country-menu clearfix">
@@ -152,13 +152,24 @@
                         </ul>
                     </div>
                 </div>
+            </li>-->
+            <li class="nav-box nav-project-box">
+                <a href="<?php echo site_url('list/activity') ?>" class="nav-link" target="_blank">热门热点</a>
+                <i class="nav-line"></i>
+            </li>
+            <li class="nav-box nav-project-box">
+                <a href="<?php echo site_url('list/yujian') ?>" class="nav-link" target="_blank">裕鉴动态</a>
+                <i class="nav-line"></i>
             </li>
             <li class="nav-box nav-project-box">
                 <a href="<?php echo site_url('projects'); ?>" class="nav-link" target="_blank">热门项目</a>
                 <i class="nav-line"></i>
             </li>
-           
-            <li class="nav-box"><a href="http://house.iqiaowai.com/" class="nav-link" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-导航-海外房产','点击','新官网主页1.5-导航-海外房产']);">海外房产</a><i class="nav-line"></i></li>
+           <li class="nav-box nav-project-box">
+                <a href="<?php echo site_url('list/case') ?>" class="nav-link" target="_blank">成功案例</a>
+                <i class="nav-line"></i>
+            </li>
+           <!--  <li class="nav-box"><a href="http://house.iqiaowai.com/" class="nav-link" target="_blank" onclick="_czc.push(['_trackEvent','新官网主页1.5-导航-海外房产','点击','新官网主页1.5-导航-海外房产']);">海外房产</a><i class="nav-line"></i></li> -->
             
             <li class="nav-box nav-about-box">
                 <a href="<?php echo site_url('aboutus') ?>" class="nav-link" target="_blank">关于我们</a>

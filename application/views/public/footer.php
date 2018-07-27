@@ -4,11 +4,11 @@
     <div class="footer-detail clearfix">
         <div class="left">
             <div class="qrphone">
-                <img src="../../../<?php echo $this->config->item('mobile_qrcode','home') ?>">
+                <img style="height: 100px;" src="../../../<?php echo $this->config->item('mobile_qrcode','home') ?>">
                 <p>侨外出国官网<br/>手机版</p>
             </div>
             <div class="qrcode">
-                <img src="../../../<?php echo $this->config->item('wechat_qrcode','home') ?>">
+                <img style="height: 100px;" src="../../../<?php echo $this->config->item('wechat_qrcode','home') ?>">
                 <p>侨外出国官方<br/>微信公众号</p>
             </div>
         </div>
