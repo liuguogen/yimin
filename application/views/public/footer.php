@@ -19,7 +19,7 @@
                     <li><a href="/" rel="nofollow" target="_blank">网站首页 </a></li>
                     
                     <li><a href="<?php echo site_url('projects'); ?>" rel="nofollow" target="_blank">热门项目</a></li>
-                    <li><a href="http://www.iqiaowai.com/jobs/" rel="nofollow" target="_blank">海外房产</a></li>
+                    <!-- <li><a href="http://www.iqiaowai.com/jobs/" rel="nofollow" target="_blank">海外房产</a></li> -->
                     <li><a href="<?php echo site_url('aboutus') ?>" rel="nofollow" target="_blank">联系我们</a></li>
                 </ul>
             </div>             
@@ -27,7 +27,7 @@
                 <ul class="clearfix">
                     <li><a href="<?php echo site_url('list/activity') ?>" rel="nofollow" target="_blank">移民热点</a></li>
                     <li><a href="<?php echo site_url('projects'); ?>" rel="nofollow" target="_blank">热门项目</a></li>
-                    <li><a href="http://www.iqiaowai.com/club/#footer" rel="nofollow" target="_blank">移民国家</a></li>
+                    <!-- <li><a href="http://www.iqiaowai.com/club/#footer" rel="nofollow" target="_blank">移民国家</a></li> -->
                     <li><a href="<?php echo site_url('list/yujian') ?>" rel="nofollow" target="_blank">裕鉴动态</a></li>
                     <li><a href="<?php echo site_url('list/case') ?>" rel="nofollow" target="_blank">成功案例</a></li>
                 </ul>
