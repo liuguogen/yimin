@@ -154,7 +154,7 @@
                 </div>
             </li>-->
             <li class="nav-box nav-project-box">
-                <a href="<?php echo site_url('list/activity') ?>" class="nav-link" target="_blank">热门热点</a>
+                <a href="<?php echo site_url('list/activity') ?>" class="nav-link" target="_blank">移民热点</a>
                 <i class="nav-line"></i>
             </li>
             <li class="nav-box nav-project-box">
