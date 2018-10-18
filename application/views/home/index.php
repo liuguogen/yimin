@@ -471,7 +471,7 @@
         <div class="qw-news">
             <div class="title-box clearfix">
                 <i></i>
-                <div class="title" style="width:275px;">裕鉴动态 <span>Yujian news</span></div>
+                <div class="title" style="width:275px;">银俸国际动态 <span>Yinfeng news</span></div>
 				<span style="float:right;line-height: 53px;"><a href="<?php echo site_url('list/yujian') ?>" style="color:#c1c1c1;" target="_blank">更多...</a></span>
             </div>
             <div class="items clearfix" id="slide">

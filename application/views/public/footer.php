@@ -28,7 +28,7 @@
                     <li><a href="<?php echo site_url('list/activity') ?>" rel="nofollow" target="_blank">移民热点</a></li>
                     <li><a href="<?php echo site_url('projects'); ?>" rel="nofollow" target="_blank">热门项目</a></li>
                     <!-- <li><a href="http://www.iqiaowai.com/club/#footer" rel="nofollow" target="_blank">移民国家</a></li> -->
-                    <li><a href="<?php echo site_url('list/yujian') ?>" rel="nofollow" target="_blank">裕鉴动态</a></li>
+                    <li><a href="<?php echo site_url('list/yujian') ?>" rel="nofollow" target="_blank">银俸国际动态</a></li>
                     <li><a href="<?php echo site_url('list/case') ?>" rel="nofollow" target="_blank">成功案例</a></li>
                 </ul>
             </div>
