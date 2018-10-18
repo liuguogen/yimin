@@ -37,7 +37,7 @@ class Index_controller extends CI_Controller {
 	{
 
 		$activity_data = $this->Home_model->getList('*','activity');
-		$popular_data = $this->Home_model->getList('*','popular');
+		$popular_data = $this->Home_model->getList('*','popular',array(),0,9);
 		$news_data = $this->Home_model->getList('*','news');
 		$case_data = $this->Home_model->getList('*','casetable');
 		$this->load->view('home/index',array('activity_data'=>$activity_data,'popular_data'=>$popular_data,'news_data'=>$news_data,'case_data'=>$case_data));
