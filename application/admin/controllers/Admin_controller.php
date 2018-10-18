@@ -126,7 +126,7 @@ class Admin_controller extends CI_Controller {
 			$post=$this->input->post();
 			$post['create_time']=time();
 			if($post['case_id']!='') {
-				$activity_id=$post['case_id'];
+				$case_id=$post['case_id'];
 				unset($post['case_id']);
 				
 				//更新
