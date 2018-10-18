@@ -5,11 +5,11 @@
         <div class="left">
             <div class="qrphone">
                 <img style="height: 100px;" src="../../../<?php echo $this->config->item('mobile_qrcode','home') ?>">
-                <p>侨外出国官网<br/>手机版</p>
+                <p>银俸国际官网<br/>手机版</p>
             </div>
             <div class="qrcode">
                 <img style="height: 100px;" src="../../../<?php echo $this->config->item('wechat_qrcode','home') ?>">
-                <p>侨外出国官方<br/>微信公众号</p>
+                <p>银俸国际官方<br/>微信公众号</p>
             </div>
         </div>
         <div class="right">
