@@ -158,7 +158,7 @@
                 <i class="nav-line"></i>
             </li>
             <li class="nav-box nav-project-box">
-                <a href="<?php echo site_url('list/yujian') ?>" class="nav-link" target="_blank">裕鉴动态</a>
+                <a href="<?php echo site_url('list/yujian') ?>" class="nav-link" target="_blank">银俸动态</a>
                 <i class="nav-line"></i>
             </li>
             <li class="nav-box nav-project-box">
