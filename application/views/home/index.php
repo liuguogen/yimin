@@ -64,12 +64,12 @@
                         
                     
                   ?>
-			<div class="item">
+			<div class="item" style="margin-right: 16px;">
 					<input type="hidden" class="romid" name="romid" value="<?php echo $v['popular_id']; ?>"/>
                     <div class="heart h_pro"><span class="pro_gz_id"><?php echo $v['follow']; ?></span>关注</div><!-- onclick="pro_gzid(this);"-->
                     <a class="rom_a" href="<?php echo site_url('popular/'.$v['popular_id'].'')?>" target="_blank"><img src="../../../<?php echo $v['thumb'] ?>" class="rom_img"  width="350px" height="200" alt="<?php echo $v['title'] ?>"/></a>
                     <p class="name rom_name"><b><a class="rom_a" href="<?php echo site_url('popular/'.$v['popular_id'].'')?>" target="_blank"> <?php echo $v['title'] ?></a></b></p>
-                    <p class="desc rom_desc"><a class="rom_a" href="<?php echo site_url('popular/'.$v['popular_id'].'')?>" target="_blank"><?php echo mb_substr($v['brief'],0,120,'utf-8').'...'; ?></a></p>
+                    <p class="desc rom_desc"><a class="rom_a" style="display:block;height:72px;" href="<?php echo site_url('popular/'.$v['popular_id'].'')?>" target="_blank"><?php echo mb_substr($v['brief'],0,120,'utf-8').'...'; ?></a></p>
                     <p class="price">价格：<span class="rom_bud"><?php echo $v['price'] ?></span></p>
                     <div class="project-consult clearfix">
                         <a href="<?php echo site_url('popular/'.$v['popular_id'].'')?>" target="_blank"><div class="" style="width: 300px;background: #3ab6ca;line-height: 36px;height: 36p;margin:10px 22px;color: white;text-align: center;">查看详情</div></a>
@@ -471,7 +471,7 @@
         <div class="qw-news">
             <div class="title-box clearfix">
                 <i></i>
-                <div class="title" style="width:275px;">银俸国际动态 <span>Yinfeng news</span></div>
+                <div class="title" style="width:275px;">银俸动态 <span>Yinfeng news</span></div>
 				<span style="float:right;line-height: 53px;"><a href="<?php echo site_url('list/yujian') ?>" style="color:#c1c1c1;" target="_blank">更多...</a></span>
             </div>
             <div class="items clearfix" id="slide">
