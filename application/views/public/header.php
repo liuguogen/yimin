@@ -26,7 +26,7 @@
     </div>
     <!-- 头部 E -->
     <!-- 导航 S  -->
-    <div class="qw-nav" style="background: #3ab6ca;">
+    <div class="qw-nav" style="background: url(../../../assets/images/bg_menu.png) repeat-x;z-index: 999;">
         <ul class="qw-center">
             <li class="on nav-box"><a href="/" class="nav-link"    onclick="_czc.push(['_trackEvent','新官网主页1.5-导航首页','点击','新官网主页1.5-导航首页']);">首  页</a><i class="nav-line"></i></li>
             <!-- <li class="nav-box nav-country-box">
