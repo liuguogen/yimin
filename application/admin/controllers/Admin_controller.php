@@ -247,7 +247,7 @@ class Admin_controller extends CI_Controller {
 	public function editCase()
 	{
 		$data['data']=$this->Admin_model->getRow('*','casetable',array('case_id'=>$this->input->get('case_id')));
-		$this->load->view('home/addcase',$data);
+		$this->load->view('home/addacase',$data);
 	}
 
 	public function delCase()
