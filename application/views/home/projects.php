@@ -64,10 +64,10 @@ background:rgb(238,238,238);
 	    			</div>
 	    			<ul class="clearfix" id="cityall">
 		    				<li data='cityall' class="on">全部</li>
-                            <?php if($data){
-                               foreach($data as $v){ 
+                            <?php if($city){
+                               foreach($city as $v){ 
                              ?>
-		    				<li data="<?php echo $v['city']; ?>"><?php echo $v['city']; ?></li>
+		    				<li data="<?php echo $v; ?>"><?php echo $v; ?></li>
 		    				<?php }}?>
 	    			</ul>
 				</div>
@@ -77,10 +77,10 @@ background:rgb(238,238,238);
 	    			</div>
 	    			<ul class="clearfix" id="objectiveall">
 	    				<li data="objectiveall" class="on">全部</li>
-	    				 <?php if($data){
-                               foreach($data as $v){ 
+	    				 <?php if($objective){
+                               foreach($objective as $v){ 
                              ?>
-                            <li data="<?php echo $v['objective']; ?>"><?php echo $v['objective']; ?></li>
+                            <li data="<?php echo $v; ?>"><?php echo $v; ?></li>
                             <?php }}?>
 	    			</ul>
 				</div>

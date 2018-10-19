@@ -101,6 +101,14 @@ class Index_controller extends CI_Controller {
 	public function projects()
 	{   
 		$data['data'] = $this->Home_model->getList('*','popular',array(),0,-1,'orderby desc');
+		$city  = array();
+		$objective = array();
+		foreach ($data['data'] as $key => $value) {
+			$city[] = $value['city'];
+			$objective[] = $value['objective']; 
+		}
+		$data['city'] = array_unique($city);
+		$data['objective'] = array_unique($objective);
 		$this->load->view('home/projects',$data);
 	}
 
