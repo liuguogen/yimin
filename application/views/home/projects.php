@@ -156,6 +156,7 @@ background:rgb(238,238,238);
            $.post("<?php echo site_url('getprojects')?>", {"city":cityall,"objective":objectiveall}, function(data){
                 if(data=='no') {
                 $('.no-project').removeClass('hide');
+                $('.project-list').children().remove();
                }else {
                 $('.project-list').children().remove();
                  $('.project-list').append(data);
@@ -171,6 +172,7 @@ background:rgb(238,238,238);
            $.post("<?php echo site_url('getprojects')?>", {"city":cityall,"objective":objectiveall}, function(data){
                if(data=='no') {
                 $('.no-project').removeClass('hide');
+                $('.project-list').children().remove();
                }else {
                 $('.project-list').children().remove();
                  $('.project-list').append(data);
