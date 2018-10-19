@@ -154,7 +154,7 @@ background:rgb(238,238,238);
              objectiveall  = $("#objectiveall>li").attr('data');
             }
            $.post("<?php echo site_url('getprojects')?>", {"city":cityall,"objective":objectiveall}, function(data){
-                if($data=='no') {
+                if(data=='no') {
                 $('.no-project').removeClass('hide');
                }else {
                 $('.project-list').children().remove();
@@ -169,7 +169,7 @@ background:rgb(238,238,238);
                 cityall  = $("#cityall>li").attr('data');
             }
            $.post("<?php echo site_url('getprojects')?>", {"city":cityall,"objective":objectiveall}, function(data){
-               if($data=='no') {
+               if(data=='no') {
                 $('.no-project').removeClass('hide');
                }else {
                 $('.project-list').children().remove();
