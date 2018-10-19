@@ -158,7 +158,7 @@ background:rgb(238,238,238);
                 $('.no-project').removeClass('hide');
                 $('.project-list').children().remove();
                }else {
-                $('.no-project').removeClass('hide');
+                $('.no-project').addClass('hide');
                 $('.project-list').children().remove();
                  $('.project-list').append(data);
                }
@@ -175,7 +175,7 @@ background:rgb(238,238,238);
                 $('.no-project').removeClass('hide');
                 $('.project-list').children().remove();
                }else {
-                $('.no-project').removeClass('hide');
+                $('.no-project').addClass('hide');
                 $('.project-list').children().remove();
                  $('.project-list').append(data);
                }
