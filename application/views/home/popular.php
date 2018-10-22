@@ -37,9 +37,9 @@
                         <div class="" onclick="check_emun('part_2');">
                             项目优势
                         </div>
-                        <div class="" onclick="check_emun('part_3');">
+                       <!--  <div class="" onclick="check_emun('part_3');">
                             解读移民
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div id="part_1" class="xqf">
