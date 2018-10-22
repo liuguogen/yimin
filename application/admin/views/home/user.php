@@ -89,11 +89,11 @@ margin:0 auto;
 
             
                
-                <a href="<?php echo site_url('Admin_controller/editPass/?admin_id='.$v['admin_id']); ?>">修改密码</a> |
+                <a href="<?php echo site_url('Admin_controller/editPass?admin_id='.$v['admin_id']); ?>">修改密码</a> |
                 
                
                 
-                <a href="javascript:if(confirm('确定删除吗？'))location='<?php echo site_url('Admin_controller/delUser/?admin_id='.$v['admin_id']) ?>'" >删除</a>
+                <a href="javascript:if(confirm('确定删除吗？'))location='<?php echo site_url('Admin_controller/delUser?admin_id='.$v['admin_id']) ?>'" >删除</a>
                 
             </td>
     </tr>
