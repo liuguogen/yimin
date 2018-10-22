@@ -35,7 +35,7 @@
                             项目介绍
                         </div>
                         <div class="" onclick="check_emun('part_2');">
-                            侨外优势
+                            项目优势
                         </div>
                         <div class="" onclick="check_emun('part_3');">
                             解读移民
