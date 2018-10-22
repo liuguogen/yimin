@@ -558,7 +558,7 @@
             <div class="item">
                 <p class="title"> 专业可靠 <i style="background:url(http://www.iqiaowai.com/templets/new/index/images/icon.png) 0 -85px no-repeat;"></i></p>
                 <p class="desc"  style="text-align: center;">
-                   19年移民行业经验<br/>中国及海外21家分公司
+                   多年移民行业经验<br/>中外多家合作机构
                 </p>
             </div>
             <div class="item">
