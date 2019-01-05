@@ -64,7 +64,7 @@
     <div style="flex: 2;">
         <div style="padding-bottom: 50px;margin-left: 28%;margin-top: 150px;background-color:rgba(0, 0, 0, 0.3);width: 100%;text-align: left;padding-top: 20px;margin-left: 50px;margin-right: 50px;">
             <div style="margin: 20px 50px;">
-                <p style="font-size: 20px;font-weight: bold;color:white;width: 100%;">REGISTER FOR AN ACCOUNT</p>
+                <p style="font-size: 25px;font-weight: bold;color:white;width: 100%;">REGISTER FOR AN ACCOUNT</p>
                 <p style="font-size: 18px;font-weight: bold;color:white;width: 100%;margin: 0;">Welcome！</p>
                 <p style="font-size: 14px;font-weight: bold;color:white;width: 100%;margin: 0;">We just need to get a
                     few details
