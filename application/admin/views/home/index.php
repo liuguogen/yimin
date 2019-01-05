@@ -165,7 +165,25 @@
                                     </li>
                             </ul>
                         </li> 
+                            <li class="b-has-child">
+                            <a href="#" class="dropdown-toggle b-nav-parent">
+                                <i class="fa fa-user icon-test"></i>
+                                <span class="menu-text">会员管理</span>
 
+                                <b class="arrow icon-angle-down"></b>
+                            </a>
+                            <ul class="submenu">
+                                
+                                    <li class="b-nav-li">
+                                        <a href="<?php echo site_url('Admin_controller/memberList') ?>" target="right_content">
+                                            <i class="icon-double-angle-right"></i>
+                                           用户列表
+                                        </a>
+                                    </li>
+                                   
+                                   
+                            </ul>
+                        </li> 
                         <!-- <li class="b-has-child">
                             <a href="#" class="dropdown-toggle b-nav-parent">
                                 <i class="fa fa-barcode icon-test"></i>
