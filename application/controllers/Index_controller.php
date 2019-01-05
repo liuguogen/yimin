@@ -22,6 +22,14 @@ class Index_controller extends CI_Controller {
 	{
 
 		parent::__construct();
+
+		if(!$this->input->cookie('member_id'))
+		{
+
+			echo '<script>window.top.location.href="'.site_url('login').'"</script>';
+        	
+        	exit();
+		}
 		$case['case'] = $this->Home_model->getList('case_id,title','casetable',array(),0,10,'create_time desc');
 		$hot['hot'] = $this->Home_model->getList('activity_id,title','activity',array(),0,10,'create_time desc');
 		$this->config->set_item('hot',$hot);
@@ -33,9 +41,10 @@ class Index_controller extends CI_Controller {
 			redirect(base_url().'wap');
 		}
 	}
-	public function index()
-	{
+	
 
+
+	public function index() {
 		$activity_data = $this->Home_model->getList('*','activity');
 		$popular_data = $this->Home_model->getList('*','popular',array(),0,9);
 		$news_data = $this->Home_model->getList('*','news');
