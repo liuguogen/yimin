@@ -45,7 +45,7 @@
         }
     </style>
 </head>
-<body style="background-image: url('../../../assets/images/bg.jpeg');background-size:cover;">
+<body style="background-image: url('../../../assets/images/bg.jpeg');background-size:cover;background-repeat: no-repeat;">
 
 
 <div style="width: 90%;height: 800px;display: flex;">
