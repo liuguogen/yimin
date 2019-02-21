@@ -157,36 +157,36 @@ ul,ol{
      <p class="en-e">P R O G R A M</p>
      
 
-     <section class="pc-banner">
+     <section class="" style="width: 960px; margin:0 auto;">
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-slide-center none-effect" style="width: 200px;">
+            <div class="swiper-slide swiper-slide-center none-effect">
                 <a href="#">
-                    <img src="../../../assets/images/banner001.jpg">
+                    <img src="../../../assets/images/t1.png">
                 </a>
                 <div class="layer-mask"></div>
             </div>
-            <div class="swiper-slide" style="width: 200px;">
+            <div class="swiper-slide" >
                 <a href="#">
-                    <img src="../../../assets/images/banner002.jpg">
+                    <img src="../../../assets/images/t1.png">
                 </a>
                 <div class="layer-mask"></div>
             </div>
-            <div class="swiper-slide" style="width: 200px;">
+            <div class="swiper-slide" >
                 <a href="#">
-                    <img src="../../../assets/images/banner003.jpg">
+                    <img src="../../../assets/images/t1.png">
                 </a>
                 <div class="layer-mask"></div>
             </div>
-            <div class="swiper-slide" style="width: 200px;">
+            <div class="swiper-slide" >
                 <a href="#">
-                    <img src="../../../assets/images/banner004.jpg">
+                    <img src="../../../assets/images/t1.png">
                 </a>
                 <div class="layer-mask"></div>
             </div>
-            <div class="swiper-slide" style="width: 200px;">
+            <div class="swiper-slide" >
                 <a href="#">
-                    <img src="../../../assets/images/banner005.jpg">
+                    <img src="../../../assets/images/t1.png">
                 </a>
                 <div class="layer-mask"></div>
             </div>
@@ -205,39 +205,42 @@ ul,ol{
      <img src="../../../assets/images/srdz1.png" style="width: 100%;">
  </div>
 
- <div class="box">
+ <div class="box" style="background-image: url(../../../assets/images/567511fc25dac.png);background-size: 100% 100%;    
+    background-repeat: no-repeat;
+   width: 960px;
+    background-position: 0 220px;">
      <p class="en-text">Who is going to escort and keep you alive ?</p>
      <p class="en-e">T H E T E A M</p>
      
 
-     <section class="pc-banner">
+     <section class="" style="width: 960px; margin:0 auto;">
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-slide-center none-effect" style="width: 200px;">
+            <div class="swiper-slide swiper-slide-center none-effect">
                 <a href="#">
                     <img src="../../../assets/images/banner001.jpg">
                 </a>
                 <div class="layer-mask"></div>
             </div>
-            <div class="swiper-slide" style="width: 200px;">
+            <div class="swiper-slide" >
                 <a href="#">
                     <img src="../../../assets/images/banner002.jpg">
                 </a>
                 <div class="layer-mask"></div>
             </div>
-            <div class="swiper-slide" style="width: 200px;">
+            <div class="swiper-slide" >
                 <a href="#">
                     <img src="../../../assets/images/banner003.jpg">
                 </a>
                 <div class="layer-mask"></div>
             </div>
-            <div class="swiper-slide" style="width: 200px;">
+            <div class="swiper-slide" >
                 <a href="#">
                     <img src="../../../assets/images/banner004.jpg">
                 </a>
                 <div class="layer-mask"></div>
             </div>
-            <div class="swiper-slide" style="width: 200px;">
+            <div class="swiper-slide" >
                 <a href="#">
                     <img src="../../../assets/images/banner005.jpg">
                 </a>
@@ -259,7 +262,7 @@ ul,ol{
 
     window.onload = function() {
         var swiper = new Swiper('.swiper-container',{
-            autoplay: 3000,
+            autoplay: false,
             speed: 1000,
             autoplayDisableOnInteraction: false,
             loop: true,

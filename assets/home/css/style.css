@@ -767,7 +767,7 @@ body {
 .button {
 	width: 100%;
 	margin: 0 auto;
-	top: -290px;
+	top: -225px;
 	position: relative;
 	z-index: 1002;
 }
