@@ -41,13 +41,17 @@ ul,ol{
     float: right;
 }
 .box{
-    width: 960px;
+    width: 100%;
     margin: 0 auto;
 
 }
 .menu {
     padding: 0;
     margin: 0;
+}
+.m{
+    width: 960px;
+    margin:0 auto;
 }
 
 .menu ul{
@@ -126,7 +130,7 @@ ul,ol{
 <body>
     
 <div class="top box">
-    <div >
+    <div class="m">
         <div class="menu">
             <ul class="clear">
                 <li>HOME</li>
@@ -198,7 +202,56 @@ ul,ol{
  </div>
 
  <div class="box">
-     <img src="../../../assets/images/srdz1.png" style="width: 960px;">
+     <img src="../../../assets/images/srdz1.png" style="width: 100%;">
+ </div>
+
+ <div class="box">
+     <p class="en-text">Who is going to escort and keep you alive ?</p>
+     <p class="en-e">T H E T E A M</p>
+     
+
+     <section class="pc-banner">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-center none-effect" style="width: 200px;">
+                <a href="#">
+                    <img src="../../../assets/images/banner001.jpg">
+                </a>
+                <div class="layer-mask"></div>
+            </div>
+            <div class="swiper-slide" style="width: 200px;">
+                <a href="#">
+                    <img src="../../../assets/images/banner002.jpg">
+                </a>
+                <div class="layer-mask"></div>
+            </div>
+            <div class="swiper-slide" style="width: 200px;">
+                <a href="#">
+                    <img src="../../../assets/images/banner003.jpg">
+                </a>
+                <div class="layer-mask"></div>
+            </div>
+            <div class="swiper-slide" style="width: 200px;">
+                <a href="#">
+                    <img src="../../../assets/images/banner004.jpg">
+                </a>
+                <div class="layer-mask"></div>
+            </div>
+            <div class="swiper-slide" style="width: 200px;">
+                <a href="#">
+                    <img src="../../../assets/images/banner005.jpg">
+                </a>
+                <div class="layer-mask"></div>
+            </div>
+        </div>
+        <div class="button">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</section>
+
+
  </div>
 </body>
 <script type="text/javascript" src="../../../assets/js/swiper.min.js"></script>
@@ -206,7 +259,7 @@ ul,ol{
 
     window.onload = function() {
         var swiper = new Swiper('.swiper-container',{
-            autoplay: false,
+            autoplay: 3000,
             speed: 1000,
             autoplayDisableOnInteraction: false,
             loop: true,
