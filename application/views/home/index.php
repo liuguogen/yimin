@@ -157,38 +157,37 @@ ul,ol{
      <p class="en-e">P R O G R A M</p>
      
 
-     <section class="" style="width: 960px; margin:0 auto;">
+     <section class="" style="width: 760px; margin:0 auto;">
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide swiper-slide-center none-effect">
-                <a href="#">
+                
                     <img src="../../../assets/images/banner001.jpg">
-                </a>
-                <div class="layer-mask"></div>
+                
+                
             </div>
             <div class="swiper-slide" >
-                <a href="#">
+                 
                     <img src="../../../assets/images/banner002.jpg">
-                </a>
-                <div class="layer-mask"></div>
+                
             </div>
             <div class="swiper-slide" >
-                <a href="#">
+                 
                     <img src="../../../assets/images/banner003.jpg">
-                </a>
-                <div class="layer-mask"></div>
+               
+                
             </div>
             <div class="swiper-slide" >
-                <a href="#">
+                
                     <img src="../../../assets/images/banner004.jpg">
-                </a>
-                <div class="layer-mask"></div>
+                
+                
             </div>
             <div class="swiper-slide" >
-                <a href="#">
+                
                     <img src="../../../assets/images/banner005.jpg">
-                </a>
-                <div class="layer-mask"></div>
+                
+                
             </div>
         </div>
         <div class="button">
@@ -213,38 +212,38 @@ ul,ol{
      <p class="en-e">T H E T E A M</p>
      
     
-     <section class="" style="width: 960px; margin:0 auto;">
+     <section class="" style="width: 760px; margin:0 auto;">
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide swiper-slide-center none-effect">
-                <a href="#">
+                
                     <img src="../../../assets/images/banner001.jpg">
-                </a>
-                <div class="layer-mask"></div>
+               
+                
             </div>
             <div class="swiper-slide" >
-                <a href="#">
+                
                     <img src="../../../assets/images/banner002.jpg">
-                </a>
-                <div class="layer-mask"></div>
+                
+                
             </div>
             <div class="swiper-slide" >
-                <a href="#">
+                
                     <img src="../../../assets/images/banner003.jpg">
-                </a>
-                <div class="layer-mask"></div>
+                
+                
             </div>
             <div class="swiper-slide" >
-                <a href="#">
+                
                     <img src="../../../assets/images/banner004.jpg">
-                </a>
-                <div class="layer-mask"></div>
+               
+                
             </div>
             <div class="swiper-slide" >
-                <a href="#">
+               
                     <img src="../../../assets/images/banner005.jpg">
-                </a>
-                <div class="layer-mask"></div>
+               
+               
             </div>
         </div>
         <div class="button">
@@ -269,9 +268,9 @@ ul,ol{
             autoplayDisableOnInteraction: false,
             loop: true,
             centeredSlides: true,
-            slidesPerView: 2,
+            slidesPerView: 2.99,
             pagination: '.swiper-pagination',
-            paginationClickable: true,
+            paginationClickable: false,
             prevButton: '.swiper-button-prev',
             nextButton: '.swiper-button-next',
             onInit: function(swiper) {
