@@ -263,7 +263,7 @@ ul,ol{
 
     window.onload = function() {
         var swiper = new Swiper('.swiper-container',{
-            autoplay: false,
+            autoplay: 3000,
             speed: 1000,
             autoplayDisableOnInteraction: false,
             loop: true,
