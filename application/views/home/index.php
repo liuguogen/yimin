@@ -57,7 +57,7 @@ ul,ol{
 .menu ul li{
     color: white;
     float: left;
-    margin:60px 30px;
+    margin:60px 36px;
     font-family: "微软雅黑"
 }
 .logo{
@@ -69,7 +69,7 @@ ul,ol{
     height: 40px;
     width: 200px;
     border: 2px solid white;
-    margin:120px 350px;
+    margin:120px 380px;
     display: inline-table;
 }
 .text-info span{
@@ -125,8 +125,8 @@ ul,ol{
 </style>
 <body>
     
-<div class="top">
-    <div class="box">
+<div class="top box">
+    <div >
         <div class="menu">
             <ul class="clear">
                 <li>HOME</li>
