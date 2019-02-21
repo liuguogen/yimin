@@ -162,31 +162,31 @@ ul,ol{
         <div class="swiper-wrapper">
             <div class="swiper-slide swiper-slide-center none-effect">
                 <a href="#">
-                    <img src="../../../assets/images/t1.png">
+                    <img src="../../../assets/images/banner001.jpg">
                 </a>
                 <div class="layer-mask"></div>
             </div>
             <div class="swiper-slide" >
                 <a href="#">
-                    <img src="../../../assets/images/t1.png">
+                    <img src="../../../assets/images/banner002.jpg">
                 </a>
                 <div class="layer-mask"></div>
             </div>
             <div class="swiper-slide" >
                 <a href="#">
-                    <img src="../../../assets/images/t1.png">
+                    <img src="../../../assets/images/banner003.jpg">
                 </a>
                 <div class="layer-mask"></div>
             </div>
             <div class="swiper-slide" >
                 <a href="#">
-                    <img src="../../../assets/images/t1.png">
+                    <img src="../../../assets/images/banner004.jpg">
                 </a>
                 <div class="layer-mask"></div>
             </div>
             <div class="swiper-slide" >
                 <a href="#">
-                    <img src="../../../assets/images/t1.png">
+                    <img src="../../../assets/images/banner005.jpg">
                 </a>
                 <div class="layer-mask"></div>
             </div>
@@ -201,18 +201,18 @@ ul,ol{
 
  </div>
 
- <div class="box">
-     <img src="../../../assets/images/srdz1.png" style="width: 100%;">
+ <div class="box" style="background-image: url(../../../assets/images/srdz11.png);background-size: 100% 100%;    
+    background-repeat: no-repeat;height: 778px;">
+
+   
+     
  </div>
 
- <div class="box" style="background-image: url(../../../assets/images/567511fc25dac.png);background-size: 100% 100%;    
-    background-repeat: no-repeat;
-   width: 960px;
-    background-position: 0 220px;">
+ <div class="box" style="">
      <p class="en-text">Who is going to escort and keep you alive ?</p>
      <p class="en-e">T H E T E A M</p>
      
-
+    
      <section class="" style="width: 960px; margin:0 auto;">
     <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -253,7 +253,9 @@ ul,ol{
         </div>
     </div>
 </section>
-
+<div style="margin:0 auto;display: block;width: 960px;margin-top: -120px;">
+    <img src="../../../assets/images/5dec1.png" height="415" width="960">
+</div>
 
  </div>
 </body>
