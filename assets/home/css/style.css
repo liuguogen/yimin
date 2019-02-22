@@ -773,7 +773,7 @@ body {
 .button {
 	width: 100%;
 	margin: 0 auto;
-	top: -225px;
+	top: -195px;
 	position: relative;
 	z-index: 1002;
 }

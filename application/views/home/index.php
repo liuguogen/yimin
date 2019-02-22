@@ -125,6 +125,23 @@ ul,ol{
     left: 40px;
     
 }
+.input-t{
+    margin-left: 80px;
+}
+.input-t input{
+    border: 2px solid #ccc;
+    height: 30px;
+    width: 240px;
+    margin: 0 10px 0 60px;
+}
+
+.input-t button{
+    height: 36px;
+    width: 100px;
+    color: white;
+    background: rgb(26,41,68);
+    
+}
 
 </style>
 <body>
@@ -209,7 +226,7 @@ ul,ol{
 
  <div class="box" style="">
      <p class="en-text">Who is going to escort and keep you alive ?</p>
-     <p class="en-e">T H E T E A M</p>
+     <p class="en-e">T H E &nbsp;&nbsp;&nbsp;T E A M</p>
      
     
      <section class="" style="width: 760px; margin:0 auto;">
@@ -263,6 +280,23 @@ ul,ol{
 
    
      
+ </div>
+
+
+
+ <div class="box">
+     <p class="en-text">Professional analysis report</p>
+     <p class="en-e" style="font-size: 3.5rem;color: rgb(26,41,68);">报告体系</p>
+     
+
+     
+    <div class="input-t">
+        <input type="" name="" placeholder="Your name...">
+
+        <input type="" name="" placeholder="Your phone...">
+        <button>咨询报告</button>
+    </div>
+     <p class="en-text">INVITE YOUR FRIENDS</p>
  </div>
 </body>
 <script type="text/javascript" src="../../../assets/js/swiper.min.js"></script>
