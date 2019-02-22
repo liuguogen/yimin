@@ -257,6 +257,13 @@ ul,ol{
 </div>
 
  </div>
+
+  <div class="box" style="background-image: url(../../../assets/images/sw1.png);background-size: 100% 100%;    
+    background-repeat: no-repeat;height: 778px;">
+
+   
+     
+ </div>
 </body>
 <script type="text/javascript" src="../../../assets/js/swiper.min.js"></script>
 <script type="text/javascript">
