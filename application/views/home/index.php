@@ -41,7 +41,7 @@ ul,ol{
     float: right;
 }
 .box{
-    width: 960px;
+    width: 100%;
     margin: 0 auto;
 
 }
@@ -140,7 +140,7 @@ ul,ol{
     width: 100px;
     color: white;
     background: rgb(26,41,68);
-    
+
 }
 
 </style>
@@ -290,7 +290,7 @@ ul,ol{
      
 
      
-    <div class="input-t">
+    <div class="input-t" style="width: 960px;margin:0 auto;">
         <input type="" name="" placeholder="Your name...">
 
         <input type="" name="" placeholder="Your phone...">
