@@ -132,7 +132,7 @@ ul,ol{
     border: 2px solid #ccc;
     height: 30px;
     width: 240px;
-    margin: 0 10px 0 60px;
+    margin: 0 0px 0 140px;
 }
 
 .input-t button{
