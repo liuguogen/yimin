@@ -106,6 +106,17 @@
                </td>
         </tr>
         <tr>
+            <th>头部背景 <span style="color: red;">*</span></th>
+            
+               <td>
+                   <div id="top_bg" ></div>
+                   <div id="add_top_bg"></div>
+                <?php if(isset($data['top_bg']) && $data['top_bg']){ ?>
+                <img src="../../../<?php echo $data['top_bg'] ?>" height="80" />
+                <?php }?>
+               </td>
+        </tr>
+        <tr>
             <th>LOGO <span style="color: red;">*</span></th>
             
                <td>
@@ -117,7 +128,7 @@
                </td>
         </tr>
         <tr>
-            <th>首页轮播图 <span style="color: red;">*</span></th>
+            <th>第一个轮播图 <span style="color: red;">*</span></th>
             
                <td>
                    <div id="thumb" ></div>
@@ -131,7 +142,20 @@
                </td>
         </tr>
          
-        
+        <tr>
+            <th>第二个轮播图 <span style="color: red;">*</span></th>
+            
+               <td>
+                   <div id="thumb2" ></div>
+                   <div id="add_thumb2"></div>
+                <?php if(isset($data['thumb2']) && $data['thumb2']) {
+                   foreach($data['thumb2'] as $v){
+                 ?>
+
+                 <img src="../../../<?php echo $v ?>" height="100" />
+            <?php  }}?>
+               </td>
+        </tr>
            
         
       
@@ -195,6 +219,17 @@ $('#thumb').diyUpload({
         console.info( err );    
     }
 });
+
+$('#thumb2').diyUpload({
+    url:"<?php echo site_url('images/upload') ?>",
+    success:function( data ) {
+        $('#add_thumb2').append('<input type="hidden" name="thumb2[]" value='+data._raw+' />');
+        
+    },
+    error:function( err ) {
+        console.info( err );    
+    }
+});
 $('#mobile_qrcode').diyUpload({
     url:"<?php echo site_url('images/upload') ?>",
     success:function( data ) {
@@ -209,6 +244,17 @@ $('#wechat_qrcode').diyUpload({
     url:"<?php echo site_url('images/upload') ?>",
     success:function( data ) {
         $('#add_wechat_qrcode').append('<input type="hidden" name="wechat_qrcode" value='+data._raw+' />');
+        
+    },
+    error:function( err ) {
+        console.info( err );    
+    }
+});
+
+$('#top_bg').diyUpload({
+    url:"<?php echo site_url('images/upload') ?>",
+    success:function( data ) {
+        $('#add_top_bg').append('<input type="hidden" name="top_bg" value='+data._raw+' />');
         
     },
     error:function( err ) {

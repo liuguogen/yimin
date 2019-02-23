@@ -322,6 +322,9 @@ class Admin_controller extends CI_Controller {
 			if(isset($data['thumb']) && $data['thumb']){
 				$data['thumb']=implode(',',$data['thumb']);
 			}
+			if(isset($data['thumb2']) && $data['thumb2']){
+				$data['thumb2']=implode(',',$data['thumb2']);
+			}
 			
 			
 			$data['create_time']=time();
@@ -344,6 +347,7 @@ class Admin_controller extends CI_Controller {
 			//$rRow['core_business']=$rRow['core_business'] ? unserialize($rRow['core_business']) :array();//序列化核心业务
 			//$rRow['contactus']=$rRow['contactus'] ? unserialize($rRow['contactus']) :array();//序列化联系我们
 			$rRow['thumb']=isset($rRow['thumb'])  ? explode(',',$rRow['thumb']) :array();
+			$rRow['thumb2']=isset($rRow['thumb2'])  ? explode(',',$rRow['thumb2']) :array();
 			//$rRow['partner_img']=$rRow['partner_img']  ? explode(',',$rRow['partner_img']) :array();
 			//$rRow['core_businessImg']=$rRow['core_businessImg'] ? explode(',',$rRow['core_businessImg']) :array();
 			$data['data']=$rRow;
