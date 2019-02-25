@@ -126,9 +126,7 @@ ul,ol{
 
 
 	
-<style>body{
-background:rgb(238,238,238);
-}</style>
+
 	 <!-- 头部 S -->
     
    
