@@ -11,26 +11,116 @@
     <meta name="keywords" content="<?php echo $this->config->item('keywords','home') ?>" />
     <meta name="description" content="<?php echo $this->config->item('description','home') ?>" /> 
     
-    <link rel="stylesheet" href="./../../assets/home/css/aboutus.css" />
-    <meta http-equiv="Cache-Control" content="no-transform" /> 
-               <meta http-equiv="Cache-Control" content="no-siteapp" />
-               <meta name="applicable-device" content="pc,mobile">	
-              	
-        <link rel="stylesheet" href="../../../assets/home/css/common.css">
-    <link rel="stylesheet" href="../../../assets/home/css/css.css">
-    <link rel="stylesheet" href="../../../assets/home/css/banner.css">
-    <link rel="stylesheet" href="../../../assets/home/css/flexslider.css">
-    <script src="../../../assets/home/js/jquery.min.js"></script>
-    <script src="../../../assets/home/js/jquery.flexslider-min.js"></script>
-    <script src="../../../assets/home/js/jwplayer.js"></script>
-    <script src="../../../assets/home/js/jquery.kxbdMarquee.js"></script>
-    <script src="../../../assets/home/js/jquery.SuperSlide.2.1.1.js"></script>
-    <script src="../../../assets/home/js/common_new.js"></script>
-    <script src="../../../assets/home/js/index.js"></script>
-    <script src="../../../assets/home/js/savepath.js"></script>
-    <link href="../../../assets/home/css/footer.css" rel='stylesheet' type='text/css'/>
+    
+    <link type="text/css" rel="stylesheet" href="../../../assets/home/css/style.css">
 </head>
+<style type="text/css">
+body{
+   margin: 0;
+   padding: 0;
+   
+}
+.top{
+    background-image: url(../../../assets/images/bg.png);
+   
+    height: 453px;
+    background-size: 100% 100%;    
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+}
+.clear{
+    clear: both;
+}
+ul,ol{
+    list-style: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.box{
+    width: 100%;
+    margin: 0 auto;
 
+}
+.menu {
+    padding: 0;
+    margin: 0;
+}
+.m{
+    width: 960px;
+    margin:0 auto;
+}
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+}
+.menu ul li{
+    color: white;
+    float: left;
+    margin:60px 36px;
+    font-family: "微软雅黑"
+}
+.logo{
+    width: 120px;
+    height: 100px;
+    vertical-align:middle;
+}
+.text-info{
+    height: 40px;
+    width: 200px;
+    border: 2px solid white;
+    margin:120px 380px;
+    display: inline-table;
+}
+.text-info span{
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+}
+.en-text{
+    margin:0 auto;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(208,208,208);
+    margin-top: 50px;
+    font-family: "宋体";
+}
+.en-e{
+    margin:0 auto;
+    text-align: center;
+    font-size: 25px;
+    color: #000;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: "宋体";
+
+}
+
+.input-t{
+    margin-left: 80px;
+}
+.input-t input{
+    border: 2px solid #ccc;
+    height: 30px;
+    width: 240px;
+    margin: 0 0px 0 140px;
+}
+
+.input-t button{
+    height: 36px;
+    width: 100px;
+    color: white;
+    background: rgb(26,41,68);
+
+}
+
+</style>
 <body>
    
 
@@ -44,59 +134,12 @@ background:rgb(238,238,238);
    
    
     <?php $this->load->view('public/header'); ?>
-    <div class="breadcrumb qw-center">
-        <div class="icon"></div>
-        <ul>
-            <li>当前位置：<a href="/">首页</a><span>&gt;</span></li>
-            <li>关于我们</li>
-           
-        </ul>
-    </div>
-    <div class="qw-center clearfix about-container">
     
-    	<div class="about-main">
-    		<!-- 侨外简介 S -->
-    		<div class="about-intro">
-    			<div class="about-title">
-	    			<h2>关于我们</h2>
-	    			<i class="line1"></i>
-	    			<i class="line2"></i>
-	    			<p class="eng-title">Aboutus Us</p>
-	    		</div>
-	    		<?php echo $this->config->item('about_group','home') ?>
-	    		
-    		</div>
-    		<!-- 侨外简介 E -->
-    		
-    	
-    	
-    		
-    		
-    		
-    	</div>
-    </div>	
-		
-    <!-- 面包屑导航 E -->
-    <!-- //底部模板 -->
-   <?php $this->load->view('public/footer') ?>
-
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-
-
-
-
-<link rel="stylesheet" href="../../../asset/home/css/general8.css">
-<!-- <div class="qw-nav-bag"><a href="http://www.iqiaowai.com/zhuanti/survey180104/#newyear" target="_blank" rel="nofollow"></a></div> -->
-
+    <div class="box" style="width: 960px;margin:0 auto;">
+    			
+    <?php echo $this->config->item('about_group','home') ?>
+	    	
+    </div>
 
 
 
