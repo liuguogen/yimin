@@ -150,13 +150,13 @@ ul,ol{
     <div class="m">
         <div class="menu">
             <ul class="clear">
-                <li>HOME</li>
-                <li>公司介绍</li>
-                <li>直营项目</li>
+                <a href="/"><li>HOME</li></a>
+                <a href="/"><li>公司介绍</li></a>
+                <a href="/"><li>直营项目</li></a>
                 <li style="margin-top: 10px;"><img class="logo" src="../../../assets/images/logo1.png"></li>
-                <li>战略项目</li>
-                <li>私人定制</li>
-                <li>CONTACT</li>
+                <a href="/"><li>战略项目</li></a>
+                <a href="/"><li>私人定制</li></a>
+                <a href="/"><li>CONTACT</li></a>
             </ul>
         
         </div>
@@ -177,35 +177,20 @@ ul,ol{
      <section class="" style="width: 760px; margin:0 auto;">
     <div class="swiper-container">
         <div class="swiper-wrapper">
+
+             <?php if($this->config->item('thumb','home')!=''){
+
+         $thumb=explode(',',$this->config->item('thumb','home'));
+         foreach($thumb as $v){
+      ?> 
             <div class="swiper-slide swiper-slide-center none-effect">
                 
-                    <img src="../../../assets/images/banner001.jpg">
+                    <img src="../../../<?php echo $v; ?>">
                 
                 
             </div>
-            <div class="swiper-slide" >
-                 
-                    <img src="../../../assets/images/banner002.jpg">
-                
-            </div>
-            <div class="swiper-slide" >
-                 
-                    <img src="../../../assets/images/banner003.jpg">
-               
-                
-            </div>
-            <div class="swiper-slide" >
-                
-                    <img src="../../../assets/images/banner004.jpg">
-                
-                
-            </div>
-            <div class="swiper-slide" >
-                
-                    <img src="../../../assets/images/banner005.jpg">
-                
-                
-            </div>
+        <?php }} ?>
+            
         </div>
         <div class="button">
             <div class="swiper-button-prev"></div>
@@ -232,36 +217,21 @@ ul,ol{
      <section class="" style="width: 760px; margin:0 auto;">
     <div class="swiper-container">
         <div class="swiper-wrapper">
+
+
+            <?php if($this->config->item('thumb2','home')!=''){
+
+         $thumb2=explode(',',$this->config->item('thumb2','home'));
+         foreach($thumb2 as $v){
+      ?> 
             <div class="swiper-slide swiper-slide-center none-effect">
                 
-                    <img src="../../../assets/images/banner001.jpg">
+                    <img src="../../../<?php echo $v; ?>">
                
                 
             </div>
-            <div class="swiper-slide" >
-                
-                    <img src="../../../assets/images/banner002.jpg">
-                
-                
-            </div>
-            <div class="swiper-slide" >
-                
-                    <img src="../../../assets/images/banner003.jpg">
-                
-                
-            </div>
-            <div class="swiper-slide" >
-                
-                    <img src="../../../assets/images/banner004.jpg">
-               
-                
-            </div>
-            <div class="swiper-slide" >
-               
-                    <img src="../../../assets/images/banner005.jpg">
-               
-               
-            </div>
+            <?php }} ?>
+           
         </div>
         <div class="button">
             <div class="swiper-button-prev"></div>
