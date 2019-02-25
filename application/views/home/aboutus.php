@@ -134,8 +134,26 @@ ul,ol{
     <?php $this->load->view('public/header'); ?>
     
     <div class="box" style="width: 960px;margin:0 auto;">
-    			
+
+        <?php if ($type =='about_group'){ ?>
     <?php echo $this->config->item('about_group','home') ?>
+    <?php }?>
+    			
+    <?php if ($type =='copy_info'){ ?>
+    <?php echo $this->config->item('copy_info','home') ?>
+    <?php }?>
+
+    <?php if ($type =='tail_custom'){ ?>
+    <?php echo $this->config->item('tail_custom','home') ?>
+    <?php }?>
+
+    <?php if ($type =='direct_project'){ ?>
+    <?php echo $this->config->item('direct_project','home') ?>
+    <?php }?>
+
+    <?php if ($type =='strategy_project'){ ?>
+    <?php echo $this->config->item('strategy_project','home') ?>
+    <?php }?>
 	    	
     </div>
 

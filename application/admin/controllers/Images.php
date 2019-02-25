@@ -47,7 +47,7 @@ class Images extends CI_Controller {
 
 		if(!file_exists(realpath(dirname(__FILE__) . '/../../../').'/uploads/'.$filename)){
 			
-			mkdir(realpath(dirname(__FILE__) . '/../../../').'/uploads/'.$filename,0777);
+			@mkdir(realpath(dirname(__FILE__) . '/../../../').'/uploads/'.$filename,0777);
 		}
 		$targetFolder= '/uploads/'.$filename;
 		$str="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYX";

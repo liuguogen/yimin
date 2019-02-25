@@ -56,7 +56,33 @@ class Index_controller extends CI_Controller {
 	{
 		$this->load->view('home/aboutus');
 	}
+	public function pInfo() {
 
+		$type = $this->uri->segment(2);
+		
+		switch ($type) {
+			case 'copy_info': //公司
+				$data['type'] = $type;
+				break;
+			case 'tail_custom': //私人定制
+				$data['type'] = $type;
+				break;
+			case 'direct_project': //直营项目
+				$data['type'] = $type;
+				break;
+			case 'strategy_project': //战略项目
+				$data['type'] = $type;
+				break;
+			case 'about_group': //关于我们
+				$data['type'] = $type;
+				break;
+			default:
+				# code...
+				break;
+		}
+		
+		$this->load->view('home/aboutus',$data);
+	}
 	public function activityDeatail()
 	{
 		$id = $this->uri->segment(2);
