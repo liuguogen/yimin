@@ -61,7 +61,7 @@ class Index_controller extends CI_Controller {
 		$type = $this->uri->segment(2);
 		
 		switch ($type) {
-			case 'copy_info': //公司
+			case 'company_info': //公司
 				$data['type'] = $type;
 				break;
 			case 'tail_custom': //私人定制

@@ -139,8 +139,8 @@ ul,ol{
     <?php echo $this->config->item('about_group','home') ?>
     <?php }?>
     			
-    <?php if ($type =='copy_info'){ ?>
-    <?php echo $this->config->item('copy_info','home') ?>
+    <?php if ($type =='company_info'){ ?>
+    <?php echo $this->config->item('company_info','home') ?>
     <?php }?>
 
     <?php if ($type =='tail_custom'){ ?>
