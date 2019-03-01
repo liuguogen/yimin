@@ -706,8 +706,8 @@ body {
 
 .swiper-slide img {
 	width: 200px;
-	border-radius: 5px;
-	display: block;
+	/*border-radius: 5px;
+	display: block;*/
 	height: 200px;
 	border: none;
     transform:rotate(50deg);
