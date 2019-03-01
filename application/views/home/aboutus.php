@@ -74,7 +74,7 @@ ul,ol{
     height: 40px;
     width: 200px;
     border: 2px solid white;
-    margin:120px 380px;
+    margin:15% 40%;
     display: inline-table;
 }
 .text-info span{
