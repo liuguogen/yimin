@@ -62,7 +62,7 @@ ul,ol{
 .menu ul li{
     color: white;
     float: left;
-    margin:60px 36px;
+    margin:60px 30px;
     font-family: "微软雅黑"
 }
 .logo{
