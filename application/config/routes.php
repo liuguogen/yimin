@@ -57,6 +57,7 @@ $route['popular/(:num)'] = 'Index_controller/popularDetail/$1';
 $route['projects'] = 'Index_controller/projects';
 $route['aboutus'] = 'Index_controller/aboutus';//关于我们
 $route['info/[a-z]+\_[a-z]+'] = 'Index_controller/pInfo/$1';//公共页面
+$route['info/save'] = 'Index_controller/saveInfo';
 $route['getprojects'] = 'Index_controller/getProjects';
 $route['login'] = 'Login_controller/index';
 $route['login_up'] = 'Login_controller/login';

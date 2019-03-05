@@ -12,6 +12,7 @@
      <meta name="keywords" content="<?php echo $this->config->item('keywords','home') ?>" />
     <meta name="description" content="<?php echo $this->config->item('description','home') ?>" /> 
     <link type="text/css" rel="stylesheet" href="../../../assets/home/css/style.css">
+    <script type="text/javascript" src="../../../assets/js/jquery-1.10.2.min.js"></script>
 </head>
 
 <body>
@@ -109,10 +110,10 @@
 
      
     <div class="input-t" style="width: 960px;margin:0 auto;">
-        <input type="" name="" placeholder="Your name...">
+        <input type="text" name="names" placeholder="Your name...">
 
-        <input type="" name="" placeholder="Your phone...">
-        <button>咨询报告</button>
+        <input type="text" name="phone" placeholder="Your phone...">
+        <button id="a_action">咨询报告</button>
     </div>
      <p class="en-text">INVITE YOUR FRIENDS</p>
  </div>
@@ -143,6 +144,12 @@
         });
     }
 
+$('#a_action').on('click',function(){
+ var nmae = $("input[name='names']").val();
+ var phone = $("input[name='phone']").val();
+ $.post("<?php echo site_url('info/save') ?>",{name:name,phone:phone},function(rs){
 
+ },'json');
+})
 </script>
 </html>
