@@ -185,7 +185,7 @@
         </tr>
 
         <tr>
-            <th>私人定制 <span style="color: red;">*</span></th>
+            <th>遇见“享” <span style="color: red;">*</span></th>
             <td>
                 <textarea class="form-control" name="tail_custom" cols="60" rows="5"><?php if(isset($data['tail_custom']) && $data['tail_custom']){ echo $data['tail_custom'];}else{echo '';} ?></textarea>
                 <script type="text/javascript">CKEDITOR.replace('tail_custom',{ toolbarCanCollapse: true,  toolbar: [['Source','FontSize','JustifyCenter','Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink','Image','Table']],height: '250px', width: '900px',filebrowserImageUploadUrl:'<?php echo site_url('images/uploads') ?>' })</script>
@@ -193,21 +193,21 @@
         </tr>
 
         <tr>
-            <th>直营项目 <span style="color: red;">*</span></th>
+            <th>遇见“精” <span style="color: red;">*</span></th>
             <td>
                 <textarea class="form-control" name="direct_project" cols="60" rows="5"><?php if(isset($data['direct_project']) && $data['direct_project']){ echo $data['direct_project'];}else{echo '';} ?></textarea>
                 <script type="text/javascript">CKEDITOR.replace('direct_project',{ toolbarCanCollapse: true,  toolbar: [['Source','FontSize','JustifyCenter','Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink','Image','Table']],height: '250px', width: '900px',filebrowserImageUploadUrl:'<?php echo site_url('images/uploads') ?>' })</script>
             </td>
         </tr>
         <tr>
-            <th>战略项目 <span style="color: red;">*</span></th>
+            <th>遇见“品” <span style="color: red;">*</span></th>
             <td>
                 <textarea class="form-control" name="strategy_project" cols="60" rows="5"><?php if(isset($data['strategy_project']) && $data['strategy_project']){ echo $data['strategy_project'];}else{echo '';} ?></textarea>
                 <script type="text/javascript">CKEDITOR.replace('strategy_project',{ toolbarCanCollapse: true,  toolbar: [['Source','FontSize','JustifyCenter','Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink','Image','Table']],height: '250px', width: '900px',filebrowserImageUploadUrl:'<?php echo site_url('images/uploads') ?>' })</script>
             </td>
         </tr>
         <tr>
-            <th>公司介绍 <span style="color: red;">*</span></th>
+            <th>遇见“臻” <span style="color: red;">*</span></th>
             <td>
                 <textarea class="form-control" name="company_info" cols="60" rows="5"><?php if(isset($data['company_info']) && $data['company_info']){ echo $data['company_info'];}else{echo '';} ?></textarea>
                 <script type="text/javascript">CKEDITOR.replace('company_info',{ toolbarCanCollapse: true,  toolbar: [['Source','FontSize','JustifyCenter','Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink','Image','Table']],height: '250px', width: '900px',filebrowserImageUploadUrl:'<?php echo site_url('images/uploads') ?>' })</script>
