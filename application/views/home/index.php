@@ -149,7 +149,13 @@ $('#a_action').on('click',function(){
  var name = $("input[name='names']").val();
  var phone = $("input[name='phone']").val();
  $.post("<?php echo site_url('info/save') ?>",{name:name,phone:phone},function(rs){
-
+    if(rs.code==1) {
+        alert(rs.msg);
+        window.location.reload();
+    }else {
+        alert(rs.msg);
+        //window.location.reload();
+    }
  },'json');
 })
 </script>

@@ -59,7 +59,18 @@ class Index_controller extends CI_Controller {
 
 	public function saveInfo() {
 		$data = $this->input->post();
-		$this->Home_model->insert('info',$data);
+		$data['create_time'] = time();
+		$flag = $this->Home_model->insert('info',$data);
+		$preg_phone='/^1[345789]\d{9}$/ims';
+		if(!preg_match($preg_phone,$data['phone'])){
+		     echo json_encode(array('code'=>0,'msg'=>'手机号不正确'));exit;
+		 }
+
+		if($flag) {
+			echo json_encode(array('code'=>1,'msg'=>'提交成功'));exit;
+		}else {
+			echo json_encode(array('code'=>0,'msg'=>'提交失败'));exit;
+		}
 
 	}
 	public function pInfo() {
