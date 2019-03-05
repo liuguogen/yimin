@@ -127,6 +127,12 @@
                                             配置信息
                                         </a>
                                     </li>
+                                    <li class="b-nav-li">
+                                        <a href="<?php echo site_url('Admin_controller/infoList') ?>" target="right_content">
+                                            <i class="icon-double-angle-right"></i>
+                                            咨询信息
+                                        </a>
+                                    </li>
                                 
                             </ul>
                         </li>
