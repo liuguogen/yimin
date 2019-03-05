@@ -59,7 +59,7 @@ class Index_controller extends CI_Controller {
 
 	public function saveInfo() {
 		$data = $this->input->post();
-		var_export($data);exit;
+		$this->Home_model->insert('info',$data);
 
 	}
 	public function pInfo() {
