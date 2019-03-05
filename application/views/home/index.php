@@ -51,12 +51,12 @@
 
  </div>
 
- <div class="box" style="background-image: url(../../../assets/images/srdz11.png);background-size: 100% 100%;    
+ <a href="<?php echo site_url('info/company_info') ?>"><div class="box" style="background-image: url(../../../assets/images/srdz11.png);background-size: 100% 100%;    
     background-repeat: no-repeat;height: 778px;">
 
    
      
- </div>
+ </div></a>
 
  <div class="box" style="">
      <p class="en-text">Who is going to escort and keep you alive ?</p>
@@ -94,12 +94,12 @@
 
  </div>
 
-  <div class="box" style="background-image: url(../../../assets/images/sw1.png);background-size: 100% 100%;    
+  <a href="<?php echo site_url('info/tail_custom') ?>"><div class="box" style="background-image: url(../../../assets/images/sw1.png);background-size: 100% 100%;    
     background-repeat: no-repeat;height: 778px;">
 
    
      
- </div>
+ </div></a>
 
 
 
