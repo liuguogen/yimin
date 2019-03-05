@@ -74,7 +74,7 @@ ul,ol{
     font-size: 18px;
     color: rgb(208,208,208);
     margin-top: 50px;
-    font-family: "宋体";
+    font-family: "黑体";
 }
 .en-e{
     margin:0 auto;
@@ -83,7 +83,7 @@ ul,ol{
     color: #000;
     font-weight: bold;
     margin-top: 20px;
-    font-family: "宋体";
+    font-family: "黑体";
 
 }
 
