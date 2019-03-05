@@ -121,10 +121,7 @@ ul,ol{
         
         </div>
 
-        <div class="text-info">
-            <span>Holland 荷兰</span>
-
-        </div>
+        
     </div>
 
 
