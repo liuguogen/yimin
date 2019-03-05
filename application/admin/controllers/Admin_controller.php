@@ -78,7 +78,45 @@ class Admin_controller extends CI_Controller {
 		$this->load->view('home/activitylist',$data);
 	}
 
-
+	public function infoList() {
+		if(!empty($_POST)){
+			$keyword=trim($this->input->post('phone'));
+			$data['phone']=$keyword;
+			$total=$this->Admin_model->getCount('info',array('phone|like'=>$keyword));
+			$filter=array('phone|like'=>$keyword);
+		}else{
+			$keyword='';
+			$total=$this->Admin_model->getCount('info');
+			$data['phone']=$keyword;
+			$filter=array();
+		}
+		$this->load->library('pagination');
+		$limit = $this->limit;
+		$config['base_url'] = site_url('Admin_controller/infoList').'?page=p';
+		$config['total_rows'] = $total;
+		$config['per_page'] = $limit;
+		$config['full_tag_open'] = '<div class="pagination">'; // 分页开始样式
+		$config['full_tag_close'] = '</div>'; // 分页结束样式
+		$config['first_link'] = '首页'; // 第一页显示
+		$config['last_link'] = '末页'; // 最后一页显示
+		$config['next_link'] = '下一页 '; // 下一页显示
+		$config['prev_link'] = '上一页'; // 上一页显示
+		$config['cur_tag_open'] = ' <a class="current">'; // 当前页开始样式
+		$config['cur_tag_close'] = '</a>'; // 当前页结束样式
+		$config['num_links'] = 2;// 当前连接前后显示页码个数
+		$config['page_query_string']=TRUE;
+		//$config['uri_segment'] = 4;
+		$config['use_page_numbers'] = TRUE;
+		$config['page_query_string']=TRUE;
+		$config['use_page_numbers'] = TRUE;
+		$per_page=$this->input->get('per_page');
+		$start=$per_page?($per_page-1)*$limit:0; 
+		
+		$data['row']=$this->Admin_model->getList('*','info',$filter,$start,$limit,'create_time DESC');
+		$this->pagination->initialize($config);
+		$data['page_links']=$this->pagination->create_links();
+		$this->load->view('home/infolist',$data);
+	}
 	public function caseList()
 	{
 		if(!empty($_POST)){
