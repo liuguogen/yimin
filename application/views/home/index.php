@@ -116,6 +116,7 @@
         <button id="a_action">咨询报告</button>
     </div>
      <p class="en-text">INVITE YOUR FRIENDS</p>
+     <?php echo <?php echo $this->config->item('copy_info','home') ?> ?>
  </div>
 </body>
 <script type="text/javascript" src="../../../assets/js/swiper.min.js"></script>
