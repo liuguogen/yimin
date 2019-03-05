@@ -105,7 +105,7 @@
 
  <div class="box">
      <p class="en-text">Professional analysis report</p>
-     <p class="en-e" style="font-size: 3.5rem;color: rgb(26,41,68);">报告体系</p>
+     <p class="en-e" style="font-size: 3.5rem;color: rgb(26,41,68);margin-bottom: 10px;">报告体系</p>
      
 
      
