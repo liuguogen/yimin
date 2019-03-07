@@ -23,7 +23,7 @@
      <p class="en-e">P R O G R A M</p>
      
 
-     <section class="" style="width: 760px; margin:0 auto;">
+     <section class="" style="width: 960px; margin:0 auto;">
     <div class="swiper-container">
         <div class="swiper-wrapper">
 
@@ -63,7 +63,7 @@
      <p class="en-e">T H E &nbsp;&nbsp;&nbsp;T E A M</p>
      
     
-     <section class="" style="width: 760px; margin:0 auto;">
+     <section class="" style="width: 960px; margin:0 auto;">
     <div class="swiper-container">
         <div class="swiper-wrapper">
 
