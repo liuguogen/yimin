@@ -9,7 +9,8 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" />
       <?php  $this->load->view('public/header') ?>
     <script src="../../../assets/aceadmin/js/jquery-1.10.2.min.js"></script>
-    <script  type="text/javascript"  src="../../../assets/aceadmin/ckeditor/ckeditor.js"></script>
+    <script  type="text/javascript"  src="../../../assets/aceadmin/kindeditor/kindeditor-all.js"></script>
+    <script  type="text/javascript"  src="../../../assets/aceadmin/kindeditor/lang/zh-CN.js"></script>
     <link rel="stylesheet" type="text/css" href="../../../assets/aceadmin/diyUpload/css/webuploader.css">
     <link rel="stylesheet" type="text/css" href="../../../assets/aceadmin/diyUpload/css/diyUpload.css">
     <script type="text/javascript" src="../../../assets/aceadmin/diyUpload/js/webuploader.html5only.min.js"></script>
@@ -167,8 +168,15 @@
         <tr>
             <th>关于我们介绍 <span style="color: red;">*</span></th>
             <td>
-                <textarea class="form-control" name="about_group" cols="60" rows="5"><?php if(isset($data['about_group']) && $data['about_group']){ echo $data['about_group'];}else{echo '';} ?></textarea>
-                <script type="text/javascript">CKEDITOR.replace('about_group',{ toolbarCanCollapse: true,  toolbar: [['Source','FontSize','JustifyCenter','Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink','Image','Table']],height: '250px', width: '900px',filebrowserImageUploadUrl:'<?php echo site_url('images/uploads') ?>' })</script>
+                <textarea class="form-control" id="about_group" name="about_group" cols="60" rows="5"><?php if(isset($data['about_group']) && $data['about_group']){ echo $data['about_group'];}else{echo '';} ?></textarea>
+                <script>
+        KindEditor.ready(function(K) {
+                window.editor = K.create('#about_group',{
+                    height:'400px',
+                    width:'870px',
+                });
+        });
+</script>
             </td>
         </tr>
         <tr>
@@ -179,38 +187,74 @@
         <tr>
             <th>版权信息 <span style="color: red;">*</span></th>
             <td>
-                <textarea class="form-control" name="copy_info" cols="60" rows="5"><?php if(isset($data['copy_info']) && $data['copy_info']){ echo $data['copy_info'];}else{echo '';} ?></textarea>
-                <script type="text/javascript">CKEDITOR.replace('copy_info',{ toolbarCanCollapse: true,  toolbar: [['Source','FontSize','JustifyCenter','Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink','Image','Table']],height: '250px', width: '900px',filebrowserImageUploadUrl:'<?php echo site_url('images/uploads') ?>' })</script>
+                <textarea class="form-control" id="copy_info" name="copy_info" cols="60" rows="5"><?php if(isset($data['copy_info']) && $data['copy_info']){ echo $data['copy_info'];}else{echo '';} ?></textarea>
+                <script>
+        KindEditor.ready(function(K) {
+                window.editor = K.create('#copy_info',{
+                    height:'400px',
+                    width:'870px',
+                });
+        });
+</script>
             </td>
         </tr>
 
         <tr>
             <th>遇见“享” <span style="color: red;">*</span></th>
             <td>
-                <textarea class="form-control" name="tail_custom" cols="60" rows="5"><?php if(isset($data['tail_custom']) && $data['tail_custom']){ echo $data['tail_custom'];}else{echo '';} ?></textarea>
-                <script type="text/javascript">CKEDITOR.replace('tail_custom',{ toolbarCanCollapse: true,  toolbar: [['Source','FontSize','JustifyCenter','Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink','Image','Table']],height: '250px', width: '900px',filebrowserImageUploadUrl:'<?php echo site_url('images/uploads') ?>' })</script>
+                <textarea class="form-control" id="tail_custom" name="tail_custom" cols="60" rows="5"><?php if(isset($data['tail_custom']) && $data['tail_custom']){ echo $data['tail_custom'];}else{echo '';} ?></textarea>
+               
+               <script>
+        KindEditor.ready(function(K) {
+                window.editor = K.create('#tail_custom',{
+                    height:'400px',
+                    width:'870px',
+                });
+        });
+</script>
             </td>
         </tr>
 
         <tr>
             <th>遇见“精” <span style="color: red;">*</span></th>
             <td>
-                <textarea class="form-control" name="direct_project" cols="60" rows="5"><?php if(isset($data['direct_project']) && $data['direct_project']){ echo $data['direct_project'];}else{echo '';} ?></textarea>
-                <script type="text/javascript">CKEDITOR.replace('direct_project',{ toolbarCanCollapse: true,  toolbar: [['Source','FontSize','JustifyCenter','Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink','Image','Table']],height: '250px', width: '900px',filebrowserImageUploadUrl:'<?php echo site_url('images/uploads') ?>' })</script>
+                <textarea class="form-control" id="direct_project" name="direct_project" cols="60" rows="5"><?php if(isset($data['direct_project']) && $data['direct_project']){ echo $data['direct_project'];}else{echo '';} ?></textarea>
+                <script>
+        KindEditor.ready(function(K) {
+                window.editor = K.create('#direct_project',{
+                    height:'400px',
+                    width:'870px',
+                });
+        });
+</script>
             </td>
         </tr>
         <tr>
             <th>遇见“品” <span style="color: red;">*</span></th>
             <td>
-                <textarea class="form-control" name="strategy_project" cols="60" rows="5"><?php if(isset($data['strategy_project']) && $data['strategy_project']){ echo $data['strategy_project'];}else{echo '';} ?></textarea>
-                <script type="text/javascript">CKEDITOR.replace('strategy_project',{ toolbarCanCollapse: true,  toolbar: [['Source','FontSize','JustifyCenter','Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink','Image','Table']],height: '250px', width: '900px',filebrowserImageUploadUrl:'<?php echo site_url('images/uploads') ?>' })</script>
+                <textarea class="form-control" id="strategy_project" name="strategy_project" cols="60" rows="5"><?php if(isset($data['strategy_project']) && $data['strategy_project']){ echo $data['strategy_project'];}else{echo '';} ?></textarea>
+                <script>
+        KindEditor.ready(function(K) {
+                window.editor = K.create('#strategy_project',{
+                    height:'400px',
+                    width:'870px',
+                });
+        });
+</script>
             </td>
         </tr>
         <tr>
             <th>遇见“臻” <span style="color: red;">*</span></th>
             <td>
-                <textarea class="form-control" name="company_info" cols="60" rows="5"><?php if(isset($data['company_info']) && $data['company_info']){ echo $data['company_info'];}else{echo '';} ?></textarea>
-                <script type="text/javascript">CKEDITOR.replace('company_info',{ toolbarCanCollapse: true,  toolbar: [['Source','FontSize','JustifyCenter','Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink','Image','Table']],height: '250px', width: '900px',filebrowserImageUploadUrl:'<?php echo site_url('images/uploads') ?>' })</script>
+                <textarea class="form-control" id="company_info" name="company_info" cols="60" rows="5"><?php if(isset($data['company_info']) && $data['company_info']){ echo $data['company_info'];}else{echo '';} ?></textarea>
+                <script>
+        KindEditor.ready(function(K) {
+                window.editor = K.create('#company_info',{
+                    height:'400px',
+                    width:'870px',
+                });
+        });
+</script>
             </td>
         </tr>
             <th></th>
