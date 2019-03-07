@@ -47,8 +47,9 @@ ul,ol{
 .menu ul li{
     color: white;
     float: left;
-    margin:60px 30px;
-    font-family: "微软雅黑"
+    margin:60px 25px;
+    font-family: "微软雅黑";
+    font-size: 20px;
 }
 .logo{
     width: 120px;
