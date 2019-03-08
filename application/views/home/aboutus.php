@@ -27,7 +27,7 @@
    
     <?php $this->load->view('public/header'); ?>
     
-    <div class="box" style="width: 960px;margin:0 auto;">
+    <div class="box" style="width: 100%;margin:0 auto;">
 
         <?php if ($type =='about_group'){ ?>
     <?php echo $this->config->item('about_group','home') ?>
