@@ -14,7 +14,9 @@
     <link type="text/css" rel="stylesheet" href="../../../assets/home/css/style.css">
     <script type="text/javascript" src="../../../assets/js/jquery-1.10.2.min.js"></script>
 </head>
-
+<style type="text/css">
+    img{width: 100%;}
+</style>
 <body>
     
 <?php $this->load->view('public/header') ?>
