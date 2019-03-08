@@ -77,7 +77,7 @@
       ?> 
             <div class="swiper-slide swiper-slide-center none-effect">
                 
-                    <img src="../../../<?php echo $v; ?>">
+                    <a href="javascript:;"><img src="../../../<?php echo $v; ?>"> </a>
                
                 
             </div>

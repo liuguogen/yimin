@@ -705,16 +705,12 @@ body {
 }
 
 .swiper-slide img {
-	width: 225px;
-	/*border-radius: 5px;
-	display: block;*/
-	height: 225px;
+	
+	border-radius: 5px;
+	display: block;
+	
 	border: none;
-    transform:rotate(50deg);
-    -ms-transform:rotate(50deg);     /* IE 9 */
-    -moz-transform:rotate(50deg);    /* Firefox */
-    -webkit-transform:rotate(50deg); /* Safari 和 Chrome */
-    -o-transform:rotate(50deg);  /* Opera */
+    
     margin-left: 25px;
 }
 
