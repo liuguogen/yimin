@@ -48,12 +48,12 @@
     <?php if ($type =='strategy_project'){ ?>
     <?php echo $this->config->item('strategy_project','home') ?>
     <?php }?>
-	    	
+	 <?php echo  $this->config->item('copy_info','home'); ?>   	
     </div>
 
 
 
-
+    
 
 
 </body>
