@@ -14,7 +14,9 @@
     
     <link type="text/css" rel="stylesheet" href="../../../assets/home/css/style.css">
 </head>
-
+<style type="text/css">
+    img{width: 100%;}
+</style>
 <body>
    
 
