@@ -705,10 +705,10 @@ body {
 }
 
 .swiper-slide img {
-	width: 250px;
+	width: 225px;
 	/*border-radius: 5px;
 	display: block;*/
-	height: 250px;
+	height: 225px;
 	border: none;
     transform:rotate(50deg);
     -ms-transform:rotate(50deg);     /* IE 9 */
